@@ -135,7 +135,7 @@ for key, values in health_index_full.items():
 
 # Alternative solution
 
-health_2017 = defaultdict(list)
+# health_2017 = defaultdict(list)
 # for country, *_ in written_eurostat_data:
 #     health_2017[country] = []
 # print(health_2017)
@@ -145,23 +145,23 @@ health_2017 = defaultdict(list)
 #         health_2017[country].append((sex, health_index))
 # print('New version 2017 health overview: ',health_2017)
 
-health_2017 = {country: [] for country, *_ in written_eurostat_data}
-dummy_health = [health_2017[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if year == 2017]
-print('New version 2017 health overview: ', health_2017)
-
-health_2018 = defaultdict(list)
-health_2018 = {country: [] for country, *_ in written_eurostat_data}
-dummy_health = [health_2018[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if year == 2018]
-print('New version 2018 health overview: ', health_2018)
-
-germany_new = defaultdict(list)
-dummy_health = [germany_new[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if country == 'Germany']
-print('New Germany 2017-2018 health overview: ', germany_new)
-
-all_health = defaultdict(list)
-all_health = {country: [] for country, *_ in written_eurostat_data}
-dummy_health = [all_health[country].append((year, sex, health_index)) for country, year, sex, health_index in written_eurostat_data]
-print('All health data 2017-2018: ', all_health)
+# health_2017 = {country: [] for country, *_ in written_eurostat_data}
+# dummy_health = [health_2017[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if year == 2017]
+# print('New version 2017 health overview: ', health_2017)
+#
+# health_2018 = defaultdict(list)
+# health_2018 = {country: [] for country, *_ in written_eurostat_data}
+# dummy_health = [health_2018[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if year == 2018]
+# print('New version 2018 health overview: ', health_2018)
+#
+# germany_new = defaultdict(list)
+# dummy_health = [germany_new[country].append((sex, health_index)) for country, year, sex, health_index in written_eurostat_data if country == 'Germany']
+# print('New Germany 2017-2018 health overview: ', germany_new)
+#
+# all_health = defaultdict(list)
+# all_health = {country: [] for country, *_ in written_eurostat_data}
+# dummy_health = [all_health[country].append((year, sex, health_index)) for country, year, sex, health_index in written_eurostat_data]
+# print('All health data 2017-2018: ', all_health)
 
 # greater_than_five = defaultdict(list)
 # greater_than_five = {country: [] for country, *_ in all_health}
