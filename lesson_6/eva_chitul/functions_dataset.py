@@ -1,5 +1,5 @@
 
-# WORK IN PROGRESS
+# WORK COMPLETED
 
 description = ('Country', [
     '2011 ', '2012 ', '2013 ', '2014 ', '2015 ', '2016 ', '2017 ', '2018 ',
@@ -116,17 +116,17 @@ print('The data for the country is: ', data_from_country, '\n')
 # 4 Function to perform average from an iterable (year or country data)
 
 
-def average_data(iterable):
-    number_elements = len(iterable)
+def average_data(dataset_coverage):
+    number_elements = len(dataset_coverage)
     if number_elements == 0:
         return 'No elements in list. Cannot perform average'
     sum_coverage = 0
 
-    for element in iterable:
+    for element in dataset_coverage:
         sum_coverage += element[1]
 
-    average = sum_coverage/number_elements
-    return average
+    sum_average = sum_coverage/number_elements
+    return sum_average
 
 
 data_from_country = country_data(full_dataset, 'BE')
