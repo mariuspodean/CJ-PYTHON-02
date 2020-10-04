@@ -12,7 +12,7 @@ raw_data = [
     ('BA', [': ', ': ', ': ', ': ', ': ', ': ', ': ', '69 ', '72 ']),
     ('BE', ['77 ', '78 ', '80 ', '83 ', '82 ', '85 ', '86 ', '87 ', '90 ']),
     ('BG', ['45 ', '51 ', '54 ', '57 ', '59 ', '64 ', '67 ', '72 ', '75 ']),
-    ('CH', [': ', ': ', ': ', '91 ', ': ', ': ', '93 b', ': ', '96 ']),
+    ('CH', [': ', ': ', ': ', '91 ', ': ', ': ', '93 ', ': ', '96 ']),
     ('CY', ['57 ', '62 ', '65 ', '69 ', '71 ', '74 ', '79 ', '86 ', '90 ']),
     ('CZ', ['67 ', '73 ', '73 ', '78 ', '79 ', '82 ', '83 ', '86 ', '87 ']),
     ('DE', ['83 ', '85 ', '88 ', '89 ', '90 ', '92 ', '93 ', '94 ', '95 ']),
@@ -30,7 +30,7 @@ raw_data = [
     ('IT', ['62 ', '63 ', '69 ', '73 ', '75 ', '79 ', '81 ', '84 ', '85 ']),
     ('LT', ['60 ', '60 ', '65 ', '66 ', '68 ', '72 ', '75 ', '78 ', '82 ']),
     ('LU', ['91 ', '93 ', '94 ', '96 ', '97 ', '97 ', '97 ', '93 b', '95 ']),
-    ('LV', ['64 ', '69 ', '72 ', '73 ', '76 ', '77 b', '79 ', '82 ', '85 ']),
+    ('LV', ['64 ', '69 ', '72 ', '73 ', '76 ', '77 ', '79 ', '82 ', '85 ']),
     ('ME', [': ', '55 ', ': ', ': ', ': ', ': ', '71 ', '72 ', '74 ']),
     ('MK', [': ', '58 ', '65 ', '68 ', '69 ', '75 ', '74 ', '79 ', '82 ']),
     ('MT', ['75 ', '77 ', '78 ', '80 ', '81 ', '81 ', '85 ', '84 ', '86 ']),
@@ -40,7 +40,7 @@ raw_data = [
     ('PT', ['58 ', '61 ', '62 ', '65 ', '70 ', '74 ', '77 ', '79 ', '81 ']),
     ('RO', ['47 ', '54 ', '58 ', '61 b', '68 ', '72 ', '76 ', '81 ', '84 ']),
     ('RS', [': ', ': ', ': ', ': ', '64 ', ': ', '68 ', '73 ', '80 ']),
-    ('SE', ['91 ', '92 ', '93 ', '90 ', '91 ', '94 b', '95 ', '93 ', '96 ']),
+    ('SE', ['91 ', '92 ', '93 ', '90 ', '91 ', '94 ', '95 ', '93 ', '96 ']),
     ('SI', ['73 ', '74 ', '76 ', '77 ', '78 ', '78 ', '82 ', '87 ', '89 ']),
     ('SK', ['71 ', '75 ', '78 ', '78 ', '79 ', '81 ', '81 ', '81 ', '82 ']),
     ('TR', [': ', '47 ', '49 ', '60 ', '70 ', '76 ', '81 ', '84 ', '88 ']),
@@ -62,7 +62,7 @@ def prepare_data(inputs):
         countries[country] = country_years
     return countries
 
-def retrieve_data(inputs, year):
+def retrieve_year(inputs, year):
     countries={}
     for in1 in inputs:
         country = in1[0]
@@ -72,8 +72,31 @@ def retrieve_data(inputs, year):
                 countries[country] = coverage[i]
     return countries
 
+def retrieve_country(inputs,country):
+    years={}
+    for in1 in inputs:
+        inputs_country = in1[0]
+        coverage = in1[1]
+        for i in range(len(coverage)):
+            if country==inputs_country :
+                years[str(2012+i)] = coverage[i]
+    return years
+
+
+def average(it):
+    coverage_array=[]
+    for i in it.values():
+        if i.strip().isnumeric():
+            coverage_array.append(int(i))
+    return sum(coverage_array)/len(coverage_array)
+
 pp.pprint(prepare_data(raw_data))
-pp.pprint(retrieve_data(raw_data,2017))            
+pp.pprint(retrieve_year(raw_data,2017))
+pp.pprint(retrieve_country(raw_data,"RO"))
+pp.pprint(average(retrieve_country(raw_data,"RO"))) 
+pp.pprint(average(retrieve_country(raw_data,"AT")))
+pp.pprint(average(retrieve_country(raw_data,"AL")))
+pp.pprint(average(retrieve_year(raw_data,2017)))       
             
             
             
