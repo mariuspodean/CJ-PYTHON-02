@@ -46,42 +46,40 @@ raw_data = [
 ]
 
 def get_dataset_as_dict(my_description, my_data):
-    year_list = [years for years in my_description[1]]
+    year_list =  my_description[1]
     dataset = dict()
-    for element in my_data:
-        coverage_list = [coverage for coverage in element[1]]
+    for country, data in my_data:
         country_year_coverage = list()
-        country_index = 0
-        for coverage in coverage_list:
+        for year, coverage in zip (year_list, data):
             if coverage != ': ' :
-                country_year_coverage.append({'year':year_list[country_index].replace(' ', ''), 'coverage':coverage.replace(' ', '')})   
-            country_index = country_index + 1
+                country_year_coverage.append({'year':year.replace(' ', ''), 'coverage':coverage.replace(' ', '')})   
 
-        dataset[element[0]] = country_year_coverage
+        dataset [country] = country_year_coverage
 
     return dataset
 
-#end of get_dataset_as_dict function
+dataset_as_dict = get_dataset_as_dict(description, raw_data)
+
 
 def get_year_dataset(my_dataset, year):
     values_list = list()
-    for item in my_dataset: 
-         #print(item, my_dataset[item])
-         for dict_item in my_dataset[item]:
-            #print(dict_item)              
-            #print(dict_item['year'])
-            #print(dict_item['coverage'])
+    for country, data in my_dataset.items(): 
+         for dict_item in data:
             if dict_item['year'] == year:
-                values_list.append((item, dict_item['coverage']))
+                values_list.append((country, dict_item['coverage']))
                       
                  
     dataset_by_year = dict()
     dataset_by_year[year] = values_list
-    #print (dataset_by_year)
 
-    return (dataset_by_year)
+    return dataset_by_year
+
+year_input = input('Please write year:')
+if (year_input >= '2011') & (year_input <= '2019'):
+    get_year_dataset(dataset_as_dict, year_input)
+else:
+    print("Please write a year between 2011-2019 inclusive!")
     
-#end of get_year_dataset function      
 
 
 def get_country_dataset(my_dataset, country):
@@ -93,35 +91,18 @@ def get_country_dataset(my_dataset, country):
     dataset_by_country[country] = values_list
 
     return (dataset_by_country)
+    
+dataset_by_country= get_country_dataset(dataset_as_dict, 'RO')
+print (dataset_by_country)
 
-#end of get_country_dataset function
 
 
 def perform_average (my_dataset):
     coverage_list = list()
-    for element in my_dataset:
-        coverage_list.append(element[1])
+    for _, coverage in my_dataset:
+        coverage_list.append(int(coverage))
 
-    suma = 0    
-    for item in coverage_list:
-        suma = suma + int(item)
-    return suma/len(coverage_list)
-
-# end of perform_average function
-
-dataset_as_dict = get_dataset_as_dict(description, raw_data)
-
-
-year_input = input('Please write year:')
-if (year_input >= '2011') & (year_input <= '2019'):
-    get_year_dataset(dataset_as_dict, year_input)
-else:
-    print("Please write a year between 2011-2019 inclusive!")
-    
-
-dataset_by_country= get_country_dataset(dataset_as_dict, 'RO')
-print (dataset_by_country)
-
+    return sum(coverage_list)/len(coverage_list)
 
 print (perform_average (dataset_by_country['RO']))
 
