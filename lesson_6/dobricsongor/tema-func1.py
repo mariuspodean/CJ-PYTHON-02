@@ -51,29 +51,23 @@ def prepare_dataset(description_, raw_data_):
     country_and_index = {country: [] for country, *_ in raw_data_}
     for position in range(len(years)):
         for country, index in raw_data_:
-            if index[position] == ': ':
-                index[position] = 'Nul'
-            if len(index[position]) > 3:
-                index[position] = index[position][0:3]
-            country_and_index[country].append({'year': years[position], 'coverage': index[position]})
+            country_and_index[country].append({'year': years[position].strip(' '), 'coverage': index[position].strip(':b ')})
     return country_and_index
 
 dataset = prepare_dataset(description, raw_data)
-print(dataset)
+print('Dataset : ',dataset)
 
 
 def get_year_data(dataset_, year_):
     yeardata = {year_: []}
     for countries, datas in dataset_.items():
         for index in datas:
-            if len(index['year']) > 4:
-                index['year'] = index['year'][0:4]
-                if index['year'] == year_:
-                    yeardata[index['year']].append((countries, index['coverage']))
+            if index['year'] == year_:
+                yeardata[index['year']].append((countries, index['coverage']))
     return yeardata
             
 data_by_years = get_year_data(dataset, '2019')
-print(data_by_years)
+print('Data by years: ',data_by_years)
 #{'2019': [('Romania', 84), ('Germany', 95), ..., ('Latvia', 85)]}
 
 def get_country_data(dataset_, country):
@@ -86,22 +80,18 @@ def get_country_data(dataset_, country):
     return data
 
 datacountry = get_country_data(dataset, "RO")
-print(datacountry)
+print('Data country: ',datacountry)
 #{'Romania': [('2019', 84), ('2018', 86), ..., ('2011', 72)]}
 
 
 def perform_average(data):
     avg = 0
-    avgfinal = 0
     for country, datas in data.items():
         for year,index in datas:
-            if index == 'Nul':
-                avg += 0
-            else:
-                avg += int(index)
+            avg += int(index)
         avgfinal = round(avg / len(datas),2)
     
     
     return avgfinal
 
-print(perform_average(datacountry))
+print('Average: ',perform_average(datacountry))
