@@ -1,11 +1,12 @@
+# DECORATORS HOMEWORK
 
-# create a decorator called uppercase that will uppercase the result
+# 1 create a decorator called uppercase that will uppercase the result
 
 def uppercase(func):
 
     def inner_up(msg):
         print('Message before upper: ', func(msg))
-        print('Message after upper: ', func(msg).upper())
+        print('Message after upper: ', func(msg).upper(), '\n')
     return inner_up
 
 
@@ -18,7 +19,8 @@ greet('World')
 greet('Eva')
 
 
-# Create a decorator called safe_divide that will output a message if the division cannot be performed, othervise it will return the result.
+# 2 Create a decorator called safe_divide that will output a message if the division cannot be performed, othervise it will return the result.
+
 
 def safe_divide(func):
 
@@ -39,7 +41,7 @@ def divide(first_number, second_number):
 print('The division result is: ', divide(10, 2), '\n')
 print('The division result is: ', divide(10, 0), '\n')
 
-#  Given a set uf print methods, create a decorator called register that will update a list called print_registry with all the decorated functions names.
+# 3 Given a set uf print methods, create a decorator called register that will update a list called print_registry with all the decorated functions names.
 
 print_registry = []
 
@@ -63,6 +65,6 @@ def say_goodbye(name):
     return "Goodbye {}!".format(name)
 
 
-print(print_registry, '\n')
+print('These are the names of the decorated functions: ', print_registry, '\n')
 print(greet('Eva'))
 print(say_goodbye('Dolly'))
