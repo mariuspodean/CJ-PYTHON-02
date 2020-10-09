@@ -73,7 +73,6 @@ print('This is the revised dataset: ', full_dataset, '\n')
 
 def year_data(dataset, year):
     year_dict = {year.strip(): []}
-    # print(year_dict, '\n')
 
     for country, element in dataset.items():
         for entry in element:
@@ -95,7 +94,6 @@ print('The data for the year is: ', data_from_year, '\n')
 
 def country_data(dataset, country):
     country_dict = {country: []}
-    # print(country_dict, '\n')
 
     for countries, elements in dataset.items():
         if countries == country:
