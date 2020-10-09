@@ -1,5 +1,5 @@
 
-# WORK COMPLETED WITH ORIGINAL RAW DATA (CONTAINING 'b')
+# WORK COMPLETED REVISED WITH ORIGINAL RAW DATA (CONTAINING 'b')
 
 description = ('Country', [
     '2011 ', '2012 ', '2013 ', '2014 ', '2015 ', '2016 ', '2017 ', '2018 ',
@@ -55,15 +55,12 @@ raw_data = [
 def prep_dataset(years, dataset):
     country_dict = {country: [] for country, *_ in dataset}
 
-    length_years = len(years[1])
-
-    for num in range(length_years):
-        for country, elements in dataset:
-            if elements[num] != ': ':
-                raw_number = elements[num].split()
-                country_dict[country].append({'year': years[1][num], 'coverage': int(raw_number[0])})
+    for country, elements in dataset:
+        for year, coverage in zip(years[1], elements):
+            if coverage == ': ':
+                country_dict[country].append({'year': year, 'coverage': 0})
             else:
-                country_dict[country].append({'year': years[1][num], 'coverage': 0})
+                country_dict[country].append({'year': year, 'coverage': int(coverage.split()[0])})
 
     return country_dict
 
@@ -118,20 +115,12 @@ print('The data for the country is: ', data_from_country, '\n')
 
 
 def average_data(dataset_coverage):
-    number_elements = len(dataset_coverage)
-    if number_elements == 0:
-        return 'No elements in list. Cannot perform average'
-    sum_coverage = 0
-
-    for element in dataset_coverage:
-        sum_coverage += element[1]
-
-    sum_average = sum_coverage/number_elements
-    return sum_average
+    sum_coverage = [value for _, value in dataset_coverage if value]
+    return sum(sum_coverage)/len(sum_coverage)
 
 
-data_from_country = country_data(full_dataset, 'BE')
-data_from_year = year_data(full_dataset, '2013')
+data_from_country = country_data(full_dataset, 'EE')
+data_from_year = year_data(full_dataset, '2015')
 
-print('Average coverage for the country is: ', average_data(data_from_country['BE']), '\n')
-print('Average coverage for the year is: ', average_data(data_from_year['2013']), '\n')
+print('Average coverage for the country is: ', average_data(data_from_country['EE']), '\n')
+print('Average coverage for the year is: ', average_data(data_from_year['2015']), '\n')
