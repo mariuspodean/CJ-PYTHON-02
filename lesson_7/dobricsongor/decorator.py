@@ -61,5 +61,5 @@ def say_hello(name):
 def say_goodbye(name):
     return "Goodbye {}!".format(name)
 
-print('Decorated fuctions: ',print_registry)
+print('Decorated functions: ',print_registry)
 #>>> ['greet', 'say_goodbye']
