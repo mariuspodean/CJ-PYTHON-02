@@ -50,36 +50,30 @@ raw_data = [
 
 def prepare_data(inputs):
     countries={}
-    for in1 in inputs:
-        country = in1[0]
-        coverage = in1[1]
+    for country, coverage in inputs:
         country_years = []
-        for i in range(len(coverage)):
+        for i,cov in enumerate(coverage):
             country_year= {}
             country_year['year'] = 2012 +i
-            country_year['coverage'] = coverage[i]
+            country_year['coverage'] = cov
             country_years.append(country_year)
         countries[country] = country_years
     return countries
 
 def retrieve_year(inputs, year):
     countries={}
-    for in1 in inputs:
-        country = in1[0]
-        coverage = in1[1]
-        for i in range(len(coverage)):
+    for country,coverage in inputs:
+        for i,cov in enumerate(coverage):
             if 2012+i == year :
-                countries[country] = coverage[i]
+                countries[country] = cov
     return countries
 
 def retrieve_country(inputs,country):
     years={}
-    for in1 in inputs:
-        inputs_country = in1[0]
-        coverage = in1[1]
-        for i in range(len(coverage)):
+    for inputs_country,coverage in inputs:
+        for i,cov in enumerate(coverage):
             if country==inputs_country :
-                years[str(2012+i)] = coverage[i]
+                years[str(2012+i)] = cov
     return years
 
 
