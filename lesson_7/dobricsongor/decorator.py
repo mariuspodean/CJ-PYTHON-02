@@ -3,7 +3,7 @@
 def uppercase(fnc):
     
     def inner_func(given_text):
-        return(fnc(given_text).upper())
+        return fnc(given_text).upper()
     
     return inner_func
     
@@ -22,11 +22,13 @@ print(greet("World"))
 def safe_divide(fnc):
 
     def inner_func(first_num,second_num):
-        if isinstance(first_num, (int,float)) and isinstance(second_num, (int,float)): 
-            #if first_num % second_num == 0:
-            print(f'The result of dividing the numbers {first_num} and {second_num} is: ',fnc(first_num,second_num))
-        else:
-            print(f'The operation divide of {first_num} and {second_num} cannot be done!') 
+        #if isinstance(first_num, (int,float)) and isinstance(second_num, (int,float)): 
+            if second_num != 0 and first_num != 0:
+                print(f'The result of dividing the numbers {first_num} and {second_num} is: ',fnc(first_num,second_num))
+            else:
+                print(f'Dividing 0 or division by 0 is always 0!')
+        #else:
+         #   print(f'The operation divide of {first_num} and {second_num} cannot be done!') 
 
     return inner_func
 
@@ -35,7 +37,9 @@ def divide(first_number, second_number):
     return first_number / second_number
 
 divide(10.3, 2)
-divide(18, 'a')
+divide(8, 0)
+divide(0, 5)
+#divide(18, 'a')
 
 #----------------------------------------------------------------------------------
 
