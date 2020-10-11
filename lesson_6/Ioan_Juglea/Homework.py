@@ -45,8 +45,8 @@ raw_data = [
     ('XK', [': ', ': ', ': ', ': ', ': ', ': ', '89 ', '93 ', '93 ']),
 ]
 
-def prepare_Data(dataset):
-    refined_Data = dict()
+def prepare_data(dataset):
+    refined_data = dict()
     for country, coveragelist in dataset:
         coverage_per_country = []
         for index, coverage in reversed(list(enumerate(coveragelist))):
@@ -55,29 +55,31 @@ def prepare_Data(dataset):
                 coverage_per_country.append(
                     {
                         'year': str(year),
-                        'coverage': int(coverage[:-1])
+                        'coverage': int(coverage.strip('b'))
                     }
                 )
-        refined_Data.update({country: coverage_per_country})
-    return refined_Data
+        refined_data.update({country: coverage_per_country})
+    return refined_data
 
 def retrieve_data_for_year(dataset, year):
-    refined_Data = prepare_Data(dataset)
-    new_Data = []
-    for country in refined_Data:
-        for dictionary in refined_Data[country]:
+    refined_data = prepare_data(dataset)
+    new_data = []
+    for country in refined_data:
+        for dictionary in refined_data[country]:
             if dictionary['year'] == year:
-                new_Data.append({country: dictionary['coverage']})
-    final_Data = {int(year): new_Data}
-    return final_Data
+                new_data.append({country: dictionary['coverage']})
+    final_data = {int(year): new_data}
+    return final_data
+
+print(retrieve_data_for_year(raw_data, '2015'))
 
 def retrieve_data_for_country(dataset, chosen_country):
-    refined_Data = prepare_Data(dataset)
-    for country in refined_Data:
+    refined_data = prepare_data(dataset)
+    for country in refined_data:
         if country == chosen_country:
-            new_Data = refined_Data[country]
-    final_Data = {chosen_country: new_Data}
-    return final_Data
+            new_data = refined_data[country]
+    final_data = {chosen_country: new_data}
+    return final_data
 
 def perform_average(dataset):
     suma = 0
