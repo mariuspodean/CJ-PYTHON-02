@@ -49,17 +49,18 @@ def prepare_data(dataset):
     refined_data = dict()
     for country, coveragelist in dataset:
         coverage_per_country = []
-        for index, coverage in reversed(list(enumerate(coveragelist))):
+        for index, coverage in enumerate(coveragelist, start=2011):
             if coverage != ': ':
-                year = 2011 + index
                 coverage_per_country.append(
                     {
-                        'year': str(year),
+                        'year': str(index),
                         'coverage': int(coverage.strip('b'))
                     }
                 )
         refined_data.update({country: coverage_per_country})
     return refined_data
+
+print(prepare_data(raw_data))
 
 def retrieve_data_for_year(dataset, year):
     refined_data = prepare_data(dataset)
@@ -70,8 +71,6 @@ def retrieve_data_for_year(dataset, year):
                 new_data.append({country: dictionary['coverage']})
     final_data = {int(year): new_data}
     return final_data
-
-print(retrieve_data_for_year(raw_data, '2015'))
 
 def retrieve_data_for_country(dataset, chosen_country):
     refined_data = prepare_data(dataset)
