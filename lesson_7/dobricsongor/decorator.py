@@ -23,10 +23,10 @@ def safe_divide(fnc):
 
     def inner_func(first_num,second_num):
         #if isinstance(first_num, (int,float)) and isinstance(second_num, (int,float)): 
-            if second_num != 0 and first_num != 0:
+            if second_num != 0:
                 print(f'The result of dividing the numbers {first_num} and {second_num} is: ',fnc(first_num,second_num))
             else:
-                print(f'Dividing 0 or division by 0 is always 0!')
+                print(f'Division by 0 is not possible!')
         #else:
          #   print(f'The operation divide of {first_num} and {second_num} cannot be done!') 
 
