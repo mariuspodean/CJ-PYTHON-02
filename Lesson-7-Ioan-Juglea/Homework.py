@@ -28,9 +28,7 @@ print_registry = []
 
 def register(func):
     print_registry.append(func.__name__)
-    def inner_func(name):
-        return func(name)
-    return inner_func
+    return func
 
 @register
 def greet_(name):
