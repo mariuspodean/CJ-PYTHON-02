@@ -30,4 +30,4 @@ class Student(object):
         return '{} {}, {}'.format(
             self.first_name, self.last_name, self.age)
 
-stud = Student('Alpha', 'Beta', 18)
+stud = Student('Alpha', 'Beta', 12)
