@@ -1,5 +1,5 @@
 
-'''def uppercase(name):
+def uppercase(name):
 
     def wrapper(input):
 
@@ -13,7 +13,7 @@
 def greet(name):
     return "Greetings {}!".format(name)
 
-print(greet("World"))'''
+print(greet("World"))
 
 
 
