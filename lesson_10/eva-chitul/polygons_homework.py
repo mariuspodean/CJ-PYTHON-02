@@ -28,13 +28,16 @@ class Polygon:
             print(f'Side {index} with length: {side}')
 
 
-# class PerimeterMixin(object):
-#     def __init__(self, *args):
-#         print('These are the sides', args)
-#         super().__init__(self, *args)
+class PerimeterMixin(Polygon):
+    def __init__(self, *args):
+        super().__init__(*args)
+
+    def perimeter(self):
+        full_perimeter = sum(self.sides)
+        return f'Perimeter of {type(self).__name__} is: {full_perimeter}'
 
 
-class Triangle(Polygon):
+class Triangle(PerimeterMixin, Polygon):
     def __init__(self, side1, side2, side3):
         super().__init__(side1, side2, side3)
 
@@ -57,14 +60,18 @@ class Square(Polygon):
         return cls(sides)
 
     def __str__(self):
-        print(f'Polygon object has {len(self.sides)} sides')
         super().display()
         return 'The End'
 
 
-tri = Polygon(10, 11, 30)
-tri.display()
+tri = Triangle(10, 11, 30)
+print(tri.perimeter())
+
+tri_second = Triangle(5, 7, 30)
+print(tri_second.perimeter())
+
 sq = Square.from_area(50)
 print(sq)
 print(Square.from_area(13))
 print(Square.from_area(29))
+print(Square.from_area(30))
