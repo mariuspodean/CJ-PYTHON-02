@@ -20,9 +20,8 @@ class PrettyPrinter:
                 pretty_string += pretty_ingredient_string + ' ' * (34 - istr_len) + '|'
 
         else:
-            pretty_name_string = '\n    |      The Fridge Contains:'
-            nstr_len = len(pretty_name_string)
-            pretty_string += pretty_string + ' ' * (34 - nstr_len) + '|'
+            pretty_name_string = '\n    |     The Fridge Contains:   |'
+            pretty_string += pretty_name_string
             pretty_string += '\n    |                            |'
 
             for index, (key, value) in enumerate(self.products_fridge.items(), start=1): # pylint: disable=maybe-no-member
@@ -34,5 +33,4 @@ class PrettyPrinter:
     |   _________________________|___
     |  /                            /
     \_/____________________________/ '''
-        print(pretty_string)                      
-
+        print(pretty_string)
