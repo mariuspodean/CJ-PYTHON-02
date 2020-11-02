@@ -28,13 +28,11 @@ class Polygon:
             print(f'Side {index} with length: {side}')
 
 
-class PerimeterMixin(Polygon):
-    def __init__(self, *args):
-        super().__init__(*args)
+class PerimeterMixin:
 
     def perimeter(self):
         full_perimeter = sum(self.sides)
-        return f'Perimeter of {type(self).__name__} is: {full_perimeter}'
+        return full_perimeter
 
 
 class Triangle(PerimeterMixin, Polygon):
