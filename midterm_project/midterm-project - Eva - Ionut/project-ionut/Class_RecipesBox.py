@@ -1,3 +1,5 @@
+from random import randint
+
 class RecipesBox():
 
     # recipe_list is a list that will contain all of the recipe objects
