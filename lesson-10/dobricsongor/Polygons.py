@@ -19,12 +19,12 @@ class Triangle(Polygon):
     def area(self):
         s1, s2, s3 = self.sides
         s_p = sum(self.sides) / 2
-        return f'The area of this triangle is {round(((s_p*(s_p - s1)*(s_p - s2)*(s_p - s3))** 0.5),2)}.'
+        return round(((s_p*(s_p - s1)*(s_p - s2)*(s_p - s3))** 0.5),2)
 
 class PerimeterMixin:
     
     def perimeter(self):
-        return f'The perimeter of this shape is {sum(self.sides)}.'
+        return sum(self.sides)
 
 class PerimeterOfShape(PerimeterMixin, Polygon):
     pass
@@ -35,17 +35,14 @@ class Square(Polygon):
         super().__init__(side, side, side, side)
 
     def area(self):
-        return f'The area of this square is {self.sides[0] ** 2}.'
+        return self.sides[0] ** 2
 
 
     @classmethod
     def from_area(cls, given_area):
         side = given_area / 4
-        #if side%2==0:
         return cls(side)
-        #else:
-         #   print('The given area is not right for a square.')
-            
+           
 
 
 pol = Polygon(2,4,6,8,4)
