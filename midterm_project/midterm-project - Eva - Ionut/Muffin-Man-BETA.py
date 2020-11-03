@@ -1,5 +1,4 @@
 import random
-import pprint
 
 
 class PrettyPrinterMixin:
@@ -223,6 +222,21 @@ def check_the_fridge(fridge, recipe_box):
     return f'Possible recipes you can make with the products in your fridge:{(list(possible_recipes))}'
 
 
+shopping_archive = []
+
+
+def archive_shopping_list(shop_list):
+
+    def archive_store(*args):
+        if shop_list(*args):
+            shopping_archive.append(shop_list(*args))
+            print(f'Added {shop_list(*args)} to the Shopping Archive')
+        else:
+            print(f'No shopping list to add to archive')
+    return archive_store
+
+
+@archive_shopping_list
 def prepare_shopping_list(fridge, recipe):
     products_fridge = {item.lower(): fridge[item] for item in fridge}
 
@@ -235,23 +249,23 @@ def prepare_shopping_list(fridge, recipe):
             if quantity > products_fridge[product]:
                 shopping_list[product] = quantity - products_fridge[product]
 
-    return f'This is the needed shopping list for {recipe.name}: {shopping_list}'
+    return shopping_list
 
 
 #************************ TESTS AREA - TO BE MOVED *******************************************
 
-mac_and_cheese_ingredients = {'macaroni': 1,'cheese': 0.5 }
+mac_and_cheese_ingredients = {'macaroni': 2,'cheese': 2 }
+croque_monsieur_ingredients = {'bread': 10, 'cheese': 5, 'ham': 5}
+pasta_pesto_ingredients = {'pasta': 2, 'pesto': 1}
+stuffed_peppers_ingredients = {'peppers': 8, 'minced meat': 10, 'rice': 5, 'onion': 1}
 
 mac_and_cheese = Recipe('Mac and Cheese', mac_and_cheese_ingredients)
-
-print(mac_and_cheese)
-
-pasta_pesto_ingredients = {'pasta': 2, 'pesto': 1}
-pasta_pesto = Recipe('Pasta with Pesto', pasta_pesto_ingredients)
-print(pasta_pesto)
-
-croque_monsieur_ingredients = {'bread': 10, 'cheese': 5, 'ham': 5}
 croque_monsieur = Recipe('Croque Monsieur', croque_monsieur_ingredients)
+pasta_pesto = Recipe('Pasta with Pesto', pasta_pesto_ingredients)
+stuffed_peppers = Recipe('Stuffed Peppers', stuffed_peppers_ingredients)
+
+print(pasta_pesto)
+print(mac_and_cheese)
 print(croque_monsieur)
 
 muffin_man_fridge = Fridge()
@@ -259,11 +273,14 @@ muffin_man_fridge = Fridge()
 muffin_man_fridge.add_item('Eggs', 30)
 muffin_man_fridge.add_item('Tomatoes', 50)
 muffin_man_fridge.add_item('Juice', 4)
+muffin_man_fridge.add_item('Cheese', 40)
+muffin_man_fridge.add_item('Pesto', 4)
 
 print(muffin_man_fridge)
 
 muffin_man_fridge.delete_item('Eggs')
 print(muffin_man_fridge)
+
 print(muffin_man_fridge.remove_quantity_item('Juice', 10))
 print(muffin_man_fridge.remove_quantity_item('Apples', 13))
 print(muffin_man_fridge.remove_quantity_item('Tomatoes', 10))
@@ -295,6 +312,7 @@ recipes_box = RecipesBox()
 recipes_box.add_recipe(croque_monsieur)
 recipes_box.add_recipe(mac_and_cheese)
 recipes_box.add_recipe(pasta_pesto)
+recipes_box.add_recipe(stuffed_peppers)
 print(recipes_box)
 
 print(recipes_box.delete_recipe(pasta_pesto))
@@ -302,11 +320,17 @@ print(recipes_box)
 
 print(recipes_box.pick_recipe(mac_and_cheese))
 print(recipes_box.pick_recipe())
-
 print(check_the_fridge(muffin_man_fridge,recipes_box))
-
-print(prepare_shopping_list(muffin_man_fridge, mac_and_cheese))
-print(prepare_shopping_list(muffin_man_fridge, pasta_pesto))
 
 muffin_man_fridge.pretty_print()
 mac_and_cheese.pretty_print()
+stuffed_peppers.pretty_print()
+
+prepare_shopping_list(muffin_man_fridge, mac_and_cheese)
+prepare_shopping_list(muffin_man_fridge, pasta_pesto)
+prepare_shopping_list(muffin_man_fridge, croque_monsieur)
+prepare_shopping_list(muffin_man_fridge, stuffed_peppers)
+
+mac_and_cheese_ingredients = {'macaroni': 50,'cheese': 50 }
+
+print('This is the Shopping Archive:', shopping_archive)
