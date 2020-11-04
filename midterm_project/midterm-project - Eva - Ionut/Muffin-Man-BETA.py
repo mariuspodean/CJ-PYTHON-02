@@ -2,6 +2,8 @@ import random
 
 
 class PrettyPrinterMixin:
+    name: str
+    products_fridge: dict
 
     def pretty_print(self):
         pretty_string = r'''
@@ -16,7 +18,7 @@ class PrettyPrinterMixin:
             pretty_string += pretty_name_string + ' ' * (34 - nstr_len) + '|'
             pretty_string += '\n    |                            |'
 
-            for index, (key, value) in enumerate(self.ingredients.items(), start = 1):  # pylint: disable=maybe-no-member
+            for index, (key, value) in enumerate(self.ingredients.items(), start=1):  # pylint: disable=maybe-no-member
                 pretty_ingredient_string = '\n    |    ' + str(index) + '. ' + key.title() + ': ' + str(value)
                 istr_len = len(pretty_ingredient_string)
                 pretty_string += pretty_ingredient_string + ' ' * (34 - istr_len) + '|'
@@ -26,7 +28,8 @@ class PrettyPrinterMixin:
             pretty_string += pretty_name_string
             pretty_string += '\n    |                            |'
 
-            for index, (key, value) in enumerate(self.products_fridge.items(), start=1): # pylint: disable=maybe-no-member
+            for index, (key, value) in enumerate(self.products_fridge.items(),
+                                                 start=1):  # pylint:disable=maybe-nomember
                 pretty_ingredient_string = '\n    |    ' + str(index) + '. ' + key.title() + ': ' + str(value)
                 istr_len = len(pretty_ingredient_string)
                 pretty_string += pretty_ingredient_string + ' ' * (34 - istr_len) + '|'
@@ -49,14 +52,14 @@ class Recipe(PrettyPrinterMixin):
         number_of_stars = len(self.name) + 3
         pretty_string = '*' * number_of_stars + '\n' + self.name + '\n' + '*' * number_of_stars + '\n'
 
-        for index, (key, value) in enumerate(self.ingredients.items(), start = 1):
+        for index, (key, value) in enumerate(self.ingredients.items(), start=1):
             pretty_string = '\n'.join((pretty_string, f'{index}. {key.title()}: {value}'))
 
         pretty_string = pretty_string + '\n' * 2 + '*' * number_of_stars
         return pretty_string
 
     def __getitem__(self, given_index):
-        for index, (key, value) in enumerate(self.ingredients.items(), start = 1):
+        for index, (key, value) in enumerate(self.ingredients.items(), start=1):
             if given_index == index:
                 return {key: value}
 
@@ -108,8 +111,8 @@ class RecipesBox(object):
     def __len__(self):
         return len(self.recipes_box)
 
-    def insert(self, index, recipe):
-        self.recipes_box.insert(index, recipe)
+    # def insert(self, index, recipe):
+    #     self.recipes_box.insert(index, recipe)
 
     def __iter__(self):
         return iter(self.recipes_box)
@@ -125,11 +128,11 @@ class RecipesBox(object):
         del self.recipes_box[recipe.name]
         return f'Recipe {recipe.name} has been removed from the Recipe Box'
 
-    def pick_recipe(self, recipe = None):
+    def pick_recipe(self, recipe=None):
         if not recipe:
             choices = list(self.recipes_box.keys())
             recipe_choice = random.choice(choices)
-            return f'Here is a random recipe {recipe_choice} and the needed ingredients {self.recipes_box[recipe_choice]}'
+            return f'Here is a random recipe {recipe_choice} and its ingredients {self.recipes_box[recipe_choice]}'
         else:
             return f'Here is your recipe {recipe.name} and the needed ingredients {recipe.ingredients}'
 
@@ -157,7 +160,7 @@ class Fridge(PrettyPrinterMixin):
 
     def __str__(self):
         stars = '*' * 20
-        print(stars, '\n','Items in Fridge:', '\n')
+        print(stars, '\n', 'Items in Fridge:', '\n')
         for index, (product, quantity) in enumerate(self.products_fridge.items(), start=1):
             print(f'{index}. {product.title()}: {quantity}')
         return stars
@@ -173,7 +176,8 @@ class Fridge(PrettyPrinterMixin):
         if product in self.products_fridge.keys():
             if self.products_fridge[product] > quantity:
                 self.products_fridge[product] -= quantity
-                return f'Removing {quantity} of {product}. You now have {self.products_fridge[product]} of {product} left in the Fridge'
+                return f'Removing {quantity} of {product}. You now have {self.products_fridge[product]} ' \
+                       f'of {product} left in the Fridge'
             elif self.products_fridge[product] == quantity:
                 del self.products_fridge[product]
                 return f'Removing {quantity} of {product}. No {product} left. Please buy more!'
@@ -185,7 +189,8 @@ class Fridge(PrettyPrinterMixin):
     def add_quantity_item(self, product, quantity):
         if product in self.products_fridge.keys():
             self.products_fridge[product] += quantity
-            return f'{product} quantity has been updated with {quantity} in the Fridge. You now have {self.products_fridge[product]}'
+            return f'{product} quantity has been updated with {quantity} in the Fridge. ' \
+                   f'You now have {self.products_fridge[product]}'
         else:
             self.products_fridge[product] = quantity
             return f'You did not have {product} in the Fridge. Quantity now updated to {quantity}'
@@ -216,27 +221,105 @@ def check_the_fridge(fridge, recipe_box):
     possible_recipes = []
 
     for name, ingredients in list_ingredients_for_recipe.items():
-        if len(ingredients.intersection(contents_fridge)) >= len(ingredients)/2:
+        if len(ingredients.intersection(contents_fridge)) >= len(ingredients) / 2:
             possible_recipes.append(name)
 
     return f'Possible recipes you can make with the products in your fridge:{(list(possible_recipes))}'
+
+
+def pretty_print_recipe(shop_list):
+    def pretty_recipe(*args):
+        if shop_list(*args):
+            muffin_man_string = r'''
+ ........................................................
+ :   ,-.      ,-.      ,-.      ,-.      ,-.      ,-.   :
+ : _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_ :
+ :(_  o  _)(_  o  _)(_  o  _)(_  o  _)(_  o  _)(_  o  _):
+ :  / o \    / o \    / o \    / o \    / o \    / o \  :
+ : (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_) :
+ :   ,-.   ....................................   ,-.   :
+ : _(*_*)_ :                                  : _(*_*)_ :
+ :(_  o  _):          Shopping list:          :(_  o  _):
+ :  / o \  :                                  :  / o \  :
+ : (_/ \_) :                                  : (_/ \_) :'''
+
+            list_shop = shop_list(*args)
+            muffin_index = 1
+            space_number = 46
+            for index, (key, value) in enumerate(list_shop.items(), start=1):
+                if muffin_index == 1:
+                    muffin_string = ' :   ,-.   :   ' + str(index) + '. ' + key.title() + ': ' + str(value)
+                    muffin_man_string += '\n' + muffin_string + ' ' * (
+                            space_number - len(muffin_string)) + ':   ,-.   :'
+                elif muffin_index == 2:
+                    muffin_string = ' : _(*_*)_ :   ' + str(index) + '. ' + key.title() + ': ' + str(value)
+                    muffin_man_string += '\n' + muffin_string + ' ' * (
+                            space_number - len(muffin_string)) + ': _(*_*)_ :'
+                elif muffin_index == 3:
+                    muffin_string = ' :(_  o  _):   ' + str(index) + '. ' + key.title() + ': ' + str(value)
+                    muffin_man_string += '\n' + muffin_string + ' ' * (
+                            space_number - len(muffin_string)) + ':(_  o  _):'
+                elif muffin_index == 4:
+                    muffin_string = ' :  / o \  :   ' + str(index) + '. ' + key.title() + ': ' + str(value)
+                    muffin_man_string += '\n' + muffin_string + ' ' * (
+                            space_number - len(muffin_string)) + ':  / o \  :'
+                elif muffin_index == 5:
+                    muffin_string = ' : (_/ \_) :   ' + str(index) + '. ' + key.title() + ': ' + str(value)
+                    muffin_man_string += '\n' + muffin_string + ' ' * (
+                            space_number - len(muffin_string)) + ': (_/ \_) :'
+
+                muffin_index += 1
+                if (muffin_index > 5):
+                    muffin_index = 1
+
+            if muffin_index == 2:
+                muffin_man_string += '\n : _(*_*)_ :                                  : _(*_*)_ :'
+                muffin_index += 1
+            if muffin_index == 3:
+                muffin_man_string += '\n :(_  o  _):                                  :(_  o  _):'
+                muffin_index += 1
+            if muffin_index == 4:
+                muffin_man_string += '\n :  / o \  :                                  :  / o \  :'
+                muffin_index += 1
+            if muffin_index == 5:
+                muffin_man_string += '\n : (_/ \_) :                                  : (_/ \_) :'
+
+            muffin_man_string += r'''
+ :   ,-.   :                                  :   ,-.   :
+ : _(*_*)_ :                                  : _(*_*)_ :
+ :(_  o  _):                                  :(_  o  _):
+ :  / o \  :                                  :  / o \  :
+ : (_/ \_) :..................................: (_/ \_) :
+ :   ,-.      ,-.      ,-.      ,-.      ,-.      ,-.   :
+ : _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_  _(*_*)_ :
+ :(_  o  _)(_  o  _)(_  o  _)(_  o  _)(_  o  _)(_  o  _):
+ :  / o \    / o \    / o \    / o \    / o \    / o \  :
+ : (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_)  (_/ \_) :
+ :......................................................: '''
+            print(muffin_man_string)
+            return list_shop
+        else:
+            print('No Muffin Man shopping list!')
+
+    return pretty_recipe
 
 
 shopping_archive = []
 
 
 def archive_shopping_list(shop_list):
-
     def archive_store(*args):
-        if shop_list(*args):
-            shopping_archive.append(shop_list(*args))
-            print(f'Added {shop_list(*args)} to the Shopping Archive')
+        list_to_archive = shop_list(*args)
+        if list_to_archive:
+            shopping_archive.append(list_to_archive)
         else:
             print(f'No shopping list to add to archive')
+
     return archive_store
 
 
 @archive_shopping_list
+@pretty_print_recipe
 def prepare_shopping_list(fridge, recipe):
     products_fridge = {item.lower(): fridge[item] for item in fridge}
 
@@ -252,9 +335,9 @@ def prepare_shopping_list(fridge, recipe):
     return shopping_list
 
 
-#************************ TESTS AREA - TO BE MOVED *******************************************
+# ************************ TESTS AREA - TO BE MOVED *******************************************
 
-mac_and_cheese_ingredients = {'macaroni': 2,'cheese': 2 }
+mac_and_cheese_ingredients = {'macaroni': 2, 'cheese': 2}
 croque_monsieur_ingredients = {'bread': 10, 'cheese': 5, 'ham': 5}
 pasta_pesto_ingredients = {'pasta': 2, 'pesto': 1}
 stuffed_peppers_ingredients = {'peppers': 8, 'minced meat': 10, 'rice': 5, 'onion': 1}
@@ -284,7 +367,7 @@ print(muffin_man_fridge)
 print(muffin_man_fridge.remove_quantity_item('Juice', 10))
 print(muffin_man_fridge.remove_quantity_item('Apples', 13))
 print(muffin_man_fridge.remove_quantity_item('Tomatoes', 10))
-print(muffin_man_fridge.remove_quantity_item('Tomatoes',40))
+print(muffin_man_fridge.remove_quantity_item('Tomatoes', 40))
 print(muffin_man_fridge)
 
 muffin_man_fridge.add_item('Cheese', 30)
@@ -320,17 +403,17 @@ print(recipes_box)
 
 print(recipes_box.pick_recipe(mac_and_cheese))
 print(recipes_box.pick_recipe())
-print(check_the_fridge(muffin_man_fridge,recipes_box))
+
+print(check_the_fridge(muffin_man_fridge, recipes_box))
 
 muffin_man_fridge.pretty_print()
 mac_and_cheese.pretty_print()
-stuffed_peppers.pretty_print()
 
 prepare_shopping_list(muffin_man_fridge, mac_and_cheese)
 prepare_shopping_list(muffin_man_fridge, pasta_pesto)
 prepare_shopping_list(muffin_man_fridge, croque_monsieur)
 prepare_shopping_list(muffin_man_fridge, stuffed_peppers)
 
-mac_and_cheese_ingredients = {'macaroni': 50,'cheese': 50 }
+mac_and_cheese_ingredients = {'macaroni': 50, 'cheese': 50}
 
 print('This is the Shopping Archive:', shopping_archive)
