@@ -1,5 +1,7 @@
 import random
 
+shopping_archive = []
+
 
 class PrettyPrinterMixin:
     name: str
@@ -302,9 +304,6 @@ def pretty_print_recipe(shop_list):
             print('No Muffin Man shopping list!')
 
     return pretty_recipe
-
-
-shopping_archive = []
 
 
 def archive_shopping_list(shop_list):
