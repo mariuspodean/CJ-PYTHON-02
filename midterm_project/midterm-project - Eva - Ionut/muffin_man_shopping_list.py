@@ -15,12 +15,12 @@ class PrettyPrinterMixin:
  \_ |                            | '''
         if hasattr(self, 'ingredients'):
 
-            pretty_name_string = '\n    |      ' + self.name  # pylint: disable=maybe-no-member
+            pretty_name_string = '\n    |      ' + self.name
             nstr_len = len(pretty_name_string)
             pretty_string += pretty_name_string + ' ' * (34 - nstr_len) + '|'
             pretty_string += '\n    |                            |'
 
-            for index, (key, value) in enumerate(self.ingredients.items(), start=1):  # pylint: disable=maybe-no-member
+            for index, (key, value) in enumerate(self.ingredients.items(), start=1):
                 pretty_ingredient_string = '\n    |    ' + str(index) + '. ' + key.title() + ': ' + str(value)
                 istr_len = len(pretty_ingredient_string)
                 pretty_string += pretty_ingredient_string + ' ' * (34 - istr_len) + '|'
@@ -113,8 +113,8 @@ class RecipesBox(object):
     def __len__(self):
         return len(self.recipes_box)
 
-    # def insert(self, index, recipe):
-    #     self.recipes_box.insert(index, recipe)
+    def insert(self, index, recipe):
+        self.recipes_box.insert(index, recipe)
 
     def __iter__(self):
         return iter(self.recipes_box)
@@ -289,7 +289,7 @@ def pretty_print_recipe(shop_list):
                             space_number - len(muffin_string)) + ': (_/ \_) :'
 
                 muffin_index += 1
-                if (muffin_index > 5):
+                if muffin_index > 5:
                     muffin_index = 1
 
             if muffin_index == 2:
