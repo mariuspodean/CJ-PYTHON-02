@@ -30,7 +30,7 @@ class RacingCar(AllCar):
 
 
     def is_fast(self):
-        return f'Is this a fast car? {self.speed >= 200}'
+        return self.speed >= 200
 
     
     @staticmethod
@@ -44,17 +44,16 @@ class RacingCar(AllCar):
     def is_allowed_to_race(self):
         print ('Is this car allowed to race? ') 
         if self.is_fast and self.horsepower > 400:
-            return RacingCar.welcome_message()
+            return self.welcome_message()
         else:
             return False
 
 
     def discount_if_expensive(self):
-        message = f'This car worth {self.value} EUR.'
         if self.value > 50000:
-            return f'{message}...but you can have it with an extra 10% discount: {int((self.value)-(self.value/10))} EUR'
+            return True
         else:
-            return message
+            return False
 
     @classmethod
     def from_dict(cls, dictionary):
