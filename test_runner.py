@@ -1,3 +1,0 @@
-from tests import test_vector
-
-test_vector_object_attribute_initialization()
