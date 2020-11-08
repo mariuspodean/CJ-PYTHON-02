@@ -38,8 +38,6 @@ sq = Square.from_area(16)
 print (sq)
 
 class PerimeterMixin:
-    def __init__(self, *args):
-        self.sides = args
 
     def perimeter(self):
         return f'The perimeter for this polygon is {sum(self.sides)}'
