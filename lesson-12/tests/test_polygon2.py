@@ -19,7 +19,7 @@ class TestPolygon(unittest.TestCase):
 
         pol = polygon2.Polygon(4,4,4)
 
-        test_poligon_perimeter = polygon2.Polygon.perimeter(pol)
+        test_poligon_perimeter = pol.perimeter()
 
         self.assertEqual(test_poligon_perimeter, pol.s1+pol.s2+pol.s3), 'Sum is not good'
 
@@ -27,7 +27,7 @@ class TestPolygon(unittest.TestCase):
 
         pol = polygon2.Polygon(2,2,2)
 
-        test_poligon_area = polygon2.Polygon.area(pol)
+        test_poligon_area = pol.area()
 
         self.assertIsNotNone(test_poligon_area), 'Area returns None'    
         self.assertFalse(isinstance((test_poligon_area),int)), 'The returned area is not an integer'
