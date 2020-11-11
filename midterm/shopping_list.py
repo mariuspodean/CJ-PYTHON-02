@@ -196,6 +196,17 @@ class Fridge(PrittyPrinterMixin):
         else:
             print(f'The {item} is not in the fridge, cannot update.')
 
+    def remove_from_food(self,item,quantity):
+        if item not in self.fridge_list:
+            print(f'The {item} is not in the fridge. Cannot take out from it.')
+        else:
+            self.fridge_list[item] -= quantity
+            if self.fridge_list[item] == 0:
+                del self.fridge_list[item]
+                print(f'You took out all the {item}. Go and shop some more.')
+            else:
+                print(f'We took out {quantity} piece(s) from the {item}.')
+
 
     def __str__(self):
         return super().__str__()
@@ -229,15 +240,48 @@ def check_the_fridge(fridge, recipe_list):
     return f'Recipes we can make from the fridge: {preparable_recipes}'
 
 
-shopping_arc = []
+#shop={}
+def pretty_print_recipe(shop_display):
+    def wrapper1(*args):
+        shopping_list_arc=shop_display(*args)   #ramane
+        for key,value in shopping_list_arc:
+            #for k, v in key,value:
+            printer=f'{key}:{value}\n'
+        art_ascii = r"""
+   ______________________________
+ / \                             \.
+|   |                            |.
+ \_ |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |                            |.
+    |   _________________________|___
+    |  /                            /.
+    \_/dc__________________________/.
+            """
+        return printer+art_ascii
+    return wrapper1
+
+
+
+shopping_list_archive = []
 def archive_shopping_list(shop_ing):
-    #shopping_arc = []
     def wrapper(*args):
-        shopping_arc.append(shop_ing(*args))
-        return (f'{shop_ing(*args)} list included in archive')
+        shopping_list_archive.append(shop_ing(*args))
+        print (f'The {shop_ing(*args)} items were included in archive')
+        return shopping_list_archive 
     return wrapper
 
 @archive_shopping_list
+#@pretty_print_recipe
 def prepare_shopping_list(recipe,fridge):
     shopping_list = {}
     for recipe_ingredient, recipe_quantity in recipe.items():
