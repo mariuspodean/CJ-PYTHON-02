@@ -1,3 +1,4 @@
+import shopping_list
 from shopping_list import PrittyPrinterMixin, Recipe, RecipeBox, Fridge, check_the_fridge, archive_shopping_list, prepare_shopping_list
 
 canibale_pizza_ingredients = {'salami': 2, 'cheese': 3, 'pizzabase': 1, 'ham':2}
@@ -45,6 +46,7 @@ fridge.add_food('salt', 2)
 fridge.add_food('ham', 3)
 fridge.add_food('eggs', 4)
 fridge.add_food('tomato', 2)
+fridge.add_food('ananas', 3)
 
 print(fridge)
 
@@ -53,8 +55,13 @@ fridge.update_to_food('bread', 3)
 print(fridge)
 print('macaroni' in fridge)
 
+fridge.remove_from_food('bread', 1)
+fridge.remove_from_food('ananas',3)
+print(fridge)
+
 fridge.remove_food('bread')
 print(fridge)
+
 
 fridge.check_recipe(mac_and_cheese)
 print(check_the_fridge(fridge,recipelist))
@@ -62,3 +69,5 @@ print(check_the_fridge(fridge,recipelist))
 print(prepare_shopping_list(mac_and_cheese,fridge))
 print(prepare_shopping_list(canibale_pizza,fridge))
 print(prepare_shopping_list(salad,fridge))
+
+print(shopping_list.shopping_list_archive)
