@@ -86,7 +86,7 @@ class RecipesBox():
         return iter(self.recipes_list)
     
     def insert (self, index, recipe):
-        return self.recipes_list(index, recipe)
+        return self.recipes_list.insert(index, recipe)
     
     def __getitem__(self, index):
         return self.recipes_list[index]
@@ -98,9 +98,9 @@ class RecipesBox():
         del self.recipes_list[index]
         
     def __len__(self):
-        return len(recipes_list)
+        return len(self.recipes_list)
     
-    def pick (self, recipe_to_extract=None):
+    def pick(self, recipe_to_extract=None):
         if recipe_to_extract:
             for recipe in self.recipes_list:
                 if recipe.name == recipe_to_extract:
@@ -108,10 +108,10 @@ class RecipesBox():
         else:
             return random.choice(self.recipes_list)
     
-    def add (self, recipe_to_add):
+    def add(self, recipe_to_add):
         self.recipes_list.append(recipe_to_add)
     
-    def delete (self, recipe_to_delete):
+    def delete(self, recipe_to_delete):
         for recipe in self.recipes_list:
             if recipe.name == recipe_to_delete:
                 self.recipes_list.remove(recipe)
@@ -244,7 +244,7 @@ def archive_shopping_list(function):
     def inner_function (*args):
         shopping_list_archive.append(function(*args))
         print ('List was archived')
-        return function
+        return function(*args)
     return inner_function 
 
 @archive_shopping_list
