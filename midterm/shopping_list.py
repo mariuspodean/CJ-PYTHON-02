@@ -4,41 +4,19 @@ import sys
 
 class PrittyPrinterMixin:
 
-    # def box_it(fnc):
-        
-    #     def inner_func(self):
-    #         print('********************')
-    #         fnc(self)
-    #         print('********************')
-    #     return inner_func
-    
-    
-    # @box_it
     def __str__(self):
         
         if hasattr(self, 'ingredients'):
-            print_view = f'*************************'
-            print_view += '\n'
-            print_view += f'{self.get_name()}'
-            print_view += '\n'
-            print_view += f'************************'
-            print_view += '\n'
+            print_view = f'*************************\n{self.get_name()}\n************************\n'
             for index, (ingredient,quantity) in enumerate(self.ingredients.items(), start=1):
                 print_view += f'{index}. {ingredient}: {quantity}' + '\n'
-            print_view += '\n'
-            print_view += f'************************'
+            print_view += f'\n************************'
             return (print_view)
         else:
-            print_view = f'*************************'
-            print_view += '\n'
-            print_view += f'Fridge contains:'
-            print_view += '\n'
-            print_view += f'************************'
-            print_view += '\n'
+            print_view = f'*************************\nFridge contains:\n************************\n'
             for index, (ingredient,quantity) in enumerate(self.fridge_list.items(), start=1):
                 print_view += f'{index}. {ingredient}: {quantity}' + '\n'
-            print_view += '\n'
-            print_view += f'************************'
+            print_view += '\n************************'
             return (print_view)
  
 
@@ -128,9 +106,11 @@ class RecipeBox:
     def pick(self, recipe=None):
         if recipe:
             print (f' Selected recipe is: {recipe.recipe_name}, and contains: {recipe.ingredients}')
+            return recipe.recipe_name
         else:
             random_recipe = random.choice(list(self.recipebox.keys()))
             print (f' Random recipe is: {random_recipe} and contains: {self.recipebox[random_recipe]}')
+            return random_recipe
 
     def __str__(self):
         return (f'Recipebox contains: {list(self.recipebox.keys())}')
@@ -201,7 +181,7 @@ class Fridge(PrittyPrinterMixin):
             print(f'The {item} is not in the fridge. Cannot take out from it.')
         else:
             self.fridge_list[item] -= quantity
-            if self.fridge_list[item] == 0:
+            if self.fridge_list[item] <= 0:
                 del self.fridge_list[item]
                 print(f'You took out all the {item}. Go and shop some more.')
             else:
@@ -224,7 +204,7 @@ class Fridge(PrittyPrinterMixin):
 
         print(f'Things for preparing {recipe.recipe_name} we don\'t have in the fridge: {not_in_fridge}')
         print(f'Things for preparing {recipe.recipe_name} we have in the fridge: {have_in_fridge}')
-
+        return not_in_fridge,have_in_fridge
 
 def check_the_fridge(fridge, recipe_list):
 
@@ -240,21 +220,24 @@ def check_the_fridge(fridge, recipe_list):
     return f'Recipes we can make from the fridge: {preparable_recipes}'
 
 
-#shop={}
+
 def pretty_print_recipe(shop_display):
     def wrapper1(*args):
-        shopping_list_arc=shop_display(*args)   #ramane
-        for key,value in shopping_list_arc:
-            #for k, v in key,value:
-            printer=f'{key}:{value}\n'
-        art_ascii = r"""
+        shopping_list_arc=shop_display(*args)
+        if shopping_list_arc:
+            art_ascii = r"""
+            
+            
    ______________________________
  / \                             \.
 |   |                            |.
  \_ |                            |.
     |                            |.
-    |                            |.
-    |                            |.
+    |                            |."""
+            for index, (ingredient,quantity) in enumerate(shopping_list_arc.items(), start=1):
+                printer = f'{index}. {ingredient}: {quantity}' + '\n'                         
+            print (printer+art_ascii)
+        print(r'''
     |                            |.
     |                            |.
     |                            |.
@@ -265,9 +248,10 @@ def pretty_print_recipe(shop_display):
     |                            |.
     |   _________________________|___
     |  /                            /.
-    \_/dc__________________________/.
-            """
-        return printer+art_ascii
+    \_/dc__________________________/.''')
+        
+        
+        return shop_display(*args)
     return wrapper1
 
 
@@ -277,11 +261,12 @@ def archive_shopping_list(shop_ing):
     def wrapper(*args):
         shopping_list_archive.append(shop_ing(*args))
         print (f'The {shop_ing(*args)} items were included in archive')
-        return shopping_list_archive 
+        return shop_ing(*args)
     return wrapper
 
-@archive_shopping_list
+
 #@pretty_print_recipe
+@archive_shopping_list
 def prepare_shopping_list(recipe,fridge):
     shopping_list = {}
     for recipe_ingredient, recipe_quantity in recipe.items():
@@ -290,3 +275,6 @@ def prepare_shopping_list(recipe,fridge):
         elif recipe_quantity>fridge[recipe_ingredient]:
             shopping_list[recipe_ingredient] = recipe_quantity - fridge[recipe_ingredient]
     return shopping_list
+
+
+
