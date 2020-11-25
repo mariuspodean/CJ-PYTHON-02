@@ -1,1 +1,31 @@
-#Problem description
+Headcount report
+
+The purpose of this project is to automate the headcount report for ITIVITI, in order to have a view on the new joiners, leavers and the actual headcount for the month of October.
+The data processed will be from the file october_database.xlsx .
+
+Tasks: 
+* count new joiners and have their id
+    * process:  count the employees who have the contract start date in October; 
+
+* count new leavers and have their id
+    * process:  count the employees who have the last day in payroll in October :
+                                                                                    and they have "1" in HC column;
+                                                                                    they have 1270SE cost center;
+                                                                                    they have "parental" reason;
+
+* count interns
+    * process:  count the employees with "intern" contract type who are still employed;
+
+*count consultants:
+    * process: count the employees with "freelancer" contract type who are still employed;
+
+*count headcount:
+    * process: count the employees who have "1" as a value in column "HC";
+
+* count VIE:
+    * process: count the employees with "VIE" contract type who are still employed;
+
+
+
+
+
