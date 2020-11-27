@@ -4,6 +4,19 @@ The purpose of this project is to automate the headcount report for ITIVITI, in 
 The data processed will be from the file october_database.xlsx .
 
 Tasks: 
+
+*count headcount:
+    * process: count the employees who have "1" as a value in column "HC";
+
+* count VIE :
+    * process: count and show the employees with "VIE" contract type who are still employed;
+
+* count interns
+    * process:  count and show the employees with "intern" contract type who are still employed;
+
+*count consultants:
+    * process: count and show the employees with "freelancer" contract type who are still employed;
+
 * count new joiners and have their id
     * process:  count the employees who have the contract start date in October; 
 
@@ -13,17 +26,9 @@ Tasks:
                                                                                     they have 1270SE cost center;
                                                                                     they have "parental" reason;
 
-* count interns
-    * process:  count the employees with "intern" contract type who are still employed;
 
-*count consultants:
-    * process: count the employees with "freelancer" contract type who are still employed;
 
-*count headcount:
-    * process: count the employees who have "1" as a value in column "HC";
 
-* count VIE:
-    * process: count the employees with "VIE" contract type who are still employed;
 
 
 
