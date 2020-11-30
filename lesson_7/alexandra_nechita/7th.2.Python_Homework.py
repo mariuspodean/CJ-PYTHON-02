@@ -3,8 +3,7 @@ def safe_divide(divide):
         if second_number == 0:
             print("Division cannot be performed")
             return
-
-        return print(divide(first_number, second_number))
+        return divide(first_number, second_number)
     return safe_divide_inner
 
 
@@ -12,4 +11,4 @@ def safe_divide(divide):
 def divide(first_number, second_number):
     return first_number/second_number
 
-divide(9,3)
+print(divide(9,3))

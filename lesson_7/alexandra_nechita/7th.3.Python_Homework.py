@@ -4,6 +4,7 @@ def register (func):
     print_registry.append (func.__name__)
     def register_inner(message):
       print ('I am a useless function')
+      return func
     return register_inner
 
 
