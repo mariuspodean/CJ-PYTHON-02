@@ -12,7 +12,8 @@ class Products(...):
 
 Once a product has been created, it cannot be updated.
 We can use the method def price_after_discount we will calculate the price of products after discount applied according to the known discount percentage.
-We cand also use a method that gives the lowest / highest price, which compare the price of same product sold by different brands. 
+
+We need to overload at least one operator, for example compare two products by price. 
 
 
 
