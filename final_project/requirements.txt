@@ -1,0 +1,60 @@
+Final Project Requirements
+
+    Task: Create an application that will mange the stock need for a flower shop.
+
+    We will start with a mapping that will help us describe a Bouquet:
+        class Bouquet(...):
+        ...
+    
+    A new bouquet can be created starting from a name and dictionary of flowers and quantities.
+
+    We will also have a BouquetBox that is a mutable sequence that holds our bouquets.
+        class BouquetBox(...):
+        ...
+  
+    Each class must implement custom str and repr methods
+
+    We also have the stock that is a mutable mapping that holds some products together with their quantities.
+        class Stock(...):
+        ...
+
+    We can add new items in stock or remove existing ones. 
+    We can also update the quantities for the items present in stock.
+    When we alter the quantity for an item and that becomes 0, we should get a notification that the product is not available.
+    We can use the check_stock method to see if we have all the required flowers from a bouquet.
+    This method will return two lists: one with the items from the bouquet that we have in stock, and another one with the ones that we do not have.
+    We will have a mixin class called FlowerBoutique that will be used by Stock and Bouquets to print nicely their contents.
+        class FlowerBoutique:
+        ...
+    
+    The function stock_items_needed will take a bouquet, and based on the flowers we have in stock,
+    will return a dictionary with the items that we have to buy and the corresponding quantities.
+    This method will check flowers by presence and quantity and compute the missing quantity that will be added to the shopping list.
+    For the function stock_items_needed we will have a decorator:
+    • pretty_print_bouquet: this decorator will take the returned values from the stock_items_needed 
+     and will print a nice representation of the flowers needed;
+    
+
+    A  minimum of one of the following will be used: 
+    -decorator,
+    -context manager;
+    -generator
+    -mixin,
+    -inheritance;
+    -one scenario of operator overloading, 
+    -logging (using the standard logging)
+    -unit testing.
+
+
+
+The project will consist of three files:
+
+
+requirements.txt - will store all the requirements of our problem definition,
+
+application.py - the implementation,
+
+playground.py - a file showcasing the functionality and proving it implements fully the requirements
+
+tests.py - the unittests.
+
