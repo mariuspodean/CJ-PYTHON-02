@@ -1,91 +1,82 @@
 import random
-from collections.abc import MutableSequence, Mapping, MutableMapping
 
 class PrettyPrinter:
     
     def __str__(self):
-        name = self.name
-        star_line = '*' * (len(name)+4) + '\n'
-        string = star_line + '  '+ name + '\n'
-        string += star_line + '\n'     
+        star_line = '*' * (len(self.name) + 4) + '\n'
+        string = f'{star_line} \n {self.name} \n {star_line} \n'     
         for index, (keys, values) in enumerate(self.items(), 1):
-            string += f'  {index}. {keys}: {values} \n'
-        string += '\n'
-        string += star_line
+            string += f'{index}. {keys}: {values} \n'
+        string += f'\n {star_line}'
         return (string)
-
-#taken from https://stackoverflow.com/questions/19022868/how-to-make-dictionary-read-only-in-python
-class ReadOnlyDict(dict):
-    
-    def __readonly__(self, *args, **kwargs):
-        raise RuntimeError("Cannot modify Recipe")
-    
-    __setitem__ = __readonly__
-    __delitem__ = __readonly__
-    pop = __readonly__
-    popitem = __readonly__
-    clear = __readonly__
-    update = __readonly__
-    setdefault = __readonly__
-    del __readonly__
-    
+  
 class Recipe(PrettyPrinter):
     
     def __init__(self, name, dictionary_of_ingredients):
+        list_of_ingredients = []
         self._name = name
-        self._dictionary_of_ingredients = ReadOnlyDict(dictionary_of_ingredients)
+        for ingredient, quantity in dictionary_of_ingredients.items():
+            list_of_ingredients.append((ingredient, quantity))
+        self.tuple_of_ingredients = tuple(list_of_ingredients)
     
     @property
     def name(self):
         return self._name
-
-    def __getitem__(self, ingredient):
-        return self._dictionary_of_ingredients[ingredient]
     
-    def __contains__(self, ingredient):
-        if ingredient in self._dictionary_of_ingredients:
+    def __getitem__(self, index):
+        return self.tuple_of_ingredients[index]
+    
+    def __contains__(self, ingredient, quantity):
+        if (ingredient, quantity) in self.tuple_of_ingredients:
             return True
         else:
             return False
-    def get(self, key):
-        return self._dictionary_of_ingredients[key]
+        
+    def get(self, index):
+        return self.tuple_of_ingredients[index]
     
     def __eq__(self, other):
         if isinstance(other, Recipe):
-            return self._dictionary_of_ingredients == other._dictionary_of_ingredients
+            return self.tuple_of_ingredients == other.tuple_of_ingredients
         return False
     
     def __ne__(self, other):
         return not self.__eq__(other)
        
     def __iter__(self):
-        return iter(self._dictionary_of_ingredients)       
+        return iter(self.tuple_of_ingredients)       
         
     def __len__(self):
-        return len(self._dictionary_of_ingredients)
+        return len(self.tuple_of_ingredients)
+
+    def dict_from_tuple(self):
+        dictionary_of_ingredients = {}
+        for (ingredient, quantity) in self.tuple_of_ingredients:
+            dictionary_of_ingredients[ingredient] = quantity
+        return dictionary_of_ingredients
     
     def items(self):
-        return self._dictionary_of_ingredients.items()
+        return self.dict_from_tuple().items()
     
     def keys(self):
-        return self._dictionary_of_ingredients.keys()
+        return self.dict_from_tuple().keys()
     
     def values(self):
-        return self._dictionary_of_ingredients.values()
+        return self.dict_from_tuple().values()
        
     def __str__(self):
         return super().__str__()
                     
 class RecipesBox():
    
-    def __init__ (self, name, recipes_list):
-        self.name=name
+    def __init__(self, name, recipes_list):
+        self.name = name
         self.recipes_list = recipes_list
     
     def __iter__(self):
         return iter(self.recipes_list)
     
-    def insert (self, index, recipe):
+    def insert(self, index, recipe):
         return self.recipes_list.insert(index, recipe)
     
     def __getitem__(self, index):
@@ -153,25 +144,26 @@ class Fridge(PrettyPrinter):
     def values(self):
         return self.dictionary_of_products.values()
         
-    def add (self, product_name, product_quantity):
-        previous_quantity=0
-        if product_name in self.dictionary_of_products:
-            previous_quantity = self.dictionary_of_products[product_name]
-        self.dictionary_of_products[product_name] = previous_quantity + product_quantity
+    def add(self, product_name, product_quantity):
+        if product_name not in self.dictionary_of_products:
+            self.dictionary_of_products[product_name] = product_quantity
+        self.dictionary_of_products[product_name] += product_quantity
                
-    def extract (self, product_name, product_quantity):
+    def extract(self, product_name, product_quantity):
         if product_name in self.dictionary_of_products:
-            if self.dictionary_of_products[product_name]>product_quantity:
-                self.dictionary_of_products[product_name]-=product_quantity
-            elif self.dictionary_of_products[product_name]<product_quantity:
-                print (f'The quantity of {product_name} in the fridge is insufficient')
-            else:
+            self.dictionary_of_products[product_name] -= product_quantity
+            if self.dictionary_of_products[product_name] == 0:
                 del self.dictionary_of_products[product_name]
-                print (f'Product {product_name} removed from the fridge')
+                print (f'Product {product_name} removed from the fridge')              
+            elif self.dictionary_of_products[product_name] < 0:
+                del self.dictionary_of_products[product_name]
+                print (f'The quantity of {product_name} in the fridge is insufficient for your recipe, buy some more')               
+            else:
+                print(f'The quantity of {product_name} left in the fridge after extraction is {self.dictionary_of_products[product_name]}')
         else:
-            print ("Ingredient not in fridge")
+            print (f'Ingredient not in fridge, go to the shop to buy {product_name}')
                     
-    def check_recipe (self, recipe):
+    def check_recipe(self, recipe):
         recipe_ingredients = set(recipe.keys())
         fridge_ingredients = set(self.dictionary_of_products.keys())
         available_ingredients = list(recipe_ingredients & fridge_ingredients)
@@ -182,7 +174,7 @@ class Fridge(PrettyPrinter):
     def __str__(self):
         return super().__str__()       
 
-def check_the_fridge (fridge, recipes_box):
+def check_the_fridge(fridge, recipes_box):
     recipes_from_the_fridge = []
     for recipe in recipes_box:
         recipe_ingredients = set(recipe.keys())
@@ -222,7 +214,8 @@ def pretty_print_recipe(function):
             for index, (keys, values) in enumerate(shopping_dict.items(), 1):
                 current_line = f'| |{index}. {keys}: {values}'
                 space_count = 62 - len (current_line)
-                string_to_print += current_line + ' '*space_count + '| |\n'
+                space_string = ' '*space_count
+                string_to_print += f'{current_line}{space_string}| |\n'
             string_to_print += r'''| |___________________________________________________________| |
 |_______________________________________________________________|
                    )__________|__|__________(
@@ -232,20 +225,20 @@ def pretty_print_recipe(function):
                   ,'   ==.   \    /  .==    `.
                  /            )  (            \
                  `==========='    `===========' '''
-            print (string_to_print)
+            print(string_to_print)
         else:
-            print ("The shopping list is empty")
+            print("The shopping list is empty")
         return function(*args)
                     
     return inner_function
 
 def archive_shopping_list(function):
     
-    def inner_function (*args):
+    def inner_function(*args):
         shopping_list_archive.append(function(*args))
         print ('List was archived')
-        return function(*args)
-    return inner_function 
+        return function
+    return inner_function
 
 @archive_shopping_list
 @pretty_print_recipe
@@ -257,10 +250,7 @@ def prepare_shopping_list(fridge, recipe):
                 shopping_list[ingredient]=quantity-fridge[ingredient]
         else:
             shopping_list[ingredient]=quantity
-    return shopping_list
-
-
-            
+    return shopping_list    
     
 
 
