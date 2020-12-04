@@ -1,0 +1,45 @@
+Pandair Airline Project
+
+You are the manager of an airline called ‘Pandair’ and want to implement a program/app that will help you keep track of your aircrafts, their location and possible flights you can do.
+
+Airline Fleet
+You will need to create your aircraft fleet, which should contain both Cargo and Passenger Aircrafts. The Passenger Aircrafts should be both Private and Commercial. All aircrafts should give:
+- Manufacturer
+- Weight
+- Speed
+- Consumption
+- Identifier and
+- Number of flights concluded since the last maintenance.
+
+For the Passenger and Cargo aircraft you also need:
+- number of passengers that can be carried (Passenger aircraft)
+- maximum load weight (Cargo aircraft)
+
+Both Passenger and Cargo should inherit from class Aircraft. Private and Commercial should inherit from class Passenger.
+
+Create a method due_for_maintanance that checks whether an aircraft has reached 30 flights and is due for maintenance (returning True or False).
+
+Define a Quick Maintenance Mixin - which is inherited by Cargo and Private aircrafts - that allows for a quick maintenance of the aircraft. Such a maintenance would take the number of flights operated by the aircraft and decrease it by 10. If the decrease would take the number of flights below 0, the number of flights is set to 0.
+
+We will also have an ‘Airport’ sequence that stores all the aircraft available/present at a given airport. You should also implement methods that allow you to add and remove aircrafts from your Airport  (NB. each airport should be a new instance of Airport).
+
+Using operator overloading, implement the option to add two Airports together to form a Regional one.
+
+Use a mutable mapping called Fleet Database to store all your airports. You can use the format below:
+    Brussels: aircraft1, aircraft2, aircraft3…
+
+Like in the case of Airport, implement specific methods that allow you to add and remove an airport (and its aircrafts) from the database.
+
+Please ensure that you do not have the same aircraft in your airport or fleet twice.
+
+For all defined classes, make sure you implement custom str and repr methods.
+
+Create a function called operate_flight to move an aircraft (passengers or cargo) from a city (origin) to another (destination). This function will move the aircraft from origin to the destination by updating the airports, the aircrafts’ number of flights until maintenance number and the Fleet Database accordingly.
+
+Implement a decorator for the operate_flight function that will keep a log of the flights/movements conducted by the aircrafts. If an aircraft has reached its ‘due for maintenance’ flights number, print an alert message.
+
+Create a generator that gives you all the possible origin-destination pairs in Fleet Database that have an aircraft that can carry 100 passengers(at origin) and the destination has a maximum of 3 aircrafts.
+
+Use the standard logging to keep track of the program and its functionality.
+
+Lastly, create a separate document for testing in which you implement unittests for your program.
