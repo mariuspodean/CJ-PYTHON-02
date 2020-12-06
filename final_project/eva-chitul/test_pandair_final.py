@@ -2,6 +2,7 @@ from final_project.eva-chitul import pandair_application_final
 import unittest
 
 
+
 class AircraftCreation(unittest.TestCase):
 
     def test_private_aircraft_creation(self):
@@ -90,4 +91,109 @@ class AirportChecks(unittest.TestCase):
         airport_3.add_aircraft(aircraft_4)
         airport_3.remove_aircraft(aircraft_3)
         self.assertEqual(1, len(airport_3)), 'Aircraft not found at Airport was removed'
+
+
+class FleetChecks(unittest.TestCase):
+
+    def test_fleet_is_created_as_dictionary(self):
+        fleet_test = pandair_application.FleetDatabase()
+        assert isinstance(fleet_test.fleet, dict), 'Fleet is not a dictionary'
+
+    def test_fleet_len_method(self):
+        fleet_len = pandair_application.FleetDatabase()
+        self.assertEqual(0, len(fleet_len)), 'Len function not returning 0 for empty Fleet'
+
+    def test_add_airport_with_aircraft_to_fleet(self):
+        check_plane = ['Airbus', 100, 200, 150, 'COM00', 20, 300]
+        aircraft = pandair_application.CommercialAircraft(*check_plane)
+        check_airport = pandair_application.Airport()
+        check_airport.add_aircraft(aircraft)
+        fleet_check = pandair_application.FleetDatabase()
+        fleet_check.add_airport('Check Airport', check_airport)
+        self.assertEqual(1, len(fleet_check)), 'Fleet did not add Airport'
+
+    def test_remove_airport_from_fleet(self):
+        plane_info = ['Airbus', 100, 200, 150, 'COM00', 20, 300]
+        plane = pandair_application.CommercialAircraft(*plane_info)
+        airport = pandair_application.Airport()
+        airport.add_aircraft(plane)
+        fleet_check_1 = pandair_application.FleetDatabase()
+        fleet_check_1.add_airport('Check Airport 1', airport)
+        fleet_check_1.remove_airport('Check Airport 1')
+        self.assertEqual(0, len(fleet_check_1)), 'Fleet did not remove Airport'
+
+    def test_get_item_creates_airport_if_airport_does_not_exist_in_fleet(self):
+        empty_fleet = pandair_application.FleetDatabase()
+        len_empty_fleet = len(empty_fleet)
+        _ = empty_fleet['airport that does not exist']
+        self.assertEqual(len_empty_fleet + 1, len(empty_fleet)), 'Airport that does not exist was not created'
+
+
+class CheckOperateFlight(unittest.TestCase):
+
+    def test_operate_flight_moves_plane_from_origin_to_destination(self):
+        plane_info = ['Boeing', 100, 200, 150, 'COM00', 20, 300]
+        new_plane = pandair_application.CommercialAircraft(*plane_info)
+
+        origin_airport = pandair_application.Airport()
+        destination_airport = pandair_application.Airport()
+        origin_airport.add_aircraft(new_plane)
+
+        new_fleet = pandair_application.FleetDatabase()
+        new_fleet.add_airport('origin airport name', origin_airport)
+        new_fleet.add_airport('destination airport name', destination_airport)
+
+        pandair_application.operate_flight(new_fleet, 'origin airport name', 'destination airport name', new_plane)
+        self.assertEqual(0, len(origin_airport)), 'Aircraft was moved from origin airport'
+        self.assertEqual(2, len(new_fleet)), 'Destination airport was not created'
+        self.assertEqual(1, len(destination_airport)), 'Aircraft was not moved to destination airport'
+
+    def test_operate_flight_increases_aircraft_maintenance_number_by_1(self):
+        new_plane_info = ['Bombardier', 100, 200, 150, 'COM00', 10, 300]
+        new_plane = pandair_application.CommercialAircraft(*new_plane_info)
+
+        origin_airport = pandair_application.Airport()
+        destination_airport = pandair_application.Airport()
+        origin_airport.add_aircraft(new_plane)
+
+        new_fleet = pandair_application.FleetDatabase()
+        new_fleet.add_airport('origin name', origin_airport)
+        new_fleet.add_airport('destination name', destination_airport)
+        pandair_application.operate_flight(new_fleet, 'origin name', 'destination name', new_plane)
+
+        self.assertEqual(11, new_plane.number_flights_maintenance), 'Number of flights until maintenance not increased by 1'
+
+
+class CheckGeneratePairs(unittest.TestCase):
+
+    def test_generator_gives_expected_number_of_origin_destination_pairs(self):
+        plane_info_1 = ['Airbus', 100, 200, 150, 'COM00', 10, 300]
+        plane_info_2 = ['Boeing', 100, 200, 150, 'COM00', 10, 300]
+        plane_1 = pandair_application.CommercialAircraft(*plane_info_1)
+        plane_2 = pandair_application.CommercialAircraft(*plane_info_2)
+
+        airport_1 = pandair_application.Airport()
+        airport_2 = pandair_application.Airport()
+        airport_3 = pandair_application.Airport()
+        airport_4 = pandair_application.Airport()
+
+        airport_1.add_aircraft(plane_1)
+        airport_2.add_aircraft(plane_2)
+
+        fleet_check = pandair_application.FleetDatabase()
+        fleet_check.add_airport('airport one', airport_1)
+        fleet_check.add_airport('airport two', airport_2)
+        fleet_check.add_airport('airport three', airport_3)
+        fleet_check.add_airport('airport four', airport_4)
+
+        list_pairs = []
+        check = pandair_application.generate_pairs()
+        list_pairs.append(next(pandair_application.generate_pairs()))
+        list_pairs.append(next(pandair_application.generate_pairs()))
+        list_pairs.append(next(pandair_application.generate_pairs()))
+        list_pairs.append(next(pandair_application.generate_pairs()))
+        list_pairs.append(next(pandair_application.generate_pairs()))
+        list_pairs.append(next(pandair_application.generate_pairs()))
+
+        self.assertEqual(6, len(list_pairs)), 'Generator not giving the expected origin-destination paris'
 
