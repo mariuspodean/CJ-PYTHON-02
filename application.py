@@ -1,3 +1,5 @@
+
+
 import csv
 from datetime import datetime
 
@@ -28,7 +30,7 @@ import pandas as pd
 
 october_data = pd.read_csv('october_database.csv')
 
-show_active_vie = f'''\n The active VIE for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "VIE") & (october_data['Contract status'] == 'Employed')])}'''
+show_active_vie = f'''\n\n The active VIE for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "VIE") & (october_data['Contract status'] == 'Employed')])}'''
 
 count_active_vie = f''' \n The active VIE for the month of {last_month_text} is number of ID's: \n\n {(october_data.loc[(october_data['Contract type'] == 'VIE') & (october_data['Contract status'] == 'Employed')]).count()}'''
 
@@ -37,7 +39,7 @@ print(count_active_vie)
 
 #count and show interns
 
-show_active_interns = f'''\n The active interns for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "Intern") & (october_data['Contract status'] == 'Employed')])}'''
+show_active_interns = f'''\n\n The active interns for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "Intern") & (october_data['Contract status'] == 'Employed')])}'''
 
 count_active_interns = f''' \n The active interns for the month of {last_month_text} is number of ID's: \n\n {(october_data.loc[(october_data['Contract type'] == 'Intern') & (october_data['Contract status'] == 'Employed')]).count()}'''
 
@@ -46,18 +48,17 @@ print (count_active_interns)
 
 #count and show consultants
 
-show_active_consultants = f'''\n The active interns for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "Freelancer contract") & (october_data['Contract status'] == 'Employed')])}'''
+show_active_consultants = f'''\n\n The active interns for the month of {last_month_text} are: \n\n {(october_data.loc[(october_data["Contract type"] == "Freelancer contract") & (october_data['Contract status'] == 'Employed')])}'''
 
 count_active_consultants = f''' \n The active interns for the month of {last_month_text} is the number of ID's: \n\n {(october_data.loc[(october_data['Contract type'] == 'Freelancer contract') & (october_data['Contract status'] == 'Employed')]).count()}'''
 
 print (show_active_consultants)
 print (count_active_consultants)
 
-#count and show new joiners
+#context manager
 
-#count and show leavers
-
-
+with open('october_database_output.csv', 'w') as opened_file:
+    opened_file.write(headcount_count + show_active_vie + show_active_interns + show_active_consultants)
 
 #mutable mapping str and repr methods
 
@@ -149,8 +150,6 @@ else:
 
 #decorator
 
-#sequence
-
 itiviti_presence_countries_dict= {
     1: "Australia",
     2: "Brazil",
@@ -182,6 +181,58 @@ def country_list():
         print("{} {}".format(nr, country))
 
 country_list()
+
+#Mixins
+
+class EmployeeNmae:
+
+    def setname(self, name):
+        self.name = name
+    def getname(self):
+        return self.name
+
+class DefaultRecord(EmployeeNmae):
+
+    def __init__(self):
+        self.name = "No employee record"
+
+employee_record = DefaultRecord()
+
+employee_name = employee_record.getname()
+
+print(employee_name)
+
+employee_record.setname("Bianca Gabrian")
+
+employee_name = employee_record.getname()
+
+print (employee_name)
+
+#generator
+
+def EmployeeDataGenerator():
+    file = "october_database.csv"
+    for row in open(file, encoding="ISO-8859-1"):
+        yield row
+
+data_generator = EmployeeDataGenerator()
+print(next(data_generator))
+print(next(data_generator))
+print(next(data_generator))
+print(next(data_generator))
+
+#loggings
+
+import logging
+
+logging.basicConfig(filename = 'logging_file', level = logging.DEBUG)
+
+logging.debug (departments)
+logging.debug (managers)
+logging.debug (manager_start_year)
+
+
+
 
 
 

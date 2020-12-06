@@ -17,16 +17,6 @@ done
 *count consultants:
     * process: count and show the employees with "freelancer" contract type who are still employed;
 done
-* count new joiners and have their id
-    * process:  count the employees who have the contract start date in October; 
-X
-* count new leavers and have their id
-    * process:  count the employees who have the last day in payroll in October :
-                                                                                    and they have "1" in HC column;
-                                                                                    they have 1270SE cost center;
-                                                                                    they have "parental" reason;
-
-X
 
 * a minimum of two custom collections (mandatory a sequence and a mutable mapping),
 done, done 
@@ -34,11 +24,11 @@ done, done
 * each class must implement custom str and repr methods
 done
 * a minimum of one of the following: decorator, context manager, and generator,
-done
+done, done, done
 * mixin, inheritance, and one scenario of operator overloading,
-X, done, done
+done, done, done
 * logging (using the standard logging)
-X
+done
 * unit testing.
 X
 
