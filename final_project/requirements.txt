@@ -14,7 +14,7 @@ Final Project Requirements
   
     Each class must implement custom str and repr methods
 
-    We also have the stock that is a mutable mapping that holds some products together with their quantities.
+    We also have the stock that is a mutable mapping that holds some products together with their quantities, terms of validity
         class Stock(...):
         ...
 
@@ -37,12 +37,12 @@ Final Project Requirements
 
     A  minimum of one of the following will be used: 
     -decorator,
-    -context manager;
-    -generator
-    -mixin,
+    -context manager - use a file that will contain discounts for Black Friday or 
+    -generator - iterate flowers with expired term of validity
+    -mixin
     -inheritance;
-    -one scenario of operator overloading, 
-    -logging (using the standard logging)
+    -one scenario of operator overloading - calculate discounts for flowers with expired term of validity
+    -logging (using the standard logging) -- use print "out of stock"
     -unit testing.
 
 
