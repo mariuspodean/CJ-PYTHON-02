@@ -1,5 +1,5 @@
 from application import Bouquet,PrettyBouquet, BouquetBox, Stock,PrettyStock, check_the_stock, \
-    prepare_shopping_list, shopping_list_archive
+    prepare_procurement_list, procurement_list_archive
 
 print('--------------------------')
 print('Customer facing showcase')
@@ -73,9 +73,9 @@ Rainbow_Alstroemeria_Bouquet_flowers = {
 }
 
 
-Rainbow_Alstroemeria_Bouque_flowers = Bouquet(
-    "Rainbow Alstroemeria Bouque",
-    Rainbow_Alstroemeria_Bouque_flowers
+Rainbow_Alstroemeria_Bouquet_flowers = Bouquet(
+    "Rainbow Alstroemeria_Bouquet",
+    Rainbow_Alstroemeria_Bouquet_flowers
 )
 
 

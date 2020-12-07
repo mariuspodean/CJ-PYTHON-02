@@ -1,7 +1,11 @@
-from random import randrange
+import logging
 import time
+from random import randint
+from contextlib import contextmanager
+from random import randrange
 
-shopping_list_archive=[]
+
+procurement_list_archive=[]
 
 class Bouquet:
 
@@ -91,7 +95,7 @@ class Stock:
         self.inside_stock = inside_stock
         self.name = name
        
-# When printing the stock object, it will print similar to a bouquet, its contents.
+# When printing the stock object, it will print similar to a bouquet, its content.
     def __str__(self):
         print_content = ''
         for flower in self.inside_stock:
@@ -99,7 +103,19 @@ class Stock:
             print_content = f'{print_content}\n'
         return print_content
 
-# de aici in jos tot ce e cu __ urmareste sa faca mutable mapping
+
+
+# def __repr__(self):
+#         print_content = ''
+#         for flower in self.inside_stock:
+#             print_content = ' '.join((print_content, flower, str(self.inside_stock[flower]))) 
+#             print_content = f'{print_content}\n'
+#         return print_content
+
+
+
+
+#  mutable mapping
     def __contains__(self, flower):
         return flower in self.inside_stock
 
@@ -140,7 +156,7 @@ class Stock:
         else:
             print ('No such flower in stock')
     
-    def check_bouquet (self,bouquet)->[]:
+    def check_bouquet(self,bouquet)->[]:
         list_we_have = []
         list_to_shop = []
         for flower in bouquet.keys():
@@ -230,62 +246,123 @@ def check_the_stock(stock, bouquets):
 def pretty_print_bouquet(function):
 
     def wrapper(stock,bouquet):
-        shopping_list=function(stock,bouquet)
-        missing_items = PrettyBouquet("Shopping List:",shopping_list)
+        procurement_list=function(stock,bouquet)
+        missing_items = PrettyBouquet("Flowers needed",procurement_list)
         missing_items.pretty_print()
-        return shopping_list
+        return procurement_list
 
     return wrapper
 
-def archive_shopping_list(fnc2):
+def archive_procurement_list(fnc2):
     def inner_func_2(stock, bouquet):
-        shopping_list = fnc2(stock, bouquet)
+        procurement_list = fnc2(stock, bouquet)
         time_now = time.localtime()
         date_today = time.strftime('%d %m %Y', time_now)
 
-        if type(shopping_list) == dict:
-            shopping_list_archive.append((date_today, bouquet.bouquet_name, shopping_list))
+        if type(procurement_list) == dict:
+            procuremet_list_archive.append((date_today, bouquet.bouquet_name, procurement_list))
 
-        return shopping_list
+        return procurement_list
 
     return inner_func_2
 
-@archive_shopping_list
+@archive_procurement_list
 @pretty_print_bouquet
-def prepare_shopping_list(fridge, bouquet):
-    shopping_list = {}
+def prepare_procurement_list(stock, bouquet):
+    procurement_list = {}
     for flower in bouquet.keys():
-        if flower in fridge:
-            if fridge[flower] <= bouquet[flower]:
-                quantity_to_buy = bouquet[flower] - fridge[flower]
-                shopping_list.update({flower: quantity_to_buy})
-    print (f'Shopping list: {shopping_list}')
-    return shopping_list
+        if flower in stock:
+            if stock[flower] <= bouquet[flower]:
+                quantity_to_buy = bouquet[flower] - stock[flower]
+                procurement_list.update({flower: quantity_to_buy})
+    print (f'Procurement list: {procurement_list}')
+    return procurement_list
 
-#OPERATOR OVERLOADING
-class LilyBouquets:
+# #OPERATOR OVERLOADING
+# class LilyBouquets:
 
-    def __init__(self, bouquet):
-        self.bouquet = bouquet
+#     def __init__(self, bouquet):
+#         self.bouquet = bouquet
 
-    def __str__(self):
-        return self.bouquet
+#     def __str__(self):
+#         return self.bouquet
 
-    def __add__(self, other):
-        return SpecialBouquet(f'{self.bouquets + other.bouquet} concatenated from {self.bouquet} and {other.bouquet}')
-
-
-class RosesBouquet:
-
-    def __init__(self, bouquet):
-        self.bouquet = bouquet
+#     def __add__(self, other):
+#         return SpecialBouquet(f'{self.bouquets + other.bouquet} concatenated from {self.bouquet} and {other.bouquet}')
 
 
+# class RosesBouquet:
 
-
-#context manager
-
-#generator
+#     def __init__(self, bouquet):
+#         self.bouquet = bouquet
 
 
 
+
+# #context manager
+
+# #generator
+
+
+# class ComputerConfig(DisplayMixin):
+
+#     def __init__(self, name='noName', *args):
+#         self.name = name
+#         self.items = list(args)
+#         should_have = ['MTB', 'VID', 'PRO', 'RAM', 'SSD']
+#         for item in list(args):
+#             if item.part_type in should_have:
+#                 should_have.remove(item.part_type)
+#             else:
+#                 raise ValueError('you should have one of each component')
+#         if should_have:
+#             raise ValueError('you are missing : ' + str(should_have))
+#         if len(args) < 5:
+#             raise ValueError('the computer is missing components')
+#         self.price = 0
+#         for _ in list(args):
+#             self.price += _.price
+
+
+# config_list = []
+
+
+# def log_configurator(fnc):
+#     def inner_func(name, config_parts, values):
+#         configure_computer = fnc(name, config_parts, values)
+#         config_list.append(configure_computer.name)
+#         return configure_computer
+
+#     return inner_func
+
+# # logging
+# logger = logging.getLogger(__name__)
+# logging.basicConfig(level=logging.DEBUG)
+
+
+# # decorator
+# @log_configurator
+# def configure_computer(name, config_parts, values):
+#     start = time.time()
+#     proc = config_parts.pick_pro(values[0])
+#     mtbd = config_parts.pick_mtb(values[1])
+#     vide = config_parts.pick_vid(values[2])
+#     rams = config_parts.pick_ram(values[3])
+#     ssds = config_parts.pick_ssd(values[4])
+#     end = time.time()
+#     logger.info(f'configuration took {end - start} seconds')
+#     return ComputerConfig(name, proc, mtbd, vide, rams, ssds)
+
+
+# # context manager, decorator and generator
+# @contextmanager
+# def open_file(name):
+#     f = open(name, 'w')
+#     try:
+#         yield f
+#     finally:
+#         f.close()
+
+# def save_to_txt(txt='no text entered'):
+#     with open_file('computer_history.txt') as f:
+#         f.write(txt)
