@@ -40,6 +40,8 @@ Implement a decorator for the operate_flight function that will keep a log of th
 
 Create a generator that gives you all the possible origin-destination pairs in Fleet Database that have an aircraft that can carry 100 passengers(at origin) and the destination has a maximum of 3 aircrafts.
 
+Using a context manager, alter the due for maintenance method of Aircraft in such a way that it always returns False regardless of the number of flights operated.
+
 Use the standard logging to keep track of the program and its functionality.
 
 Lastly, create a separate document for testing in which you implement unittests for your program.

@@ -1,4 +1,5 @@
-from pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, CargoAircraft, CommercialAircraft, Airport, FleetDatabase, operate_flight, flights_log, generate_pairs, fleet_database_check, flights_log_database, regional_fleet
+from pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, CargoAircraft, CommercialAircraft, Airport, FleetDatabase, \
+    operate_flight, flights_log, generate_pairs, fleet_database_check, flights_log_database, regional_fleet, AlterAircraft
 
 #PLAYGROUND
 
@@ -130,19 +131,20 @@ print(fleet_database, '\n')
 print(flights_log_database)
 
 
-# GENERATE PAIRS
+# GENERATOR AND GENERATE PAIRS
 
 check = generate_pairs()
-print(next(check))
-print(next(check))
-print(next(check))
-print(next(check))
-print(next(check))
-print(next(check))
-print(next(check))
-# print(next(check))
-# print(next(check))
-# print(next(check))
-# print(next(check))
+
+for pair in generate_pairs():
+    print(next(check))
 
 print(fleet_database, '\n')
+
+# CONTEXT MANAGER AND ALTERING DUE FOR MAINTENANCE METHOD
+
+aircraft = PrivateAircraft('Bombardier', 300, 500, 200, 'P1000', 150, 100)
+
+with AlterAircraft(aircraft) as check_altered_aircraft:
+    print(f'Altered due for maintenance for {aircraft} with {aircraft.number_flights_maintenance} flights returning', check_altered_aircraft.due_for_maintenance())
+
+print(f'Altered due for maintenance for {aircraft} with {aircraft.number_flights_maintenance} flights returning', check_altered_aircraft.due_for_maintenance())

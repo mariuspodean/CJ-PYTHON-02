@@ -1,16 +1,17 @@
 import itertools
 import logging
 import time
+import datetime
 
 fleet_database_check = set()
 flights_log_database = {}
 regional_fleet = {}
 
+logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.datetime.today()}_pandair_logging')
 log = logging.getLogger('Pandair Airline')
-logging.basicConfig(level=logging.DEBUG, filename='pandair_logging')
 
 
-class Aircraft(object):
+class Aircraft:
 
     def __init__(self, manufacturer, weight, speed, consumption, identifier, number_flights_maintenance):
         self.manufacturer = manufacturer
@@ -80,7 +81,7 @@ class CommercialAircraft(PassengerAircraft):
         super().__init__(manufacturer, weight, speed, consumption, identifier, number_flights_maintenance, number_passengers)
 
 
-class Airport(object):
+class Airport:
 
     def __init__(self):
         self.airport_list = []
@@ -126,7 +127,7 @@ class Airport(object):
             log.info(f' {aircraft} not found at Airport.')
 
 
-class FleetDatabase(object):
+class FleetDatabase:
 
     def __init__(self):
         self.fleet = {}
@@ -240,4 +241,31 @@ def generate_pairs():
         if origin != destination:
             log.debug(f'{time.asctime(time.localtime(time.time()))} New origin-destination pair was generated: {origin} - {destination}')
             yield f'Possible origin destination pair: {origin} - {destination}'
+
+
+class AlterAircraft:
+
+    def __init__(self, plane):
+        self.plane = plane
+
+    def __enter__(self):
+        self.pandair_status = open('pandair_status.txt', 'w')
+        self.pandair_status.write('Altering behaviour of due for maintenance method. Be careful with the flights! \n')
+
+        self.original_maintenance_method = self.plane.due_for_maintenance
+        self.plane.due_for_maintenance = lambda: False
+
+        log.info(f'Behaviour of {self.plane} has been changed')
+        log.debug(f'{time.asctime(time.localtime(time.time()))} Due for maintenance method for {self.plane} now returning False')
+
+        return self.plane
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.pandair_status.write(f'Due for maintenance method of aircraft returned to original state\n')
+        self.pandair_status.write('Closing down Pandair App. Travel safe!\n')
+
+        self.plane.due_for_maintenance = self.original_maintenance_method
+
+        log.info(f'Behaviour of {self.plane} has returned to original')
+        log.debug(f'{time.asctime(time.localtime(time.time()))} Due for maintenance method for {self.plane} now back to original form')
 
