@@ -1,5 +1,7 @@
-from application import Physical, Spiritual, Emotional, Social, Intellectual, DomainsCollection, check_status, i_am_a_decorator
+from application import PersonalDevelopment, Physical, Spiritual, Emotional, Social, Intellectual, DomainsCollection, check_status, i_am_a_decorator, i_am_a_generator
 import datetime
+from time import sleep
+from inspect import getgeneratorstate
 
 
 Alexandra_desired_physical = {
@@ -35,10 +37,10 @@ Alexandra_desired_intellectual = {
 }
 
 Alexandra_dict_of_friends = {
-    'Dan': ('0722222222', datetime.datetime(1988, 12, 5)),
-    'Larisa': ('0745111111', datetime.datetime(1991, 7, 5)),
-    'Mihaela': ('0744333333', datetime.datetime(1968, 5, 11)),
-    'Dan Adrian': ('0721555555', datetime.datetime(1966,11, 9))
+    'Dan': ('0722222222', datetime.datetime(1988, 12, 5).strftime("%x")),
+    'Larisa': ('0745111111', datetime.datetime(1991, 7, 5).strftime("%x")),
+    'Mihaela': ('0744333333', datetime.datetime(1968, 5, 11).strftime("%x")),
+    'Dan Adrian': ('0721555555', datetime.datetime(1966,11, 9).strftime("%x"))
 }
 
 Alexandra_actual_physical = {}
@@ -167,5 +169,15 @@ print(Alexandra_Desired_Physical==Andreea_Physical)
 
 check_status(Alexandra_Desired_Collection, Alexandra_Actual_Collection)
 
+Alexandra_Desired_Physical.save_state()
 
-    
+gen = i_am_a_generator(Alexandra_dict_of_friends)
+
+while True:
+    try:
+        print(getgeneratorstate(gen))
+        print(f'Please suggest this app to your friend {next(gen)}')
+        sleep(2)
+    except StopIteration:
+        print('Thank you for suggesting us to all you friends')
+        break
