@@ -1,0 +1,56 @@
+
+ The headcount for November in ITIVITI is 942 active employees. 
+
+
+ The active VIE for the month of November are: 
+
+         ID Start date    End date Comment         Country           Department   Seniority   Age Contract type Contract status Cost center  HC
+105  15311     Oct-17  12/31/2021     NaN  United Kingdom     Customer Success    2/1/2019  23.0           VIE        Employed      1500GB   0
+180  14628     Jan-18         NaN     NaN   United States          Engineering   10/4/2018  27.0           VIE        Employed      1324SE   0
+634  14649     Apr-19         NaN     NaN   United States  G&A / People Office  11/13/2017  27.0           VIE        Employed      1080SE   0
+
+ The active interns for the month of November are: 
+
+          ID Start date    End date Comment        Country               Department   Seniority   Age Contract type Contract status Cost center  HC
+9     15441     Jul-17         NaN     NaN          India              Engineering   5/10/2019   NaN        Intern        Employed      1324SE   0
+19    15571     Aug-17  12/31/2020     NaN         Russia              Engineering    6/1/2020  27.0        Intern        Employed      1322SE   0
+28    15619     Aug-17   5/20/2021     NaN        Romania              Engineering   7/20/2020  22.0        Intern        Employed      1321SE   0
+240   15398     Mar-18    8/2/2021     NaN        Romania              Engineering    8/3/2020  24.0        Intern        Employed      1321SE   0
+310   15488     May-18  12/31/2020     NaN        Romania     G&A / Finance Office  11/11/2019  23.0        Intern        Employed      1060SE   0
+363   15650     Jul-18   9/10/2021     NaN         France              Engineering    9/1/2020  43.0        Intern        Employed      1321SE   0
+381   15510     Aug-18         NaN     NaN  United States     G&A / Finance Office    1/8/2020  26.0        Intern        Employed      1060SE   0
+564   15471     Feb-19  12/31/2020     NaN         Russia              Engineering  10/14/2019  25.0        Intern        Employed      1322SE   0
+648   15658     Apr-19  12/31/2020     NaN         Russia              Engineering   9/21/2020  20.0        Intern        Employed      1322SE   0
+653   15258     May-19    1/2/2021     NaN         France              Engineering    1/2/2019  29.0        Intern        Employed      1323SE   0
+665   15504     May-19  12/15/2021     NaN         France  Infrastructure Services  12/16/2019  23.0        Intern        Employed      1210SE   0
+785   15529     Sep-19    3/9/2021     NaN        Romania              Engineering    3/9/2020  23.0        Intern        Employed      1321SE   0
+817   15594     Oct-19  12/15/2020     NaN        Romania         Customer Success   6/15/2020  22.0        Intern        Employed      1500GB   0
+872   14582     Dec-19         NaN     NaN         France         Product Strategy   5/28/2018  23.0        Intern        Employed      1166SE   0
+879   15551     Dec-19    5/6/2021     NaN         Russia              Engineering    5/6/2020  20.0        Intern        Employed      1322SE   0
+890   15331     Dec-19  12/31/2020     NaN        Romania     G&A / Finance Office    4/1/2019  23.0        Intern        Employed      1060SE   0
+891   15319     Dec-19   9/19/2021     NaN        Romania      G&A / People Office  11/19/2019  23.0        Intern        Employed      1080SE   0
+954   15583     Feb-20  11/30/2020     NaN         Russia  Infrastructure Services    6/1/2020   NaN        Intern        Employed      1180SE   0
+990   15472     Apr-20  12/31/2020     NaN         Russia              Engineering  10/21/2019  23.0        Intern        Employed      1322SE   0
+1010  15588     Apr-20  12/15/2020     NaN        Romania         Customer Success   6/15/2020  26.0        Intern        Employed      1500GB   0
+1032  15342     May-20   8/31/2022     NaN         France              Engineering    9/9/2019  21.0        Intern        Employed      1321SE   0
+1056  15626     Jun-20  12/31/2020     NaN         Russia              Engineering   7/17/2020  19.0        Intern        Employed      1322SE   0
+1057  15587     Jun-20  12/31/2020     NaN         Russia              Engineering   7/14/2020  20.0        Intern        Employed      1322SE   0
+1074  15402     Jun-20    8/2/2021     NaN        Romania              Engineering    8/3/2020  22.0        Intern        Employed      1321SE   0
+1126  14501     Aug-20         NaN     NaN        Romania            Not Available   12/1/2016   NaN        Intern        Employed         NaN   0
+1158  15543     Sep-20  12/10/2020     NaN        Romania      G&A / People Office   8/10/2020  25.0        Intern        Employed      1080SE   0
+
+ The active interns for the month of November are: 
+
+          ID Start date  End date Comment         Country               Department   Seniority   Age        Contract type Contract status Cost center  HC
+14    15442     Jul-17       NaN     NaN           India              Engineering  12/10/2018   NaN  Freelancer contract        Employed      1324SE   0
+15    15443     Aug-17       NaN     NaN           India              Engineering    4/8/2019   NaN  Freelancer contract        Employed      1324SE   0
+62    15648     Sep-17       NaN     NaN  United Kingdom         Product Strategy   8/18/2020   NaN  Freelancer contract        Employed      1166SE   0
+355   14297     Jul-18       NaN     NaN   United States         Product Strategy   9/15/2015  51.0  Freelancer contract        Employed      1166SE   0
+406   15224     Aug-18       NaN     NaN   United States  Global Markets AMERICAS    7/1/2014  38.0  Freelancer contract        Employed      3030US   0
+719   15524     Jul-19       NaN     NaN  United Kingdom     G&A / Finance Office    2/5/2020   NaN  Freelancer contract        Employed      1060SE   0
+738   14691     Jul-19       NaN     NaN           India              Engineering   2/12/2018   NaN  Freelancer contract        Employed      1329SE   0
+739   14697     Jul-19       NaN     NaN           India              Engineering  11/20/2017   NaN  Freelancer contract        Employed      1329SE   0
+740   13753     Jul-19       NaN     NaN           India              Engineering   6/20/2015   NaN  Freelancer contract        Employed      1329SE   0
+826   15340     Oct-19       NaN     NaN          Sweden     G&A / Finance Office  10/28/2019   NaN  Freelancer contract        Employed      1060SE   0
+1021  15614     May-20  5/7/2021     NaN          France    Professional Services    5/8/2020   NaN  Freelancer contract        Employed      1023GB   0
+1155  15628     Sep-20       NaN     NaN          Sweden      G&A / People Office   8/24/2020   NaN  Freelancer contract        Employed      1080SE   0
