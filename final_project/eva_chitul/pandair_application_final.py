@@ -227,12 +227,12 @@ def operate_flight(fleet_data, city, destination, aircraft):
     return aircraft, city, destination
 
 
-def generate_pairs():
+def generate_pairs(fleet_database):
 
-    list_origin = set([origin for origin, fleet in fleet_database.items() for aircraft in fleet
+    list_origin = set([origin for origin, fleet in fleet_database.fleet.items() for aircraft in fleet
                    if isinstance(aircraft, PassengerAircraft) and aircraft.number_passengers > 100])
 
-    list_destination = set([destination for destination, planes in fleet_database.items() if len(planes) <= 3])
+    list_destination = set([destination for destination, planes in fleet_database.fleet.items() if len(planes) <= 3])
 
     print(list_origin)
     print(list_destination)

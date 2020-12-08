@@ -1,6 +1,5 @@
-from final_project.eva-chitul import pandair_application_final
+from final_project.eva_chitul import pandair_application_final
 import unittest
-
 
 
 class AircraftCreation(unittest.TestCase):

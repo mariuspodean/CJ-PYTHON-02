@@ -1,5 +1,6 @@
-from pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, CargoAircraft, CommercialAircraft, Airport, FleetDatabase, \
-    operate_flight, flights_log, generate_pairs, fleet_database_check, flights_log_database, regional_fleet, AlterAircraft
+from final_project.eva_chitul.pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, \
+    CargoAircraft, CommercialAircraft, Airport, FleetDatabase, operate_flight, flights_log, generate_pairs, fleet_database_check, \
+    flights_log_database, regional_fleet, AlterAircraft
 
 #PLAYGROUND
 
@@ -133,9 +134,9 @@ print(flights_log_database)
 
 # GENERATOR AND GENERATE PAIRS
 
-check = generate_pairs()
+check = generate_pairs(fleet_database)
 
-for pair in generate_pairs():
+for pair in generate_pairs(fleet_database):
     print(next(check))
 
 print(fleet_database, '\n')
