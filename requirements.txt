@@ -1,0 +1,25 @@
+'''Human resources management application
+
+The purpose of this project is to automate the headcount report for ITIVITI, in order to have a view on the headcount number, consultants, interns, VIE as well as a view on country footprint and departments evolution.
+The data processed will be from the file october_database.csv .
+
+The first need month over month is to calculate the actual headcount for ITIVITI.
+In order to do this a variable named headcount will be created and the headcount data from the csv file will be read and stored in the "headcount variable". Because the data is processed after the current month ends, the headcount displayed will be for the last month.
+
+Using pandas library the employees with contract type "VIE", "intern" and "freelancer" will be counted and showed.
+Because we want to keep track of the monthly data and changes, we will use a context manager and store the above outputs in the file "october_database_output.csv"
+
+The organizational stuructre changes over time, we want to keep track of the current departments together with the managers.
+
+Senuority in an organization is important from a human resourse perspctive as bonusues and different recognision startegies are put in place. For this we want to show the seniority of managers, creating a class that will inherit the class Managers.
+We also want to compare the seniority of two employees. In order to do this a class that uses an operator was created.
+
+The organization is changing all the time and we need to keep track of the countries in which ITIVITI has employees. This country dictionary will be showed and decorated.
+
+When a new employee joins to the organization we will add the employee into the record and check it s exitance.
+
+As we might work with large databases, we might need to go row over row to check specifics. For this, a generator will be used.
+
+To check if we get errors when executing pair of transcations, a debug logging was used and date written in logging_file.
+
+Finally, to test the fuctionality the headcount and number of departments were tested. '''
