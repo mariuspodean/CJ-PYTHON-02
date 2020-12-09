@@ -213,6 +213,8 @@ class CheckAlterAircraftContextManager(unittest.TestCase):
         plane_info = ['Bombardier', 100, 200, 150, 'COM00', 10, 300]
         plane = pandair_application_final.PrivateAircraft(*plane_info)
 
+        self.assertTrue(plane.due_for_maintenance()), 'Aircraft does not return due for maintenance'
+
         with pandair_application_final.AlterAircraft(plane) as test_check_altered_aircraft:
             self.assertFalse(test_check_altered_aircraft.due_for_maintenance()), 'Alter Aicraft not altering due for maintenance behaviour'
 
