@@ -37,7 +37,7 @@ Final Project Requirements
 
     A  minimum of one of the following will be used: 
     -decorator,
-    -context manager - use a file that will contain discounts for Black Friday or 
+    -context manager - will greet the customer once entering the store. It will also politely say goodbye and say his name.  
     -generator - iterate flowers with expired term of validity
     -mixin
     -inheritance;
