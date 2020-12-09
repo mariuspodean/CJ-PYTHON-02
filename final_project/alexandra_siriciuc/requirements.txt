@@ -1,0 +1,79 @@
+KINDERGARTEN application
+
+This application help us to manage a public or private kindergarten. 
+First of all, we will have access to all general information regarding the teachers and children, such as name, date of birth and phone contact. 
+Secondly it is about the management of groups, knowing the date of birth you can register a child in one group or another, we will have for each group the assigned teacher and the list of children. We will always know how many children are in a certain group.
+In the third line, this app will help us to manage the menu for the kindergarten. 
+
+In order to have this functional application, we have to follow these steps:
+
+* We will start with the class called Person. This base class will have as attributes, general information about a person related with the kindergarten : name, date_birth, gender, phone_number
+class Person ():
+...
+* We will implement the method get_age that will give us the possibility to calculate the age of a person knowing his date of birth. The date of birth must be in format dd-mm-yyyy; if not, we will ensure that an exception will be raised. 
+
+
+* Create the classes called Kid and Teacher that will help us to store information about children and teachers. These two classes will inherit Person class.
+Class Kid will have additional attribute, a parent name and the class Teacher has information about salary. A method will calculate the annual salary of a teacher. 
+
+* Using 'greater than' dunder method in class Kid, we will implement operator overloading to compare 2 kids by age (year and month).
+
+
+* Another class called Group is a mutable sequence that will store information about kindergarten groups. A group is created starting from a name of group, name of teacher and list of children.
+We should also implement methods that allows us to add and remove kids from the list.
+class Group ():
+...
+
+
+* We will also create a class Menu that is a mutable mapping. It will be created with the start date, price and a dictionary that holds menu list for a work week. 
+class Menu ():
+... 
+
+* The menu is created for five days and contains the three meals per day: breakfast, lunch and afternoon snack stored in a list.
+menu_dict = { Monday : {'breakfast': ['banana bread', 'milk'], 'lunch': ['chicken soup', 'fish with vegetables'], 'snack' ; ['fresh fruits'] } , ... }
+menu = Menu('16-11-2020', 13, menu_dict)
+
+* Create a context manager FileHandler that will handle a file operations (open and write). This context manager will be used when we dump the menu into a file in order to print it. 
+class FileHandler(): 
+def __init__(self, file_name, file_mode):
+...
+ 
+* Using a generator, we will have the possibility to obtain the menu for next day.
+def menu_daily_generator(my_menu):
+...
+
+
+* Create the class Kindergarten which is the main class for the management of our bussiness. 
+class Kindergarten ():
+... 
+This class will hold: 
+* the name of kindergarten as single attribute
+* a dictionary with default groups. A group is defined according to an age range, the key is the group name and the value is represented by a set( min and max age of children):
+default_groups = {baby_group_name: (1.5, 3), first_group_name: (3,4), second_group_name:(4,5), third_group_name: (5,6)}
+* a  dictionary created in order to store kindergarten groups, the key is the name and the value will be represents by instance of Group class. 
+* a list of teachers and thus we will be able to implement methods for add and remove teachers.
+* a method get_kid_group will show us the group eligible for a child according to his age(year and month), we will also have methods for registrer and unregister children
+* a list of Menu for which we will implement methods in order to add and remove existing ones. 
+Using a decorator function archive_menu_list, the removed menu will be added in a list which stored the old menus, it is a kind of archive.
+ 
+
+* We will have a mixin class called PrettyPrinter that will be used by Group to print nicely information about the group
+
+***********************
+Name of group
+      Name of teacher 
+***********************
+
+1. kid 1
+2. kid 2
+
+***********************
+
+* For all defined classes, we implement custom str and repr methods.  
+
+* We will use standard logging in order to track what happen when the program runs
+
+* Create a separate documents tests.py for testing in which we implement unittesting for our program.
+
+
+
