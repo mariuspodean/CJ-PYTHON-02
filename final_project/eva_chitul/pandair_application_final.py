@@ -7,7 +7,7 @@ fleet_database_check = set()
 flights_log_database = {}
 regional_fleet = {}
 
-logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.datetime.today()}_pandair_logging')
+logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.date.today()}_pandair_logging')
 log = logging.getLogger('Pandair Airline')
 
 
@@ -103,7 +103,7 @@ class Airport:
         all_aircraft = self.airport_list + second_airport.airport_list
         for aircraft in all_aircraft:
             region_airport.add_aircraft(aircraft, check_duplicates=False)
-            log.debug(f'{time.asctime(time.localtime(time.time()))} Created Regional Airport from {self} and {second_airport}')
+        log.debug(f'{time.asctime(time.localtime(time.time()))} Created Regional Airport from {self} and {second_airport}')
         return region_airport
 
     def add_aircraft(self, aircraft, check_duplicates=True):
@@ -114,14 +114,14 @@ class Airport:
         else:
             self.airport_list.append(aircraft)
             fleet_database_check.add(aircraft)
-            log.debug(f'{time.asctime(time.localtime(time.time()))} {aircraft} added in Airport and Fleet')
+            log.debug(f'{time.asctime(time.localtime(time.time()))} {aircraft} added in Airport and Fleet. Airplanes in fleet overview: {fleet_database_check}')
 
     def remove_aircraft(self, aircraft):
         if aircraft in self.airport_list:
             position = self.airport_list.index(aircraft)
             del self.airport_list[position]
             fleet_database_check.remove(aircraft)
-            log.debug(f'{time.asctime(time.localtime(time.time()))} {aircraft} removed from Airport and Fleet')
+            log.debug(f'{time.asctime(time.localtime(time.time()))} {aircraft} removed from Airport and Fleet. Airplanes in fleet overview: {fleet_database_check}')
         else:
             print(f'{aircraft} not found at Airport. Unable to remove')
             log.info(f' {aircraft} not found at Airport.')
@@ -137,7 +137,7 @@ class FleetDatabase:
             print(f'Airport {key} not in Fleet Database. Airport will be added')
             log.info(f' Airport {key} not in Fleet Database.')
             self.fleet[key] = Airport()
-            log.debug(f'{time.asctime(time.localtime(time.time()))} Airport {key} not found. Airport was added to Fleet Database')
+            log.debug(f'{time.asctime(time.localtime(time.time()))} Airport {key} not found. Airport was added to Fleet Database. Fleet Overview: {self.fleet}')
         return self.fleet[key]
 
     def __delitem__(self, key):
@@ -256,7 +256,7 @@ class AlterAircraft:
         self.plane.due_for_maintenance = lambda: False
 
         log.info(f'Behaviour of {self.plane} has been changed')
-        log.debug(f'{time.asctime(time.localtime(time.time()))} Due for maintenance method for {self.plane} now returning False')
+        log.debug(f'{time.asctime(time.localtime(time.time()))} Due for maintenance method for {self.plane} now returning {self.plane.due_for_maintenance}')
 
         return self.plane
 

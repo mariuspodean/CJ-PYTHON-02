@@ -115,7 +115,7 @@ fleet_database.remove_airport('brussels')
 print(fleet_database, '\n')
 print(fleet_database_check, '\n')
 
-# OPERATE FLIGHT
+# OPERATE FLIGHT & DECORATOR
 
 operate_flight(fleet_database, 'Brussels', 'Berlin', commercial_2)
 print(fleet_database, '\n')
