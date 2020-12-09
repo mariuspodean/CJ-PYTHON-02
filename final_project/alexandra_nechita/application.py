@@ -3,7 +3,7 @@ import datetime
 
 eps = 0.0000001
 
-logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.datetime.now().strftime("%Y-%m-%d")}_Equilibrium_log.log')
+logging.basicConfig(level=logging.DEBUG, filename=f'{datetime.datetime.now().strftime("%Y-%m-%d")}_Equilibrium_log.log', filemode='w')
 logger = logging.getLogger(__name__)
 
 class PersonalDevelopment:
@@ -35,7 +35,7 @@ class PersonalDevelopment:
 # :param other:
 # :return: boolean flag weather self and other are the same or not
 # Two PersonalDevelopment objects are equal if they have identical list of activities and identical frequencies for each activity
-   
+        
         for activity, frequency in self.dict_of_activities.items():
             if activity not in other.dict_of_activities:
                 return False
@@ -87,7 +87,9 @@ class PersonalDevelopment:
     
     def save_state(self):
 # Method to write in a file the activities implemented in a field
-        with i_am_a_context_manager(f'{datetime.datetime.now().strftime("%Y-%m-%d")}_{self.name}.txt') as file:
+        file_name = f'{datetime.datetime.now().strftime("%Y-%m-%d")}_{self.name}.txt'
+        with i_am_a_context_manager(file_name) as file:
+            logger.info(f'Writing list of activities in {file_name}')
             file.write('Placeholder for list of activities')
 
 
@@ -99,6 +101,7 @@ class MixinPrint:
         pass
     
     def __str__(self, name='No_name', dict_of_activities={'no_activity': 0}, **kwargs):
+        logger.debug(f'Performing MixinPrint for {name}')
         star_line = '*' * (len(name) + 4) + '\n'
         string = f'{star_line} \n{name} \n\n{star_line} \n'
         for index, (keys, values) in enumerate(dict_of_activities.items(), 1):
@@ -113,6 +116,7 @@ class Physical(PersonalDevelopment, MixinPrint):
 # Inherits from PersonalDevlopment class and MixinPrint class
     
     def __init__(self, name, dict_of_activities, BMI):
+        logger.debug(f'Creating Physical object named {name}')
         super().__init__(name, dict_of_activities)
         self.BMI = BMI
                
@@ -166,6 +170,7 @@ class Spiritual(PersonalDevelopment, MixinPrint):
 # Inherits from PersonalDevlopment class and MixinPrint
     
     def __init__(self, name, dict_of_activities, spiritual_views):
+            logger.debug(f'Creating Spiritual object named {name}')
             super().__init__(name, dict_of_activities)
             self.spiritual_views = spiritual_views
         
@@ -219,6 +224,7 @@ class Emotional(PersonalDevelopment, MixinPrint):
 # Inherits from PersonalDevlopment class and MixinPrint
     
     def __init__(self, name, dict_of_activities, EQ):
+            logger.debug(f'Creating Emotional object named {name}')
             super().__init__(name, dict_of_activities)
             self.EQ = EQ
     
@@ -272,6 +278,7 @@ class Social(PersonalDevelopment, MixinPrint):
 # Inherits from PersonalDevlopment class and MixinPrint
     
     def __init__(self, name, dict_of_activities, dict_of_friends):
+            logger.debug(f'Creating Social object named {name}')
             super().__init__(name, dict_of_activities)
             self.dict_of_friends = dict_of_friends
     
@@ -325,6 +332,7 @@ class Intellectual(PersonalDevelopment, MixinPrint):
 # Inherits from PersonalDevlopment class and MixinPrint
         
     def __init__(self, name, dict_of_activities, field_of_interest):
+        logger.debug(f'Creating Intellectual object named {name}')
         super().__init__(name, dict_of_activities)
         self.field_of_interest = field_of_interest
         
@@ -377,6 +385,7 @@ class DomainsCollection():
 # Sequence-like class(tuple). Holds PersonalDevelopment objects
 
     def __init__(self, name, domains_collection):
+        logger.debug(f'Creating DomainsCollection object named {name}')
         self.name = name
         self.domains_collection = domains_collection
         
@@ -398,7 +407,7 @@ class DomainsCollection():
 
 def i_am_a_decorator(function):
 # This function will be used to decorate the check_status function 
-
+    logger.debug(f'Decorating {function.__name__}')
     def inner_function(*args):
         printing_list = function(*args)
         for (domain, status) in printing_list:
@@ -418,7 +427,8 @@ def check_status(desired_state_collection, actual_state_collection):
 # Function compares two DomainsCollection objects, member by member
 # :param desired_state_collection, actual_state_collection
 # :return: a list with five tuples: desired state - status of the actual state compared with the desired state
-
+    logger.info("Looking for differences between desired state and actual state activities")
+    logger.debug(f'Desired state collection is {desired_state_collection.name} and actual state is {actual_state_collection.name}')
     printing_list = []
     for index in range(5):
         if desired_state_collection[index] == actual_state_collection[index]:
@@ -439,15 +449,18 @@ class i_am_a_context_manager():
         self.file_name = file_name
     
     def __enter__(self):
+        logger.debug(f'Opening {self.file_name} to write activities')
         self.file = open(self.file_name, 'w')
         return self.file
         
     def __exit__(self, exc_type, exc_val, exc_tb):
+        logger.debug(f'Closing {self.file_name}')
         self.file.close()
         
         
 def i_am_a_generator(dict_of_friends):
 # Implementation of a generator factory that will yield a key from a dictionary - called in playground.py
+    logger.debug("Generating one friend at a time from the friends dictionary")
     for friend in dict_of_friends.keys():
         yield friend
     
