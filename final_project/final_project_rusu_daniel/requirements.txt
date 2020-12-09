@@ -1,0 +1,23 @@
+We will build an application that will help us encrypt data from  a file that we want to sed over the internet safely,
+or decrypt data from a file received from somebody over the internet
+Steps:
+1) We start by creating a sequence class(Class Database) that generates the accounts data, here we also have an overloading operator
+ -> the operator let us concatenate the users names into one database
+ -> has custom repr and str methods
+2) We also have a mutable mapping class(Class Users) used to store the accounts data in a dictionary
+ -> has custom repr and str methods
+ -> we can add or remove accounts, implement 2 methods for add and remove 
+3) A Class Encrypt used to encrypt the data and also decrypt it
+ -> this class generates a bytes key used to ecrypt the data
+ -> a function to encrypt data
+ -> a function to decrypt data 
+ -> the key, the ecrypted data, and decrypted data are saved in separate files
+ -> import from cryptography an encoding alghoritm(ex: Fernet)
+4) A custom manager function that is created to write the data from the Users class in a file, this function builds a context manager using a generator 
+5) Create mixin class AuthenticationMixin that let us verify if the accounts from the Users class are corect, by imitating a login process
+ -> this class will add functionality to the Users class
+6) Create a function CustomFileOpen used to write the data from the Users class into a file
+  -> the function is a context manager created with a decorator and a generator
+7) Unittests to verify the database and the operating system, Loggin to highlight the changes in the program
+
+
