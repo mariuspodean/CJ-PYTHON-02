@@ -1,5 +1,4 @@
 import sys
-sys.path.append('/home/alexandra/Projects/NATIONAL-PYTHON-01')
 import unittest
 from final_project.implementation import Person
 from final_project.implementation import Kindergarten
