@@ -1,8 +1,8 @@
 Final Project Requirements
 
-    Task: Create an application that will mange the stock need for a flower shop.
+    Task: Create an application which will assist you in buying flowers from a shop.
 
-    We will start with a mapping that will help us describe a Bouquet:
+    We will start with a class that will help us describe a Bouquet:
         class Bouquet(...):
         ...
     
@@ -12,38 +12,30 @@ Final Project Requirements
         class BouquetBox(...):
         ...
   
-    Each class must implement custom str and repr methods
+    Each class has implemented a custom __str__ and __repr__ method
 
-    We also have the stock that is a mutable mapping that holds some products together with their quantities, terms of validity
-        class Stock(...):
-        ...
-
-    We can add new items in stock or remove existing ones. 
-    We can also update the quantities for the items present in stock.
-    When we alter the quantity for an item and that becomes 0, we should get a notification that the product is not available.
-    We can use the check_stock method to see if we have all the required flowers from a bouquet.
-    This method will return two lists: one with the items from the bouquet that we have in stock, and another one with the ones that we do not have.
-    We will have a mixin class called FlowerBoutique that will be used by Stock and Bouquets to print nicely their contents.
-        class FlowerBoutique:
-        ...
+    We have a context manager, which interacts with us when buying flowers.
+        class BouquetManager()
+    It greets us when we enter the store(context). Identifies itself when we start talking to it and finally whishes us well when exiting the context.
+    Regardless of what happens to the assistent, we are always greeted.
     
-    The function stock_items_needed will take a bouquet, and based on the flowers we have in stock,
-    will return a dictionary with the items that we have to buy and the corresponding quantities.
-    This method will check flowers by presence and quantity and compute the missing quantity that will be added to the shopping list.
-    For the function stock_items_needed we will have a decorator:
-    • pretty_print_bouquet: this decorator will take the returned values from the stock_items_needed 
-     and will print a nice representation of the flowers needed;
-    
+    Inside the context manager we have an infinite loop, which allows us to continuously interact with the system. It allows us to:
+        l - list existing stock
+        b - buy a bouquet from stock
+        m - merge all purchased bouquets into a single one
+        p - print all purchased bouquets
+        q - Exit the store
 
-    A  minimum of one of the following will be used: 
-    -decorator,
+    A  minimum of one of the following was used: 
+    -decorator - A decorator allowing us to easily attach the logging behaviour to any method. It was implemented  as log_operation function
     -context manager - will greet the customer once entering the store. It will also politely say goodbye and say his name.  
-    -generator - iterate flowers with expired term of validity
-    -mixin
-    -inheritance;
-    -one scenario of operator overloading - calculate discounts for flowers with expired term of validity
-    -logging (using the standard logging) -- use print "out of stock"
-    -unit testing.
+    -generator - The context manager also yields the Bouquets that are purchased so that they can be printed outside the enter_store function
+    -mixin - PrettyBouquet allows the application to print all purchased bouquets
+    -inheritance - PrettyBouquet inherits methods from Bouquet class
+    -one scenario of operator overloading - Add two bouquets together, so that we can merge all purchased bouquets.
+    -logging (using the standard logging) - We can debug the history of interactions with the context manager (history.txt - one folder up). 
+    It was implemented in log_operation function.
+    -unit testing - Test adding two bouquets toether in different configurations.
 
 
 
@@ -57,4 +49,6 @@ application.py - the implementation,
 playground.py - a file showcasing the functionality and proving it implements fully the requirements
 
 tests.py - the unittests.
+
+history.txt - logging history (one folder up)
 
