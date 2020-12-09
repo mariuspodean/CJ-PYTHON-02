@@ -15,7 +15,7 @@ digi24 = "https://www.digi24.ro/"
 
 now = datetime.now()
 date_string = now.strftime("%d-%m-%Y--%H-%M")
-logging.basicConfig(level=logging.DEBUG, filename=f'final_project/ioan-juglea/logs/{date_string}_log.log')
+logging.basicConfig(level=logging.DEBUG, filename=f'ioan-juglea/logs/{date_string}_log.log')
 logger = logging.getLogger('NewsApp')
 
 
@@ -26,7 +26,7 @@ class FancyWrite:
         now = datetime.now()
         date_string = now.strftime("%d-%m-%Y")
         logger.info(f"Attempting to open the file '{date_string}_articles.txt'")
-        self.file = open(f"final_project/ioan-juglea/savedarticles/{date_string}_articles.txt", "a")
+        self.file = open(f"ioan-juglea/savedarticles/{date_string}_articles.txt", "a")
         logger.debug(f"Opened the file for append")
         if not self.file_is_created:
             self.file.write(f"These are the articles you saved on {date_string}:\n")
