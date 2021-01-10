@@ -1,0 +1,54 @@
+Final Project Requirements
+
+    Task: Create an application which will assist you in buying flowers from a shop.
+
+    We will start with a class that will help us describe a Bouquet:
+        class Bouquet(...):
+        ...
+    
+    A new bouquet can be created starting from a name and dictionary of flowers and quantities.
+
+    We will also have a BouquetBox that is a mutable sequence that holds our bouquets.
+        class BouquetBox(...):
+        ...
+  
+    Each class has implemented a custom __str__ and __repr__ method
+
+    We have a context manager, which interacts with us when buying flowers.
+        class BouquetManager()
+    It greets us when we enter the store(context). Identifies itself when we start talking to it and finally whishes us well when exiting the context.
+    Regardless of what happens to the assistent, we are always greeted.
+    
+    Inside the context manager we have an infinite loop, which allows us to continuously interact with the system. It allows us to:
+        l - list existing stock
+        b - buy a bouquet from stock
+        m - merge all purchased bouquets into a single one
+        p - print all purchased bouquets
+        q - Exit the store
+
+    A  minimum of one of the following was used: 
+    -decorator - A decorator allowing us to easily attach the logging behaviour to any method. It was implemented  as log_operation function
+    -context manager - will greet the customer once entering the store. It will also politely say goodbye and say his name.  
+    -generator - The context manager also yields the Bouquets that are purchased so that they can be printed outside the enter_store function
+    -mixin - PrettyBouquet allows the application to print all purchased bouquets
+    -inheritance - PrettyBouquet inherits methods from Bouquet class
+    -one scenario of operator overloading - Add two bouquets together, so that we can merge all purchased bouquets.
+    -logging (using the standard logging) - We can debug the history of interactions with the context manager (history.txt - one folder up). 
+    It was implemented in log_operation function.
+    -unit testing - Test adding two bouquets toether in different configurations.
+
+
+
+The project will consist of three files:
+
+
+requirements.txt - will store all the requirements of our problem definition,
+
+application.py - the implementation,
+
+playground.py - a file showcasing the functionality and proving it implements fully the requirements
+
+tests.py - the unittests.
+
+history.txt - logging history (one folder up)
+

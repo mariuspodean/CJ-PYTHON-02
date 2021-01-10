@@ -1,0 +1,47 @@
+DEBUG:root:[2020-12-12/09/20 12:54:38]Operation performed:<function Bouquet.__add__ at 0x7f432a4b7040>
+DEBUG:root:[2020-12-12/09/20 12:57:43]Operation performed:<function Bouquet.__add__ at 0x7fb638181040>
+DEBUG:root:[2020-12-12/09/20 13:00:46]Operation performed:<function Bouquet.__add__ at 0x7f28bbe6e040>
+DEBUG:root:[2020-12-12/09/20 13:00:46]Parameter : Smiles & Sunshine Bouquet: {'Peruvian Lily': 7, 'Rose': 9}
+DEBUG:root:[2020-12-12/09/20 13:00:46]Parameter : Christmas Celebration Bouquet: {'Red Amaryllis': 1, 'Red Hypericum': 1, 'Purple Bloom Chrysanthemums': 2, 'Red Gerbera': 2, 'Purple Germini': 3, 'Red Spray Roses': 2, 'Burgundy Carnations': 3, 'Rai Cones': 2, 'Rhodo': 2, 'Conifer': 3}
+DEBUG:root:[2020-12-12/09/20 13:00:46]Operation performed:<function Bouquet.__add__ at 0x7f28bbe6e040>
+DEBUG:root:[2020-12-12/09/20 13:00:46]Parameter : Smiles & Sunshine Bouquet and Christmas Celebration Bouquet: {'Peruvian Lily': 7, 'Rose': 9, 'Red Amaryllis': 1, 'Red Hypericum': 1, 'Purple Bloom Chrysanthemums': 2, 'Red Gerbera': 2, 'Purple Germini': 3, 'Red Spray Roses': 2, 'Burgundy Carnations': 3, 'Rai Cones': 2, 'Rhodo': 2, 'Conifer': 3}
+DEBUG:root:[2020-12-12/09/20 13:00:46]Parameter : White Medley Bouquet: {'White Spray Stocks': 3, 'White Rose': 5, 'White Double Lisianthus': 5, 'White Trachelium': 5, 'Eucalyptus': 3}
+DEBUG:root:[2020-12-12/09/20 13:14:53]Operation performed:<function Bouquet.__add__ at 0x7f0095685040>
+DEBUG:root:[2020-12-12/09/20 13:14:53]Parameter : Smiles & Sunshine Bouquet: {'Peruvian Lily': 7, 'Rose': 9}
+DEBUG:root:[2020-12-12/09/20 13:14:53]Parameter : Christmas Celebration Bouquet: {'Red Amaryllis': 1, 'Red Hypericum': 1, 'Purple Bloom Chrysanthemums': 2, 'Red Gerbera': 2, 'Purple Germini': 3, 'Red Spray Roses': 2, 'Burgundy Carnations': 3, 'Rai Cones': 2, 'Rhodo': 2, 'Conifer': 3}
+DEBUG:root:[2020-12-12/09/20 13:14:53]Operation performed:<function Bouquet.__add__ at 0x7f0095685040>
+DEBUG:root:[2020-12-12/09/20 13:14:53]Parameter : Smiles & Sunshine Bouquet and Christmas Celebration Bouquet: {'Peruvian Lily': 7, 'Rose': 9, 'Red Amaryllis': 1, 'Red Hypericum': 1, 'Purple Bloom Chrysanthemums': 2, 'Red Gerbera': 2, 'Purple Germini': 3, 'Red Spray Roses': 2, 'Burgundy Carnations': 3, 'Rai Cones': 2, 'Rhodo': 2, 'Conifer': 3}
+DEBUG:root:[2020-12-12/09/20 13:14:53]Parameter : White Medley Bouquet: {'White Spray Stocks': 3, 'White Rose': 5, 'White Double Lisianthus': 5, 'White Trachelium': 5, 'Eucalyptus': 3}
+DEBUG:root:[2020-12-12/09/20 14:56:00]Operation performed:<function Bouquet.__add__ at 0x7f2579587040>
+DEBUG:root:[2020-12-12/09/20 14:56:00]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 14:56:00]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 14:57:59]Operation performed:<function Bouquet.__add__ at 0x7f9d1d47f040>
+DEBUG:root:[2020-12-12/09/20 14:57:59]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 14:57:59]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 14:59:03]Operation performed:<function Bouquet.__add__ at 0x7fbe72df70d0>
+DEBUG:root:[2020-12-12/09/20 14:59:03]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 14:59:03]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 14:59:54]Operation performed:<function Bouquet.__add__ at 0x7f398fe3e0d0>
+DEBUG:root:[2020-12-12/09/20 14:59:54]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 14:59:54]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 15:00:19]Operation performed:<function Bouquet.__add__ at 0x7fb1f24a5040>
+DEBUG:root:[2020-12-12/09/20 15:00:19]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:00:19]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 15:00:20]Operation performed:<function Bouquet.__add__ at 0x7fe3c5c71040>
+DEBUG:root:[2020-12-12/09/20 15:00:20]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:00:20]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 15:01:41]Operation performed:<function Bouquet.__add__ at 0x7f5f7cc240d0>
+DEBUG:root:[2020-12-12/09/20 15:01:41]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:01:41]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 15:01:41]Operation performed:<function Bouquet.__add__ at 0x7f5f7cc240d0>
+DEBUG:root:[2020-12-12/09/20 15:01:41]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:01:41]Parameter : Bouquet 2: {'flower 1': 1, 'flower 2': 3}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Operation performed:<function Bouquet.__add__ at 0x7fc0776b6160>
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 2: {'flower 3': 1, 'flower 5': 3}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Operation performed:<function Bouquet.__add__ at 0x7fc0776b6160>
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 2: {'flower 1': 1, 'flower 2': 3}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Operation performed:<function Bouquet.__add__ at 0x7fc0776b6160>
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 1: {'flower 1': 1, 'flower 2': 2}
+DEBUG:root:[2020-12-12/09/20 15:09:36]Parameter : Bouquet 2: {'flower 1': 1, 'flower 3': 3}
