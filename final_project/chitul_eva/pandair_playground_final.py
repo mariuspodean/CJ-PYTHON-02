@@ -1,4 +1,4 @@
-from final_project.eva_chitul.pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, \
+from pandair_application_final import Aircraft, QuickMaintenanceMixin, PassengerAircraft, PrivateAircraft, \
     CargoAircraft, CommercialAircraft, Airport, FleetDatabase, operate_flight, flights_log, generate_pairs, fleet_database_check, \
     flights_log_database, regional_fleet, AlterAircraft
 

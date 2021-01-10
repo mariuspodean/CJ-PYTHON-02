@@ -1,10 +1,10 @@
 from application import PrittyPrinterMixin, Players, TableOfPlayers, rules, betting_options, winning_rules, betting_params, betting_params_validation, validate_number, validate_bet_amount, generate_random, compare_numbers, no_more_credit, winning, exit_betting, all_time_scores, roulette, TimeIt, decorate_players_scores, prepare_results_list, score_reader
 
-player1_info = {'name':'Dobri Cso', 'age': 35, 'credit':1000}
-player2_info = {'name':'George Drag', 'age': 30, 'credit':800}
-player3_info = {'name':'Jack Daniels', 'age': 38, 'credit':1200}
-player4_info = {'name':'Julius Caesar', 'age': 60, 'credit':500}
-player5_info = {'name':'John Doe', 'age': 25, 'credit':700}
+player1_info = {'name': 'Dobri Cso', 'age': 35, 'credit': 1000}
+player2_info = {'name': 'George Drag', 'age': 30, 'credit': 800}
+player3_info = {'name': 'Jack Daniels', 'age': 38, 'credit': 1200}
+player4_info = {'name': 'Julius Caesar', 'age': 60, 'credit': 500}
+player5_info = {'name': 'John Doe', 'age': 25, 'credit': 700}
 
 player1 = Players('Lucky Cso', player1_info)
 player2 = Players('Drag X', player2_info)
@@ -23,9 +23,7 @@ print(repr(player4))
 print(player5)
 print(repr(player5))
 
-
 print(player1['age'])
-
 
 players_list = TableOfPlayers()
 players_list.add_player(player1)
@@ -39,14 +37,11 @@ players_list.remove_player(player5)
 print(players_list)
 print(len(players_list))
 
-
-players = [player1,player2,player3,player4,player5]
-
+players = [player1, player2, player3, player4, player5]
 
 with TimeIt(players):
     roulette(players)
     prepare_results_list(all_time_scores)
-
 
 scores = score_reader('scores.txt')
 for score in scores:

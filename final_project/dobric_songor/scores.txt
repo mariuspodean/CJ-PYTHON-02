@@ -12,12 +12,12 @@ Player: Johnny D CREDIT: 700
 ******************************
 Players credits AFTER playing roulette:
 
-Player: Lucky Cso NEW-CREDIT: 999
+Player: Lucky Cso NEW-CREDIT: 900
 
-Player: Drag X NEW-CREDIT: 799
+Player: Drag X NEW-CREDIT: 688
 
-Player: Jacky 8 NEW-CREDIT: 1199
+Player: Jacky 8 NEW-CREDIT: 0
 
-Player: Imperator NEW-CREDIT: 499
+Player: Imperator NEW-CREDIT: 0
 
-Player: Johnny D NEW-CREDIT: 699
+Player: Johnny D NEW-CREDIT: 0

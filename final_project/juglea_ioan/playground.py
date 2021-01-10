@@ -101,4 +101,4 @@ with FancyWrite() as fwrite:
     fwrite.fancy_write("Example title", "Example link")
 
 # Uncomment the next line to initialize the GUI Window
-# application.window()
+application.window()

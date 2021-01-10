@@ -1,0 +1,777 @@
+DEBUG:NewsApp:Added Example news 1, Example link 1 to id[139811579636984]
+DEBUG:NewsApp:Added Example news 2, Example link 2 to id[139811579636984]
+DEBUG:NewsApp:Added Example news 3, Example link 3, Example bonus attribute to id[139811579636984]
+INFO:NewsApp:Getting the first 4 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811579666560]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811579666560]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811579666560]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811579666560]
+INFO:NewsApp:Getting the first 3 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30144
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Hopes for survivors fades as passenger plane wreckage found off Indonesian coast, https://www.nbcnews.com/news/world/sriwijaya-air-flight-sj182-hopes-survivors-fade-plane-wreckage-found-n1253653 to id[139811582323568]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added How a surveillance plane was sent to one wealthy suburb, https://www.nbcnews.com/business/business-news/how-surveillance-plane-was-sent-one-wealthy-suburb-n1253607 to id[139811582323568]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Who decides when there are helicopters? Experts weigh in on National Guard monitoring protests, https://www.nbcnews.com/business/business-news/who-decides-when-there-are-helicopters-experts-weigh-national-guard-n1253599 to id[139811582323568]
+INFO:NewsApp:Getting the first 1 headers from Fox
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811391290000]
+INFO:NewsApp:Getting the first 5 headers from Protv
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36038
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811391288824]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811391288824]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811391288824]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811391288824]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811391288824]
+INFO:NewsApp:Getting the first 2 headers from Digi24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42672
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added O tulpină nouă a coronavirusului, depistată pe aeroportul din Tokyo. De unde veneau pasagerii-purtători, https://www.digi24.ro/stiri/externe/mapamond/o-tulpina-noua-a-coronavirusului-depistata-pe-aeroportul-din-tokyo-de-unde-veneau-pasagerii-purtatori-1431625 to id[139811602348800]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Manny Pacquiao cere pedeapsa cu moartea și oferă recompensă de 10.000 de dolari, după crima oribilă care a zguduit Filipine, https://www.digisport.ro/special/manny-pacquiao-cere-pedeapsa-cu-moartea-si-ofera-recompensa-de-10-000-de-dolari-dupa-crima-oribila-care-a-zguduit-filipine-983024 to id[139811602348800]
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30144
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Getting the next header in NBC
+INFO:NewsApp:Getting ALL available news from BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811376232208]
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811376232208]
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811376232208]
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811376232208]
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811376232208]
+DEBUG:NewsApp:Added US lifts restrictions on contacts with Taiwan, https://www.bbc.com/news/world-us-canada-55606594 to id[139811376232208]
+DEBUG:NewsApp:Added Battling the pangolin traffickers, https://www.bbc.com/news/world-africa-55592290 to id[139811376232208]
+DEBUG:NewsApp:Added Can the world's largest vaccine maker meet demand?, https://www.bbc.com/news/world-asia-india-55571793 to id[139811376232208]
+DEBUG:NewsApp:Added Australia close in on third Test win, https://www.bbc.com/sport/cricket/55608364 to id[139811376232208]
+DEBUG:NewsApp:Added Scottish Premiership: Aberdeen v Rangers & Livingston v Ross County build-up, https://www.bbc.com/sport/live/football/55529667 to id[139811376232208]
+DEBUG:NewsApp:Added India allege racist abuse in third Test, https://www.bbc.com/sport/cricket/55600880 to id[139811376232208]
+DEBUG:NewsApp:Added The English town that lured Tom Cruise, https://www.bbc.com/travel/story/20210103-englands-sleepy-scientology-town to id[139811376232208]
+DEBUG:NewsApp:Added The German word transforming careers, https://www.bbc.com/worklife/article/20201222-the-german-quereinsteiger-ending-career-changing-stigma to id[139811376232208]
+DEBUG:NewsApp:Added The social distancing manual from 1588, https://www.bbc.com/future/article/20210107-the-432-year-old-manual-on-social-distancing to id[139811376232208]
+DEBUG:NewsApp:Added Films to look forward to in 2021, https://www.bbc.com/culture/article/20210107-twenty-films-to-watch-in-2021 to id[139811376232208]
+DEBUG:NewsApp:Added How to make the most of breakfast ingredients, https://www.bbc.comhttps://www.bbc.co.uk/food/articles/breakfast_pots to id[139811376232208]
+DEBUG:NewsApp:Added Here are 21 ways to get fit in 2021, https://www.bbc.com/sport/55151792 to id[139811376232208]
+DEBUG:NewsApp:Added A historic moment for Africa's forests, https://www.bbc.com/future/article/20210107-congo-basin-a-bold-plan-to-save-africas-largest-rainforest to id[139811376232208]
+DEBUG:NewsApp:Added Greener planes of the future... or just pretty plans?, https://www.bbc.com/news/business-51751984 to id[139811376232208]
+DEBUG:NewsApp:Added 'New York is not dead, but it is on life support', https://www.bbc.com/news/business-55535324 to id[139811376232208]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava fountain, https://www.bbc.com/news/world-55605868 to id[139811376232208]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava..., https://www.bbc.com/news/world-55605868 to id[139811376232208]
+DEBUG:NewsApp:Added Madrid hit by Storm Filomena, https://www.bbc.com/news/world-55605863 to id[139811376232208]
+DEBUG:NewsApp:Added The secret artists creating miniature..., https://www.bbc.com/news/entertainment-arts-55575666 to id[139811376232208]
+DEBUG:NewsApp:Added How protests swept across the US, https://www.bbc.com/news/world-us-canada-55596518 to id[139811376232208]
+DEBUG:NewsApp:Added One-minute World News, https://www.bbc.com/news/10462520 to id[139811376232208]
+DEBUG:NewsApp:Added Boris Johnson struggles in interview, https://www.bbc.com/news/uk-40358825 to id[139811376232208]
+DEBUG:NewsApp:Added Ready for the total solar eclipse?, https://www.bbc.com/news/world-us-canada-40362067 to id[139811376232208]
+DEBUG:NewsApp:Added Koalas 'face extinction' in parts of..., https://www.bbc.com/news/world-australia-40365981 to id[139811376232208]
+DEBUG:NewsApp:Added Video 'shows Mosul mosque's destruction', https://www.bbc.com/news/world-middle-east-40366136 to id[139811376232208]
+DEBUG:NewsApp:Added Indonesia's female 'devil wheel' riders, https://www.bbc.com/news/world-asia-40360168 to id[139811376232208]
+DEBUG:NewsApp:Added Thousands attend Manila mass people told to..., https://www.bbc.com/news/world-asia-55604918 to id[139811376232208]
+DEBUG:NewsApp:Added Chocolates and beer: Buying from Belgium..., https://www.bbc.com/news/world-europe-55592161 to id[139811376232208]
+DEBUG:NewsApp:Added A night at India's largest farmers' protest, https://www.bbc.com/news/world-asia-india-55584924 to id[139811376232208]
+DEBUG:NewsApp:Added BA Holidays reverses decision to continue sales, https://www.bbc.com/news/business-55588798 to id[139811376232208]
+DEBUG:NewsApp:Added TV documentary pioneer and film-maker Apted dies, https://www.bbc.com/news/uk-55597263 to id[139811376232208]
+DEBUG:NewsApp:Added Coronavirus: A year of high-speed discovery, https://www.bbc.com/news/science-environment-55565284 to id[139811376232208]
+DEBUG:NewsApp:Added Amazon to remove Parler from web hosting service, https://www.bbc.com/news/technology-55608081 to id[139811376232208]
+DEBUG:NewsApp:Added Third Covid vaccine approved in the UK, https://www.bbc.com/news/health-55586410 to id[139811376232208]
+DEBUG:NewsApp:Added The Red Planet's many hidden colours, https://www.bbc.com/news/science-environment-55562150 to id[139811376232208]
+DEBUG:NewsApp:Added Twitter permanently suspends Trump's account, https://www.bbc.com/news/world-us-canada-55597840 to id[139811376232208]
+DEBUG:NewsApp:Added Amazon plots a course into the healthcare industry, https://www.bbc.com/news/business-55228999 to id[139811376232208]
+DEBUG:NewsApp:Added Why did these people start businesses in a pandemic?, https://www.bbc.com/news/business-55405289 to id[139811376232208]
+DEBUG:NewsApp:Added Striking news pictures from around the world, https://www.bbc.com/news/in-pictures-55579991 to id[139811376232208]
+DEBUG:NewsApp:Added Building a frozen city in China, https://www.bbc.com/news/in-pictures-55529089 to id[139811376232208]
+DEBUG:NewsApp:Added Africa's top shots: Flames, fireworks and family, https://www.bbc.com/news/world-africa-55573602 to id[139811376232208]
+DEBUG:NewsApp:Added Five startling images from the US Capitol riot, https://www.bbc.com/news/in-pictures-55577824 to id[139811376232208]
+DEBUG:NewsApp:Added In pictures: Pro-Trump protesters storm Capitol, https://www.bbc.com/news/world-us-canada-55568131 to id[139811376232208]
+INFO:NewsApp:Getting ALL available news from NBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30144
+DEBUG:NewsApp:Added Hopes for survivors fades as passenger plane wreckage found off Indonesian coast, https://www.nbcnews.com/news/world/sriwijaya-air-flight-sj182-hopes-survivors-fade-plane-wreckage-found-n1253653 to id[139811376267952]
+DEBUG:NewsApp:Added How a surveillance plane was sent to one wealthy suburb, https://www.nbcnews.com/business/business-news/how-surveillance-plane-was-sent-one-wealthy-suburb-n1253607 to id[139811376267952]
+DEBUG:NewsApp:Added Who decides when there are helicopters? Experts weigh in on National Guard monitoring protests, https://www.nbcnews.com/business/business-news/who-decides-when-there-are-helicopters-experts-weigh-national-guard-n1253599 to id[139811376267952]
+DEBUG:NewsApp:Added Covid-19 vaccine could be heading to the black market, https://www.nbcnews.com/news/us-news/coming-black-market-near-you-covid-19-vaccine-n1253504 to id[139811376267952]
+DEBUG:NewsApp:Added New Zealand central bank says data system hacked, https://www.nbcnews.com/news/weird-news/new-zealand-central-bank-says-data-system-hacked-sensitive-information-n1253652 to id[139811376267952]
+DEBUG:NewsApp:Added U.S. sets another record for daily Covid-19 cases, https://www.nbcnews.com/news/us-news/u-s-sets-another-record-daily-covid-19-cases-n1253650 to id[139811376267952]
+DEBUG:NewsApp:Added Amazon suspends hosting for Parler, https://www.nbcnews.com/tech/tech-news/amazon-suspends-hosting-parler-its-servers-citing-violent-content-n1253648 to id[139811376267952]
+DEBUG:NewsApp:Added Murder of 12-year-old in 1997 still unsolved 23 years later, https://www.nbcnews.com/dateline/woman-refuses-give-fight-justice-1997-murder-sister-georgia-lee-n1253649 to id[139811376267952]
+DEBUG:NewsApp:Added Travel security tightened for members of Congress after harassment, https://www.nbcnews.com/politics/congress/travel-security-tightened-members-congress-after-harassment-n1253647 to id[139811376267952]
+DEBUG:NewsApp:Added U.S. Covid-19 cases hit 22 million as scientists track variant strain, https://www.nbcnews.com/news/us-news/u-s-covid-19-cases-hit-22-million-scientists-track-n1253643 to id[139811376267952]
+DEBUG:NewsApp:Added Pence to attend Biden inauguration; Trump never called him in the Capitol bunker, sources say, https://www.nbcnews.com/politics/2020-election/pence-attend-biden-inauguration-n1253645 to id[139811376267952]
+DEBUG:NewsApp:Added Joe Biden wants to set aside deficit concerns to invest in ailing U.S. economy, https://www.nbcnews.com/politics/white-house/joe-biden-wants-set-aside-deficit-concerns-invest-ailing-u-n1253638 to id[139811376267952]
+DEBUG:NewsApp:Added In earlier call, Trump pressured Georgia elections investigator to find evidence of fraud, https://www.nbcnews.com/politics/donald-trump/earlier-call-trump-pressured-georgia-elections-investigator-find-evidence-fraud-n1253639 to id[139811376267952]
+DEBUG:NewsApp:Added Inside the House chamber as the Capitol was overrun by an angry mob, https://www.nbcnews.com/politics/congress/inside-house-chamber-capitol-was-overrun-angry-mob-n1253640 to id[139811376267952]
+DEBUG:NewsApp:Added Member of famed Tuskegee Airmen dies from coronavirus, https://www.nbcnews.com/news/obituaries/member-famed-tuskegee-airmen-dies-coronavirus-n1253637 to id[139811376267952]
+DEBUG:NewsApp:Added More than $1 billion up for grabs between Mega Millions, Powerball jackpots, https://www.nbcnews.com/news/us-news/more-1-billion-grabs-between-mega-millions-powerball-jackpots-n1253635 to id[139811376267952]
+DEBUG:NewsApp:Added Koa Beck on dismantling the persistence of white feminism, https://www.nbcnews.com/news/nbcblk/koa-beck-dismantling-persistence-white-feminism-n1253555 to id[139811376267952]
+DEBUG:NewsApp:Added As some Republicans distance themselves from Trump, Pompeo stays in his corner, https://www.nbcnews.com/politics/donald-trump/pompeo-stays-trump-s-corner-some-republicans-distance-themselves-n1253633 to id[139811376267952]
+DEBUG:NewsApp:Added Queen Elizabeth and husband, Prince Philip, receive coronavirus vaccine, https://www.nbcnews.com/news/world/britain-s-queen-elizabeth-husband-prince-philip-receive-coronavirus-vaccine-n1253630 to id[139811376267952]
+INFO:NewsApp:Getting ALL available news from FOX
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811374527992]
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811374527992]
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811374527992]
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811374527992]
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811374527992]
+DEBUG:NewsApp:Added ANDREW MCCARTHY: Trump has committed an impeachable offense, https://www.foxnews.com/opinion/trump-impeachment-resignation-andrew-mccarthy to id[139811374527992]
+DEBUG:NewsApp:Added Bozell: Social media giants 'canceling conservatives,' antitrust action needed, https://www.foxnews.com/politics/amazon-parler-apple-removal-download-aws-conservatives to id[139811374527992]
+DEBUG:NewsApp:Added Indonesian divers find parts of plane wreckage in Java Sea, https://www.foxnews.com/world/indonesian-divers-find-parts-of-plane-wreckage-in-java-sea to id[139811374527992]
+DEBUG:NewsApp:Added Storm to dump heavy snow in parts of Plains, Mississippi Valley, https://www.foxnews.com/us/winter-storm-southern-plains-lower-mississippi-valley to id[139811374527992]
+DEBUG:NewsApp:Added Capitol riot: Shooting death of Ashli Babbitt under investigation US attorney says: report, https://www.foxnews.com/us/investigation-shooting-death-ashli-babbitt-capitol to id[139811374527992]
+DEBUG:NewsApp:Added GOP rep grew up watching 'The Daily Show' — and it led him to make a promise to himself, https://www.foxnews.com/politics/rep-peter-meijer-iraq-veteran-long-term-us-planning to id[139811374527992]
+DEBUG:NewsApp:Added US, other nations issue joint statement expressing 'serious concern' about Hong Kong mass arrests, https://www.foxnews.com/world/us-joined-by-australia-uk-and-canada-in-criticizing-hong-kong-mass-arrests to id[139811374527992]
+DEBUG:NewsApp:Added Merkel blames Trump for US Capitol riots; German parliament increases security, https://www.foxnews.com/world/german-parliament-to-beef-up-security-after-us-capitol-riots-reports to id[139811374527992]
+DEBUG:NewsApp:Added DAVE RAMSEY: What happens if you want a mortgage but have no credit card or loans?, https://www.foxbusiness.com/personal-finance/dave-ramsey-mortgage-credit-cards-loan to id[139811374527992]
+DEBUG:NewsApp:Added Accused Capitol rioter carrying zip ties on Senate floor ID’d as retired Air Force, https://www.foxnews.com/us/air-force-veteran-identified-capitol-zip-ties-senate-floor to id[139811374527992]
+DEBUG:NewsApp:Added Susan Ferrechio calls out liberal mag for ‘garbage’ claim about Trump, nukes, https://www.foxnews.com/media/susan-ferrechio-calls-out-ny-mag-writer-garbage-journalism-that-makes-things-worse to id[139811374527992]
+DEBUG:NewsApp:Added JASON CHAFFETZ: To prevent voter fraud, reject Pelosi effort to set election rules nationally, https://www.foxnews.com/opinion/elections-voter-fraud-congress-jason-chaffetz to id[139811374527992]
+DEBUG:NewsApp:Added This wildly popular dieting fad could be dangerous, https://www.foxnews.com/lifestyle/the-dangerous-dark-side-of-intermittent-fasting-for-weight-loss to id[139811374527992]
+DEBUG:NewsApp:Added Senate leader maps how GOP can ‘dispose of’ Trump ouster efforts, https://www.foxnews.com/politics/mcconnell-letter-senate-impeachment-summary to id[139811374527992]
+DEBUG:NewsApp:Added Phoenix man in Capitol riot dressed in horns, bearskin headdress is arrested, charged, https://www.foxnews.com/us/man-dressed-horns-bearskin-headdress-capitol-raid-arrested-charged to id[139811374527992]
+DEBUG:NewsApp:Added Ariel Pink dropped by record label after attending pro-Trump rally ahead of Capitol riots, https://www.foxnews.com/entertainment/ariel-pink-dropped-record-label-attending-trump-rally-capitol-riots to id[139811374527992]
+DEBUG:NewsApp:Added Dem apologizes for remark about possible second impeachment, https://www.foxnews.com/politics/house-dem-apologizing-for-comparing-new-trump-impeachment-to-a-lynching to id[139811374527992]
+DEBUG:NewsApp:Added COVID-19 vaccine marks 'major milestone' for reeling hotel industry, https://www.foxbusiness.com/lifestyle/hotel-industry-coronavirus-pandemic to id[139811374527992]
+DEBUG:NewsApp:Added Buccaneers hang on against Washington to advance to divisional round for first time since 2002 season, https://www.foxnews.com/sports/buccaneers-washington-recap-wild-card-playoffs-2020-21 to id[139811374527992]
+DEBUG:NewsApp:Added David Bowie dies, and other events on this day in history, https://www.foxnews.com/us/this-day-in-history-jan-10 to id[139811374527992]
+DEBUG:NewsApp:Added If Biden halts border wall, it could cost taxpayers billions, CBP chief warns, https://www.foxnews.com/politics/biden-border-taxpayers-billions-cbp to id[139811374527992]
+DEBUG:NewsApp:Added Capitol riot: FDNY alerts FBI that members possibly part of attack, https://www.foxnews.com/us/fdny-alerts-fbi-members-capitol to id[139811374527992]
+DEBUG:NewsApp:Added Jon Voight praises Trump, calls for unity in new video following Capitol riots: 'It's not over', https://www.foxnews.com/entertainment/jon-voight-trump-unity-new-video-capitol-riots-not-over to id[139811374527992]
+DEBUG:NewsApp:Added 5 binge-worthy Fox Nation shows to watch in January, https://www.foxnews.com/media/fox-nation-january-shows-specials-exclusive to id[139811374527992]
+DEBUG:NewsApp:Added 2020-21 NFL wild card weekend matchups, schedule and more, https://www.foxnews.com/sports/2020-21-nfl-wild-card-weekend-matchups-schedule-and-more to id[139811374527992]
+INFO:NewsApp:Getting ALL available news from PROTV
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36038
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811376234056]
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811376234056]
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811376234056]
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811376234056]
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811376234056]
+DEBUG:NewsApp:Added Furtuna Filomena a provocat patru decese în Spania. Localnicii au schiat prin Madrid, https://stirileprotv.ro/stiri/international/furtuna-filomena-a-provocat-patru-decese-in-spania-localnicii-au-schiat-prin-madrid.html to id[139811376234056]
+DEBUG:NewsApp:Added Ea este studenta găsită fără viață în pădurea din Iași. Ce au descoperit anchetatorii în buzunarele fetei, https://www.fanatik.ro/ea-este-studenta-gasita-moarta-in-padurea-din-iasi-ce-au-descoperit-anchetatorii-in-buzunarele-fetei-19404824  to id[139811376234056]
+DEBUG:NewsApp:Added Un bărbat care a încercat să violeze o femeie în toaleta unui mall din București a fost arestat, https://stirileprotv.ro/stiri/actualitate/video-un-barbat-care-a-incercat-sa-violeze-o-femeie-in-toaleta-unui-complex-comercial-din-bucuresti-arestat.html to id[139811376234056]
+DEBUG:NewsApp:Added Fotograf Reuters, despre manifestanții de la Capitoliu: Voiau să îl „spânzure” pe Mike Pence, https://stirileprotv.ro/stiri/international/fotograf-reuters-despre-manifestantii-de-la-capitoliu-voiau-sa-il-zspanzure-pe-mike-pence.html to id[139811376234056]
+DEBUG:NewsApp:Added Ministrul Sănătății: Peste 100.000 de cadre medicale s-au vaccinat anti Covid, până acum, https://stirileprotv.ro/stiri/social/ministrul-sanatatii-peste-100-000-de-cadre-medicale-s-au-vaccinat-anti-covid-pana-acum.html to id[139811376234056]
+DEBUG:NewsApp:Added Adela Popescu, însărcinată pentru a treia oară. Declarații în exclusivitate, https://protvplus.ro/emisiuni/vorbeste-lumea/clip/28080-adela-popescu-insarcinata-pentru-a-3-a-oara to id[139811376234056]
+DEBUG:NewsApp:Added Jandarmii au strâns bani și i-au instalat panouri solare unui tată care își crește singur fiica de 14 ani, https://stirileprotv.ro/stiri/social/jandarmii-au-strans-bani-si-i-au-instalat-panouri-solare-unui-tata-care-isi-creste-singur-fiica-de-14-ani.html to id[139811376234056]
+DEBUG:NewsApp:Added Noi imagini de la asaltul Congresului SUA. Un polițist a fost strivit de susținătorii lui Trump, https://stirileprotv.ro/stiri/international/noi-imagini-de-la-asaltul-congresului-sua-un-politist-a-fost-strivit-de-sustinatorii-lui-trump.html to id[139811376234056]
+DEBUG:NewsApp:Added Cutiile negre ale avionului companiei Sriwijaya Air prăbuşit sâmbătă au fost localizate, https://stirileprotv.ro/stiri/international/au-fost-descoperite-resturi-si-fragmente-de-corpuri-in-zona-unde-a-disparut-avionul-sriwijaya-air.html to id[139811376234056]
+DEBUG:NewsApp:Added Ce s-a aflat despre studenta din Iași găsită fără viață în pădure. I-a spus unei colege că merge în zonă, https://stirileprotv.ro/stiri/actualitate/ce-s-a-aflat-despre-studenta-din-iasi-gasita-fara-viata-in-padure-i-a-spus-unei-colege-ca-merge-in-zona.html to id[139811376234056]
+DEBUG:NewsApp:Added Carantină în patru localități din Timiș după petrecerile de sărbători, https://stirileprotv.ro/stiri/actualitate/carantina-in-patru-localitati-din-timis-dupa-petrecerile-de-sarbatori.html to id[139811376234056]
+DEBUG:NewsApp:Added Greșeala uriașă pe care o facem cu toții și care ne distruge smartphone-urile, https://www.yoda.ro/mobile/greseala-uriasa-pe-care-o-facem-cu-totii-si-care-ne-distruge-smartphone-urile.html to id[139811376234056]
+DEBUG:NewsApp:Added Aleșii din Parlament cu averi considerabile. Liderul PSD Constanța deține terenuri, apartamente și conturi pline, https://stirileprotv.ro/stiri/politic/alesii-din-parlament-cu-averi-considerabile-liderul-psd-constanta-detine-terenuri-apartamente-si-conturi-pline.html to id[139811376234056]
+DEBUG:NewsApp:Added ANAF va avea acces la toate conturile românilor începând de luni, https://stirileprotv.ro/stiri/financiar/anaf-va-avea-acces-la-toate-conturile-romanilor-incepand-de-luni.html to id[139811376234056]
+DEBUG:NewsApp:Added Cel puţin 13 morţi şi 18 răniţi în Indonezia după o alunecare de teren, https://stirileprotv.ro/stiri/international/cel-putin-11-morti-si-18-raniti-in-indonezia-dupa-o-alunecare-de-teren.html to id[139811376234056]
+DEBUG:NewsApp:Added VIDEO. Răzbunarea unui curier. Ce i-a făcut clientului pentru că i-a dat un bacșiș „prea mic”, https://stirileprotv.ro/divers/video-un-curier-a-plecat-cu-mancarea-clientului-pentru-ca-a-primit-un-bacsis-zprea-mic.html to id[139811376234056]
+DEBUG:NewsApp:Added O femeie pe bicicletă a fost spulberată de un șofer de 19 ani, https://stirileprotv.ro/stiri/actualitate/o-femeie-pe-bicicleta-a-fost-spulberata-de-un-sofer-de-19-ani.html to id[139811376234056]
+DEBUG:NewsApp:Added Mary Trump: ”Unchiul meu este instabil psihic. Trebuie să fie înlăturat imediat”, https://stirileprotv.ro/stiri/international/mary-trump-unchiul-meu-este-instabil-psihic-trebuie-sa-fie-inlaturat-imediat.html to id[139811376234056]
+DEBUG:NewsApp:Added Democrații i-au dat un ultimatum lui Donald Trump. Cum ar putea fi înlăturat președintele SUA, https://stirileprotv.ro/stiri/international/democratii-i-au-dat-un-ultimatum-lui-donald-trump-cum-ar-putea-fi-inlaturat-presedintele-sua.html to id[139811376234056]
+DEBUG:NewsApp:Added Profesorii vor fi plătiți pentru a face ore suplimentare cu elevii care au pierdut cursuri din cauza Covid, https://stirileprotv.ro/stiri/financiar/profesorii-vor-fi-platiti-pentru-a-face-ore-suplimentare-cu-elevii-care-au-pierdut-cursuri-din-cauza-covid.html to id[139811376234056]
+DEBUG:NewsApp:Added Trei adolescenți, reţinuţi pentru pornografie infantilă, viol şi complicitate la viol, victimă fiind o fată de 11 ani, https://stirileprotv.ro/stiri/actualitate/trei-adolescenti-retinuti-pentru-pornografie-infantila-viol-si-complicitate-la-viol-victima-fiind-o-fata-de-11-ani.html to id[139811376234056]
+DEBUG:NewsApp:Added O femeie din Anglia a crezut că a văzut un picior de om în pământ și a sunat la poliție. Ce a descoperit de fapt, https://stirileprotv.ro/stiri/international/o-femeie-din-anglia-a-crezut-ca-a-vazut-un-picior-de-om-in-pamant-si-a-sunat-la-politie-ce-a-descoperit-de-fapt.html to id[139811376234056]
+DEBUG:NewsApp:Added Noua tulpină COVID a suferit 17 mutații deodată! Ce simptome provoacă și cum se transmite, https://www.libertatea.ro/stiri/noua-tulpina-covid-marea-britanie-simptome-transmitere-vaccin-3368567#noua-tulpina-de-covid-19-simptome?utm_source=stirileprotv&utm_medium=referral to id[139811376234056]
+DEBUG:NewsApp:Added Ce se întâmplă cu pensiile românilor în ianuarie. CNPP a făcut anunțul mult așteptat, https://bit.ly/3nsWb57 to id[139811376234056]
+DEBUG:NewsApp:Added Locul fermecător din Cluj care seamănă izbitor cu stațiunile din Alpi. Cât costă cazarea, https://stirileprotv.ro/stiri/actualitate/locul-fermecator-din-cluj-care-seamana-izbitor-cu-statiunile-din-alpi-cat-costa-cazarea.html to id[139811376234056]
+DEBUG:NewsApp:Added Irlanda de Nord avertizează că lanţul de aprovizionare cu Marea Britanie este pe cale să se prăbuşească, https://stirileprotv.ro/stiri/international/irlanda-de-nord-avertizeaza-ca-lantul-de-aprovizionare-cu-marea-britanie-este-pe-cale-sa-se-prabuseasca.html to id[139811376234056]
+DEBUG:NewsApp:Added Cine este ÎPS Teodosie, prelatul care sfidează atât statul român, cât și pe Patriarhul Daniel, https://ziare.com/stiri/eveniment/cine-este-ips-teodosie-1655326 to id[139811376234056]
+DEBUG:NewsApp:Added Un copil de 7 ani din Arad a dispărut de 24 de ore. Au fost mobilizate forțe impresionante, https://stirileprotv.ro/stiri/social/un-copil-de-7-ani-din-arad-a-disparut-de-24-de-ore-au-fost-mobilizate-forte-impresionante.html to id[139811376234056]
+DEBUG:NewsApp:Added Breaking News: Ilie Năstase și-a bătut soția! A venit poliția! Mărturii incredibile ale femeii, https://www.sport.ro/stiri/breaking-news-ilie-nastase-si-ar-fi-batut-sotia-aceasta-a-sunat-de-urgenta-la-112-detalii-de-ultima-ora.html to id[139811376234056]
+DEBUG:NewsApp:Added Facturi mai mici la curent pe piaţa concurenţială pentru consumatorii din Moldova, https://stirileprotv.ro/stiri/financiar/facturi-mai-mici-la-curent-pe-piata-concurentiala-pentru-consumatorii-din-moldova.html to id[139811376234056]
+DEBUG:NewsApp:Added Loto 6/49, 10 ianuarie. Report la Joker la categoria I de aproximativ 3,51 milioane euro, https://stirileprotv.ro/stiri/loto-649/loto-6-49-10-ianuarie-report-la-joker-la-categoria-i-de-aproximativ-3-51-milioane-euro.html to id[139811376234056]
+DEBUG:NewsApp:Added Mihai de la 3 Sud Est, după ce s-a vindecat de Covid-19: „A fost greu, era să plec”, https://stirileprotv.ro/show-buzz/entertainment/mihai-de-la-3-sud-est-dupa-ce-s-a-vindecat-de-covid-19-za-fost-greu-era-sa-plec.html to id[139811376234056]
+DEBUG:NewsApp:Added Un băiețel de 3 ani a devenit ajutor de gunoier. "E o situație cam neobișnuită", https://stirileprotv.ro/divers/un-baietel-de-3-ani-a-devenit-ajutor-de-gunoier-e-o-situatie-cam-neobisnuita.html to id[139811376234056]
+DEBUG:NewsApp:Added Vremea azi, 10 ianuarie. Lapoviță și ninsoare în sudul țării, https://stirileprotv.ro/stiri/vremea/vremea-azi-10-ianuarie-lapovita-si-ninsoare-in-sudul-tarii.html to id[139811376234056]
+DEBUG:NewsApp:Added Povestea cântăreţei Mira. S-a lansat la „Vocea României” și a crescut odată cu PROTV, https://stirileprotv.ro/stiri/1-decembrie/solista-mira-s-a-lansat-la-zvocea-romaniei-si-a-crescut-o-data-cu-protv.html to id[139811376234056]
+DEBUG:NewsApp:Added Vlad, pompierul bistriţean din prima linie medaliat cu aur la culturism, https://stirileprotv.ro/romania-te-iubesc/vlad-pompierul-bistritean-din-prima-linie-medaliat-cu-aur-la-culturism.html to id[139811376234056]
+DEBUG:NewsApp:Added Cristian Roca, tânărul care concepe "mobila viitorului" la doar 25 de ani, https://stirileprotv.ro/stiri/1-decembrie/la-25-de-ani-isi-doreste-sa-revolutioneze-amenajarile-interioare-tanarul-care-vrea-sa-produca-zmobila-inteligenta.html to id[139811376234056]
+DEBUG:NewsApp:Added Boala cu transmitere sexuală care ar putea deveni netratabilă din cauza pandemiei, https://www.doctordebine.ro/stiri-medicale/boala-cu-transmitere-sexuala-care-ar-putea-deveni-netratabila-din-cauza-pandemiei.html to id[139811376234056]
+DEBUG:NewsApp:Added Cantitate record de droguri confiscată în Spania. Printre membrii organizației sunt și români, https://stirileprotv.ro/stiri/international/cantitate-record-de-droguri-consfiscata-in-spania-printre-membrii-organizatiei-sunt-si-romani.html to id[139811376234056]
+DEBUG:NewsApp:Added Care este mâncarea preferată a Papei Francisc. Ce mănâncă Sfântul Părinte de-a lungul unei zile, https://foodstory.ro/diverse/care-este-mancarea-preferata-a-papei-francisc-ce-mananca-sfantul-parinte-de-a-lungul-unei-zile to id[139811376234056]
+DEBUG:NewsApp:Added Adela Popescu este însărcinată. A făcut anunțul în emisiunea Vorbește lumea, https://stirileprotv.ro/show-buzz/entertainment/adela-popescu-este-insarcinata-vedeta-a-facut-anuntul-in-emisiunea-vorbeste-lumea.html to id[139811376234056]
+DEBUG:NewsApp:Added Cum să conduci în siguranță pe timp de iarnă. Recomandările polițiștilor pentru șoferi, https://stirileprotv.ro/stiri/actualitate/cum-sa-conduci-in-siguranta-pe-timp-de-iarna-recomandarile-politistilor-pentru-soferi.html to id[139811376234056]
+DEBUG:NewsApp:Added O tânără din Chișinău a chemat pompierii pentru că nu-și mai putea scoate inelul de logodnă de pe deget, https://stirileprotv.ro/stiri/international/o-tanara-din-chisinau-a-chemat-pompierii-pentru-ca-nu-si-mai-putea-scoate-inelul-de-logodna-de-pe-deget.html to id[139811376234056]
+DEBUG:NewsApp:Added Facebook modifică design-ul paginilor. Dispare butonul de "Like", https://stirileprotv.ro/stiri/ilikeit/facebook-modifica-design-ul-paginilor-dispare-butonul-de-like.html to id[139811376234056]
+DEBUG:NewsApp:Added Paybyface, invenția revoluționară a unui român din SUA întors în țară. Plata cu fața merge și cu masca de protecție, https://stirileprotv.ro/stiri/ilikeit/paybyface-inventia-revolutionara-a-unui-roman-din-sua-intors-in-tara-plata-cu-fata-merge-si-cu-masca-de-protectie.html to id[139811376234056]
+DEBUG:NewsApp:Added Tehnologia anului 2021, anunțată la ILikeIT. Ce pregătesc marii jucători de pe piața tech, https://stirileprotv.ro/stiri/ilikeit/tehnologia-anului-2021-anuntata-la-ilikeit-ce-pregatesc-marii-jucatori-de-pe-piata-tech.html to id[139811376234056]
+DEBUG:NewsApp:Added Preşedinta Camerei Reprezentanţilor a SUA este îngrijorată că Trump ar putea declanșa un atac nuclear, https://stirileprotv.ro/stiri/international/presedinta-camerei-reprezentantilor-a-sua-este-ingrijorat-ca-trump-ar-putea-declansa-un-atac-nuclear.html to id[139811376234056]
+DEBUG:NewsApp:Added SpaceX a lansat cu succes un satelit de telecomunicaţii pentru Turcia. VIDEO, https://stirileprotv.ro/stiri/ilikeit/spacex-a-lansat-cu-succes-un-satelit-de-telecomunicatii-pentru-turcia-video.html to id[139811376234056]
+DEBUG:NewsApp:Added Ministrul Economiei, despre HoReCa: Când sănătatea românilor nu e în pericol, deschidem tot, https://stirileprotv.ro/stiri/financiar/ministrul-economiei-despre-horeca-cand-sanatatea-romanilor-nu-e-in-pericol-deschidem-tot.html to id[139811376234056]
+DEBUG:NewsApp:Added Spaniolii au inventat vesta de gaming. Poți să simți loviturile adversarului sau împușcăturile din joc, https://stirileprotv.ro/stiri/ilikeit/spaniolii-au-inventat-vesta-de-gaming-poti-sa-simti-loviturile-adversarului-sau-impuscaturile-din-joc.html to id[139811376234056]
+DEBUG:NewsApp:Added Mii de membri ai Gărzii Naţionale, desfăşuraţi pentru 30 de zile în Washington DC, https://stirileprotv.ro/stiri/international/mii-de-membri-ai-garzii-nationale-desfasurati-pentru-30-de-zile-in-washington-dc.html to id[139811376234056]
+DEBUG:NewsApp:Added Infractorii din autobuzele ieșene, depistați cu o aplicație de pe telefonul mobil. Cum funcționează, https://stirileprotv.ro/stiri/social/infractorii-din-autobuzele-iesene-depistati-cu-o-aplicatie-de-pe-telefonul-mobil-cum-functioneaza.html to id[139811376234056]
+DEBUG:NewsApp:Added Anglia și Scoția condiționează intrarea în țară de teste negative anti-COVID. Ce se va întâmpla în Țara Galilor și Irlanda, https://stirileprotv.ro/stiri/international/anglia-si-scotia-conditioneaza-intrarea-in-tara-de-teste-negative-anti-covid-ce-se-va-intampla-in-tara-galilor-si-irlanda.html to id[139811376234056]
+DEBUG:NewsApp:Added Medic: „Sucurile de legume şi fructe nu sunt sănătoase. Supa-cremă, o agresiune pentru pancreas”, https://stirileprotv.ro/stiri/csid/medic-zsucurile-de-legume-si-fructe-nu-sunt-sanatoase-supa-crema-o-agresiune-pentru-pancreas.html to id[139811376234056]
+DEBUG:NewsApp:Added De ce apare anxietatea și cum poate fi prevenită. „Din asta derivă foarte multe tulburări”, https://stirileprotv.ro/stiri/csid/de-ce-apare-anxietatea-si-cum-poate-fi-prevenita-zdin-asta-deriva-foarte-multe-tulburari.html to id[139811376234056]
+DEBUG:NewsApp:Added Ce vrea să audă un copil pentru a-și dezvolta încrederea în sine. ”Părintele trebuie să fie alături”, https://stirileprotv.ro/stiri/csid/ce-vrea-sa-auda-un-copil-pentru-a-si-dezvolta-increderea-in-sine-parintele-trebuie-sa-fie-alaturi.html to id[139811376234056]
+DEBUG:NewsApp:Added România reciclează doar 14% din deșeuri. Ce a găsit Inspectorul PRO în teren, https://stirileprotv.ro/stiri/inspectorul-pro/romania-recicleaza-doar-14-din-deseuri-ce-a-gasit-inspectorul-pro-in-teren.html to id[139811376234056]
+DEBUG:NewsApp:Added Fenomenul overbooking, urmărit de Inspectorul PRO. Cum se desfășoară procedura de recuperare a banilor, https://stirileprotv.ro/stiri/inspectorul-pro/fenomenul-overbooking-tot-mai-multi-romani-se-trezesc-ca-nu-au-loc-la-cursa-la-care-si-au-luat-bilet.html to id[139811376234056]
+DEBUG:NewsApp:Added Metoda inedită a unor tineri din Austria pentru a salva planeta. De ani de zile mănâncă din gunoi, https://stirileprotv.ro/stiri/inspectorul-pro/metoda-inedita-a-unor-tineri-din-austria-pentru-a-salva-planeta-de-ani-de-zile-mananca-din-gunoi.html to id[139811376234056]
+DEBUG:NewsApp:Added ”Doctor de bine”. Sfaturi importante pentru părinții preocupați de imunitatea copiilor, https://stirileprotv.ro/stiri/doctor-de-bine/doctor-de-bine-sfaturi-importante-pentru-parintii-preocupati-de-imunitatea-copiilor.html to id[139811376234056]
+DEBUG:NewsApp:Added Medic: ”Distanțarea socială va avea un impact asupra axei sexuale a copiilor”, https://stirileprotv.ro/stiri/doctor-de-bine/medic-distantarea-sociala-va-avea-un-impact-asupra-axei-sexuale-a-copiilor.html to id[139811376234056]
+DEBUG:NewsApp:Added Cum au fost afectați copiii de izolare. Medicul Mihai Craiu, invitatul emisiunii "Doctor de bine", https://stirileprotv.ro/stiri/doctor-de-bine/cum-au-fost-afecta-ii-copiii-de-izolare-medicul-mihai-craiu-invitatul-emisiunii-doctor-de-bine.html to id[139811376234056]
+INFO:NewsApp:Getting ALL available news from DIGI24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42745
+DEBUG:NewsApp:Added O tulpină nouă a coronavirusului, depistată pe aeroportul din Tokyo. De unde veneau pasagerii-purtători, https://www.digi24.ro/stiri/externe/mapamond/o-tulpina-noua-a-coronavirusului-depistata-pe-aeroportul-din-tokyo-de-unde-veneau-pasagerii-purtatori-1431625 to id[139811373543264]
+DEBUG:NewsApp:Added Manny Pacquiao cere pedeapsa cu moartea și oferă recompensă de 10.000 de dolari, după crima oribilă care a zguduit Filipine, https://www.digisport.ro/special/manny-pacquiao-cere-pedeapsa-cu-moartea-si-ofera-recompensa-de-10-000-de-dolari-dupa-crima-oribila-care-a-zguduit-filipine-983024 to id[139811373543264]
+DEBUG:NewsApp:Added Analiză ANM: Ianuarie, o lună geroasă, dar în care se pot înregistra şi temperaturi maxime de 20 de grade Celsius, https://www.digi24.ro/meteo/analiza-anm-ianuarie-o-luna-geroasa-dar-in-care-se-pot-inregistra-si-temperaturi-maxime-de-20-de-grade-celsius-1431609 to id[139811373543264]
+DEBUG:NewsApp:Added București are mai multe cazuri noi de coronavirus decât primele cinci județe la un loc, https://www.digi24.ro/stiri/actualitate/bucuresti-are-mai-multe-cazuri-noi-de-coronavirus-decat-primele-cinci-judete-la-un-loc-1431599 to id[139811373543264]
+DEBUG:NewsApp:Added Preotul Necula: „A crede că vaccinul e o încălcare a unei dogme e periculos. În mâna lui Dumnezeu stau și astfel de vaccinuri”, https://www.digi24.ro/stiri/actualitate/preotul-necula-a-crede-ca-vaccinul-e-o-incalcare-a-unei-dogme-e-periculos-in-mana-lui-dumnezeu-stau-si-astfel-de-vaccinuri-1431629 to id[139811373543264]
+DEBUG:NewsApp:Added Avertisment Interpol: Mafia va încerca să pună mâna pe vaccinul COVID, „aurul lichid al anului 2021”, https://www.digi24.ro/stiri/externe/ue/avertisment-interpol-mafia-va-incerca-sa-puna-mana-pe-vaccin-aurul-lichid-al-anului-2021-1431561 to id[139811373543264]
+DEBUG:NewsApp:Added Un bărbat care a spus că-i trage „un glonț în dovleac” lui Nancy Pelosi, arestat de FBI. Poliția a găsit un arsenal asupra lui, https://www.digi24.ro/stiri/externe/sua/un-barbat-care-a-spus-ca-i-trage-un-glont-in-dovleac-lui-nancy-pelosi-arestat-de-fbi-politia-a-gasit-un-arsenal-asupra-lui-1431550 to id[139811373543264]
+DEBUG:NewsApp:Added Mike Pence va fi prezent la ceremonia de învestire a lui Joe Biden. Viitorul președinte al SUA salută absența lui Trump, https://www.digi24.ro/stiri/externe/sua/mike-pence-va-fi-prezent-la-ceremonia-de-investire-a-lui-joe-biden-viitorul-presedinte-al-sua-saluta-absenta-lui-trump-1431541 to id[139811373543264]
+DEBUG:NewsApp:Added Elevii reîncep luni cursurile online. Ministerul Educației a anunțat când sunt programate vacanțele în 2021, https://www.digi24.ro/stiri/actualitate/educatie/elevii-reincep-luni-cursurile-online-ministerul-educatiei-a-anuntat-cand-sunt-programate-vacantele-in-2021-1431563 to id[139811373543264]
+DEBUG:NewsApp:Added Copilul dispărut la Arad a fost căutat toată noaptea. Poliția a publicat fotografia băiatului, https://www.digi24.ro/stiri/actualitate/social/copilul-disparut-la-arad-a-fost-cautat-toata-noaptea-politia-a-publicat-fotografia-baiatului-1431517 to id[139811373543264]
+DEBUG:NewsApp:Added Cutiile negre ale avionului prăbuşit în Indonezia au fost localizate, https://www.digi24.ro/stiri/externe/mapamond/echipele-de-cautare-au-detectat-semnale-care-pot-proveni-de-la-cutia-neagra-a-avionului-prabusit-in-indonezia-1431484 to id[139811373543264]
+DEBUG:NewsApp:Added Coronavirus România, INFORMAȚII OFICIALE: 671.284 infectări și 16.654 de persoane decedate din cauza COVID-19, https://www.digi24.ro/stiri/informatii-oficiale-despre-coronavirus-in-romania-1266261 to id[139811373543264]
+DEBUG:NewsApp:Added Răspunsul oficial al lui Marius Șumudică, după divergențele cu conducerea lui Gaziantep din ultima perioadă, https://www.digisport.ro/fotbal/fotbal-international/raspunsul-oficial-al-lui-marius-sumudica-dupa-divergentele-cu-conducerea-lui-gaziantep-din-ultima-perioada-983359 to id[139811373543264]
+DEBUG:NewsApp:Added Atenționare ANM: Cod galben de ninsori abundente pentru trei mari regiuni ale țării, https://www.digi24.ro/meteo/atentionare-anm-cod-galben-de-ninsori-abundente-pentru-trei-mari-regiuni-ale-tarii-1431514 to id[139811373543264]
+DEBUG:NewsApp:Added Rusia își consolidează aparatul masiv de represiune. „Să fii «agent străin» va deveni o insignă de onoare pentru activiști”, https://www.digi24.ro/stiri/externe/rusia-isi-consolideaza-aparatul-masiv-de-represiune-sa-fii-agent-strain-va-deveni-o-insigna-de-onoare-pentru-activisti-1430729 to id[139811373543264]
+DEBUG:NewsApp:Added O femeie venită din Marea Britanie și care trebuia să fie în carantină, găsită într-o stațiune montană. Era singura fără mască, https://www.digi24.ro/stiri/actualitate/sanatate/o-femeie-venita-din-marea-britanie-si-care-trebuia-sa-fie-in-carantina-gasita-intr-o-statiune-montana-1431585 to id[139811373543264]
+DEBUG:NewsApp:Added Bitcoin atinge o nouă valoare record. Criptomoneda a crescut cu 40% în acest an, https://www.digi24.ro/stiri/economie/finante-economie/bitcoin-atinge-o-noua-valoare-record-criptomoneda-a-crescut-cu-40-in-acest-an-1430938 to id[139811373543264]
+DEBUG:NewsApp:Added Valoarea de piață a Tesla a depășit-o pentru prima dată pe cea a Facebook, https://www.digi24.ro/stiri/economie/digi-economic/valoarea-de-piata-a-tesla-a-depasit-o-pentru-prima-data-pe-cea-a-facebook-1430475 to id[139811373543264]
+DEBUG:NewsApp:Added Vaccinarea: o rezolvare globală la o problemă globală, https://www.digi24.ro/opinii/vaccinarea-o-rezolvare-globala-la-o-problema-globala-1431284 to id[139811373543264]
+DEBUG:NewsApp:Added Despre numerologia din spatele numărului 9, https://www.digi24.ro/opinii/despre-numerologia-din-spatele-numarului-9-1431278 to id[139811373543264]
+DEBUG:NewsApp:Added Emil Boc, atac dur, în direct, la Vlad Voiculescu: Nici măcar într-un extemporal la dirigenție nu se face asta!, https://www.digi24.ro/stiri/actualitate/politica/emil-boc-atac-dur-in-direct-la-vlad-voiculescu-nici-macar-intr-un-extemporal-la-dirigentie-nu-se-face-asta-1431338 to id[139811373543264]
+DEBUG:NewsApp:Added Ce spun specialiștii în aviație despre prăbușirea misterioasă a Boeingului indonezian cu 62 de oameni la bord, https://www.digi24.ro/stiri/externe/mapamond/ce-spun-specialistii-in-aviatie-despre-prabusirea-misterioasa-a-boeingului-indonezian-cu-62-de-oameni-la-bord-1431464 to id[139811373543264]
+DEBUG:NewsApp:Added Medicul Papei Francisc a murit după ce s-a internat pentru a altă boală, dar s-a infectat cu..., https://www.digi24.ro/stiri/externe/ue/medicul-papei-francisc-a-murit-dupa-ce-s-a-internat-pentru-a-alta-boala-dar-s-a-infectat-cu-sars-cov-2-1431593 to id[139811373543264]
+DEBUG:NewsApp:Added SUA au depăşit pragul de 22 de milioane de cazuri de COVID-19, https://www.digi24.ro/stiri/actualitate/sanatate/sua-au-depasit-pragul-de-22-de-milioane-de-cazuri-de-covid-19-1431573 to id[139811373543264]
+DEBUG:NewsApp:Added Un bărbat a murit după ce s-a împușcat în cap cu arma de vânătoare. Sesizarea a fost făcută de soție, https://www.digi24.ro/stiri/actualitate/evenimente/un-barbat-a-murit-dupa-ce-s-a-impuscat-in-cap-cu-arma-de-vanatoare-sesizarea-a-fost-facuta-de-sotie-1431570 to id[139811373543264]
+DEBUG:NewsApp:Added Avarie majoră la sistemul de încălzire în Capitală. Bucureștenii se plâng că nu au căldură și apă..., https://www.digi24.ro/stiri/actualitate/social/avarie-la-sistemul-de-incalzire-in-capitala-bucurestenii-se-plang-ca-nu-au-caldura-si-apa-calda-1431554 to id[139811373543264]
+DEBUG:NewsApp:Added Un bărbat care a încercat să violeze o femeie în toaleta unui centru comercial din Capitală, arestat, https://www.digi24.ro/stiri/actualitate/evenimente/un-barbat-care-a-incercat-sa-violeze-o-femeie-in-toaleta-unui-centru-comercial-din-capitala-arestat-1431543 to id[139811373543264]
+DEBUG:NewsApp:Added In fata ta 9 ianuarie - invitat: Cristian Ghinea, https://www.digi24.ro/emisiuni/in-fata-ta/in-fata-ta-9-ianuarie-14-00-1431272 to id[139811373543264]
+DEBUG:NewsApp:Added Business Club 8 ianuarie 19 00, https://www.digi24.ro/emisiuni/business-club/business-club-8-ianuarie-19-00-2-1430988 to id[139811373543264]
+DEBUG:NewsApp:Added Tinerete fara Batranete (best of) 9 ianuarie 17 30, https://www.digi24.ro/emisiuni/tinerete-fara-batranete/tinerete-fara-batranete-9-ianuarie-17-30-1431332 to id[139811373543264]
+DEBUG:NewsApp:Added O tânără, studentă la Medicină, a fost găsită decedată într-o pădure din Iași, https://www.digi24.ro/stiri/actualitate/o-tanara-studenta-la-medicina-a-fost-gasita-decedata-intr-o-padure-din-iasi-1430840 to id[139811373543264]
+DEBUG:NewsApp:Added Avertizare meteo de ninsori, vânt și polei în jumătatea de sud a țării, https://www.digi24.ro/meteo/informare-meteo-de-ninsori-vant-si-polei-in-jumatatea-de-sud-a-tarii-1431134 to id[139811373543264]
+DEBUG:NewsApp:Added În timp ce Capitoliul era sub asediu, Trump îi suna pe senatorii ascunși în..., https://www.digi24.ro/stiri/externe/sua/in-timp-ce-capitoliul-era-sub-asediu-trump-ii-suna-pe-senatorii-ascunsi-in-birouri-sa-intoarca-rezultatul-votului-1431170 to id[139811373543264]
+DEBUG:NewsApp:Added Schimbare bruscă a vremii. De la temperaturi cu 6 grade mai mari decât media..., https://www.digi24.ro/meteo/schimbare-brusca-a-vremii-de-la-temperaturi-cu-6-grade-mai-mari-decat-media-la-zile-mai-friguroase-decat-normalul-lunii-ianuarie-1431346 to id[139811373543264]
+DEBUG:NewsApp:Added Șefa Camerei Reprezentanților se teme că Trump ar putea cere lansarea unui atac..., https://www.digi24.ro/stiri/externe/sefa-camerei-reprezentantilor-se-teme-ca-trump-ar-putea-cere-lansarea-unui-atac-nuclear-inainte-de-a-parasi-functia-1430966 to id[139811373543264]
+DEBUG:NewsApp:Added Schimb de replici între Emil Boc și Vlad Voiculescu, https://www.digi24.ro/video/schimb-de-replici-intre-emil-boc-si-vlad-voiculescu-1431438 to id[139811373543264]
+DEBUG:NewsApp:Added Asalt la Capitoliu: Scutier strivit de manifestanți, https://www.digi24.ro/video/asalt-la-capitoliu-scutier-strivit-de-manifestanti-1431436 to id[139811373543264]
+DEBUG:NewsApp:Added Sunet teleportat, https://www.digi24.ro/video/sunet-teleportat-1431439 to id[139811373543264]
+DEBUG:NewsApp:Added Drepturi pentru românii cu alergii, https://www.digi24.ro/video/drepturi-pentru-romanii-cu-alergii-1431435 to id[139811373543264]
+DEBUG:NewsApp:Added Poate fi implantat un cip în organism prin intermediul vaccinului? Explicațiile fizicianului Cristian Presură, https://www.digi24.ro/video/poate-fi-implantat-un-cip-in-organism-prin-intermediul-vaccinului-explicatiile-fizicianului-cristian-presura-1430301 to id[139811373543264]
+DEBUG:NewsApp:Added Primarii acuză Ministerul Sănătății că i-a pus să organizeze și să doteze centrele de vaccinare fără a le da și bani, https://www.digi24.ro/stiri/actualitate/politica/primarii-acuza-ministerul-sanatatii-ca-i-a-pus-sa-organizeze-si-sa-doteze-centrele-de-vaccinare-fara-a-le-da-si-bani-1431178 to id[139811373543264]
+DEBUG:NewsApp:Added Ce cadouri a primit Klaus Iohannis anul trecut și ce valoare au acestea, https://www.digi24.ro/stiri/actualitate/politica/ce-cadouri-a-primit-klaus-iohannis-anul-trecut-si-ce-valoare-au-acestea-1430991 to id[139811373543264]
+DEBUG:NewsApp:Added Deputat PNL: Un fost parlamentar PSD a fost numit politic în fruntea Colegiului Costache Negruzzi, la 2 săptămâni după final de mandat, https://www.digi24.ro/stiri/actualitate/politica/deputat-pnl-un-fost-parlamentar-psd-a-fost-numit-politic-in-fruntea-colegiului-costache-negruzzi-la-2-saptamani-dupa-final-de-mandat-1430910 to id[139811373543264]
+DEBUG:NewsApp:Added Marcel Ciolacu acuză guvernul că vrea să vândă companiile de stat. „Iohannis să nu fie părtaș la acest furt!”, https://www.digi24.ro/stiri/actualitate/politica/marcel-ciolacu-acuza-guvernul-ca-vrea-sa-vanda-companiile-de-stat-iohannis-sa-nu-fie-partas-la-acest-furt-1430565 to id[139811373543264]
+DEBUG:NewsApp:Added Elena Udrea are COVID-19, https://www.digi24.ro/stiri/elena-udrea-are-covid-19-1430535 to id[139811373543264]
+DEBUG:NewsApp:Added Un om de afaceri propune ca patronii să le dea angajaților un bonus pentru vaccinare, https://www.digi24.ro/stiri/economie/un-om-de-afaceri-propune-ca-angajatorii-sa-dea-un-bonus-pentru-vaccinare-1431425 to id[139811373543264]
+DEBUG:NewsApp:Added ANAF va avea acces la toate conturile din bănci. Economist: „Omul cinstit nu trebuie să se teamă de nimic”, https://www.digi24.ro/stiri/economie/anaf-va-avea-acces-la-toate-conturile-din-banci-economist-omul-cinstit-nu-trebuie-sa-se-teama-de-nimic-1431334 to id[139811373543264]
+DEBUG:NewsApp:Added Ministrul Energiei: Dacă nu se găsește vinovatul, va exista un fond european pentru despăgubirea celor afectați de pana de curent, https://www.digi24.ro/stiri/actualitate/ministrul-energiei-daca-nu-se-gaseste-vinovatul-va-exista-un-fond-european-pentru-despagubirea-celor-afectati-de-pana-de-curent-1431141 to id[139811373543264]
+DEBUG:NewsApp:Added CNAIR, despre breteaua autostrăzii A10 care trece printr-o groapă de gunoi: Nu s-a știut de existența ei. Zona va fi ecologizată, https://www.digi24.ro/stiri/economie/transporturi/cnair-despre-breteaua-autostrazii-a10-care-trece-printr-o-groapa-de-gunoi-nu-s-a-stiut-de-existenta-ei-zona-va-fi-ecologizata-1431007 to id[139811373543264]
+DEBUG:NewsApp:Added Avaria din N-V țării a fost cauzată de un incident în rețeaua europeană, care a fost separată în două. A fost lansată o investigație, https://www.digi24.ro/stiri/economie/energie/ministrul-energiei-avaria-din-nord-vestul-tarii-a-fost-cauzata-de-un-incident-de-la-reteaua-europeana-ce-spun-operatorii-europeni-1431002 to id[139811373543264]
+DEBUG:NewsApp:Added Autostrada care trece prin mijlocul unei gropi de gunoi, https://www.digi24.ro/stiri/economie/transporturi/autostrada-care-trece-prin-mijlocul-unei-gropi-de-gunoi-1430898 to id[139811373543264]
+DEBUG:NewsApp:Added Început de an în handbalul feminin: EHF Champions League și EHF..., https://www.digi24.ro/stiri/sport/handbal/inceput-de-an-in-handbalul-feminin-ehf-champions-league-si-ehf-european-league-in-direct-la-digi-sport-1430670 to id[139811373543264]
+DEBUG:NewsApp:Added Una dintre cele mai în formă jucătoare din circuitul WTA, suspendată..., https://www.digi24.ro/stiri/sport/tenis/una-dintre-cele-mai-in-forma-jucatoare-din-circuitul-wta-suspendata-provizoriu-pentru-dopaj-sunt-uimita-si-socata-1430230 to id[139811373543264]
+DEBUG:NewsApp:Added VIDEO. Mihai Neșu mănâncă singur. Victorii mici, dar importante după..., https://www.digi24.ro/stiri/sport/fotbal/mihai-nesu-mananca-singur-victorii-mici-dar-importante-dupa-o-lupta-de-10-ani-1428966 to id[139811373543264]
+DEBUG:NewsApp:Added Simona Halep: O să mă vaccinez, vreau să se termine odată această..., https://www.digi24.ro/stiri/actualitate/sanatate/simona-halep-o-sa-ma-vaccinez-vreau-sa-se-termine-odata-aceasta-pandemie-1428961 to id[139811373543264]
+DEBUG:NewsApp:Added Tenisul feminin ia startul la Abu Dhabi, în direct și în..., https://www.digi24.ro/stiri/sport/tenis/tenisul-feminin-ia-startul-la-abu-dhabi-in-direct-si-in-exclusivitate-la-digi-sport-1428742 to id[139811373543264]
+DEBUG:NewsApp:Added Spania | Furtuna Filomena a provocat patru decese. Spaniolii au..., https://www.digi24.ro/stiri/externe/ue/spania-furtuna-filomena-a-provocat-patru-decese-spaniolii-au-schiat-prin-madrid-1431504 to id[139811373543264]
+DEBUG:NewsApp:Added Navalnîi critică Twitter după ce a șters contul lui Trump: „Eu..., https://www.digi24.ro/stiri/externe/navalnii-critica-twitter-dupa-ce-a-blocat-contul-lui-trump-primesc-zilnic-amenintari-cu-moartea-si-twitter-nu-a-blocat-pe-nimeni-1431497 to id[139811373543264]
+DEBUG:NewsApp:Added Istoria pădurilor din România, recreată cu ajutorul sateliților care spionau bombele atomice ale URSS, https://www.digi24.ro/stiri/externe/mapamond/istoria-padurilor-din-romania-recreata-cu-ajutorul-satelitilor-care-spionau-bombele-atomice-ale-urss-1431380 to id[139811373543264]
+DEBUG:NewsApp:Added Papa Francisc a anunțat când se va vaccina: „Din punct de vedere etic toată lumea ar trebui să ia vaccinul”, https://www.digi24.ro/stiri/externe/ue/papa-francisc-a-anuntat-cand-se-va-vaccina-din-punct-de-vedere-etic-toata-lumea-ar-trebui-sa-ia-vaccinul-1431479 to id[139811373543264]
+DEBUG:NewsApp:Added Politico: Cine e de vină pentru că vaccinarea în țările UE merge încet, https://www.digi24.ro/stiri/externe/ue/politico-cine-e-de-vina-pentru-ca-vaccinarea-in-tarile-ue-merge-incet-1430141 to id[139811373543264]
+DEBUG:NewsApp:Added Pakistan: O pană de curent a scufundat ţara în întuneric, https://www.digi24.ro/stiri/externe/mapamond/pakistan-o-pana-de-curent-a-scufundat-tara-in-intuneric-1431460 to id[139811373543264]
+DEBUG:NewsApp:Added Rezultate LOTO 6/49, Joker, 5/40, Noroc | Duminică, 10 ianuarie 2021..., https://www.digi24.ro/stiri/actualitate/social/rezultate-loto-649-joker-540-noroc-duminica-10-ianuarie-2021-premii-de-milioane-de-euro-puse-in-joc-de-loteria-romana-1431537 to id[139811373543264]
+DEBUG:NewsApp:Added ANM: 15-20 de centimetri de zăpadă în București. Când începe să ningă, https://www.digi24.ro/meteo/anm-15-20-de-centimetri-de-zapada-in-bucuresti-cand-incepe-sa-ninga-1431518 to id[139811373543264]
+DEBUG:NewsApp:Added Certificate false cu rezultate negative pentru COVID, la vânzare pe Facebook, https://www.digi24.ro/stiri/actualitate/sanatate/certificate-false-cu-rezultate-negative-pentru-covid-la-vanzare-pe-facebook-1431483 to id[139811373543264]
+DEBUG:NewsApp:Added Polițiștii recomandă: Circulați cu prudență. Ploi, ceață, lapoviță și ninsoare pe drumurile din mai multe regiuni din țară, https://www.digi24.ro/stiri/actualitate/politistii-recomanda-circulati-cu-prudenta-ploi-ceata-lapovita-si-ninsoare-pe-drumurile-din-mai-multe-regiuni-din-tara-1431471 to id[139811373543264]
+DEBUG:NewsApp:Added Mai multe drepturi pentru românii cu alergii. Ce prevede o nouă lege..., https://www.digi24.ro/stiri/actualitate/sanatate/mai-multe-drepturi-pentru-romanii-cu-alergii-ce-prevede-o-noua-lege-promulgata-de-presedinte-1431419 to id[139811373543264]
+DEBUG:NewsApp:Added Arad: Zeci de oameni caută un copil de şapte ani dat dispărut de..., https://www.digi24.ro/stiri/actualitate/evenimente/arad-forte-mobilizate-pentru-cautarea-unui-copil-de-sapte-ani-dat-disparut-de-parinti-1431368 to id[139811373543264]
+DEBUG:NewsApp:Added Val de pensionări în magistratură, deși ministrul Justiției a anunțat..., https://www.digi24.ro/stiri/actualitate/justitie/val-de-pensionari-in-magistratura-desi-ministrul-justitiei-a-anuntat-ca-renunta-la-ideea-maririi-varstei-de-pensionare-1431087 to id[139811373543264]
+DEBUG:NewsApp:Added Captură-record de peste 800.000 de comprimate de ecstasy. Din rețea..., https://www.digi24.ro/stiri/externe/ue/captura-record-de-peste-800-000-de-comprimate-de-ecstasy-din-retea-faceau-parte-si-romani-1430911 to id[139811373543264]
+DEBUG:NewsApp:Added Câini sau pisici la bloc, doar după ce-și dau vecinii acordul. Decizie definitivă a instanței din Timișoara, https://www.digi24.ro/stiri/actualitate/caini-sau-pisici-la-bloc-doar-dupa-ce-si-dau-vecinii-acordul-decizie-definitiva-a-instantei-din-timis-1430578 to id[139811373543264]
+DEBUG:NewsApp:Added Un bărbat suspectat că a provocat un accident mortal cu mașina și a fugit a fost arestat, https://www.digi24.ro/stiri/actualitate/justitie/un-barbat-suspectat-ca-a-provocat-un-accident-mortal-cu-masina-si-a-fugit-a-fost-arestat-1430179 to id[139811373543264]
+DEBUG:NewsApp:Added Plângere penală pentru corupere de minori pe numele lui Cumpănașu..., https://www.digi24.ro/stiri/actualitate/justitie/plangere-penala-pentru-corupere-de-minori-pe-numele-lui-cumpanasu-formulata-astazi-de-mama-unei-fete-1430167 to id[139811373543264]
+DEBUG:NewsApp:Added DNA: Costel Alexe ar fi pretins în mod direct „tablă cutată, țeavă..., https://www.digi24.ro/stiri/actualitate/justitie/dna-costel-alexe-ar-fi-pretins-in-mod-direct-tabla-cutata-teava-patrata-teava-rectangulara-si-rulouri-de-tabla-1429997 to id[139811373543264]
+DEBUG:NewsApp:Added Sunet teleportat. Asculți ce vrei, fără să ai nevoie de căști, https://www.digi24.ro/stiri/sci-tech/gadget/sunet-teleportat-asculti-ce-vrei-fara-sa-ai-nevoie-de-casti-1428441 to id[139811373543264]
+DEBUG:NewsApp:Added Dat afară de pe Facebook și Twitter, Trump anunță că își face rețeaua..., https://www.digi24.ro/stiri/externe/sua/dat-afara-de-pe-facebook-si-twitter-trump-anunta-ca-isi-face-reteaua-lui-sociala-1431248 to id[139811373543264]
+DEBUG:NewsApp:Added VIDEO. Mai mulți șacali, filmați într-un ocol silvic din județul Tulcea, https://www.digi24.ro/magazin/stil-de-viata/animale/video-mai-multi-sacali-filmati-intr-un-ocol-silvic-din-judetul-tulcea-1430767 to id[139811373543264]
+DEBUG:NewsApp:Added Dunărea a fost invadată de gunoaie. Mii de pet-uri și resturi menajere în urma inundațiilor, https://www.digi24.ro/stiri/actualitate/dunarea-a-fost-invadata-de-gunoaie-mii-de-pet-uri-si-resturi-menajere-in-urma-inundatiilor-1429893 to id[139811373543264]
+DEBUG:NewsApp:Added Butonul „Like” de pe Facebook, eliminat pentru unele pagini, https://www.digi24.ro/stiri/sci-tech/lumea-digitala/butonul-like-de-pe-facebook-eliminat-pentru-unele-pagini-1429479 to id[139811373543264]
+DEBUG:NewsApp:Added Persoanele care vor arunca ilegal deșeuri vor fi amendate și li se..., https://www.digi24.ro/stiri/sci-tech/natura-si-mediu/persoanele-care-depoziteaza-ilegal-deseuri-in-capitala-in-vizorul-ministerului-mediului-1429381 to id[139811373543264]
+INFO:NewsApp:Attempting to open the file '10-01-2021_articles.txt'
+DEBUG:NewsApp:Opened the file for append
+INFO:NewsApp:Adding the header 'Example title' to the file
+DEBUG:NewsApp:Closed the file
+INFO:NewsApp:Setting up the GUI...
+INFO:NewsApp:Getting the default news...
+INFO:NewsApp:Getting the first 5 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811381539896]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811381539896]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811381539896]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811381539896]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811381539896]
+INFO:NewsApp:Getting the first 5 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30084
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Hopes for survivors fades as passenger plane wreckage found off Indonesian coast, https://www.nbcnews.com/news/world/sriwijaya-air-flight-sj182-hopes-survivors-fade-plane-wreckage-found-n1253653 to id[139811381331224]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added How a surveillance plane was sent to one wealthy suburb, https://www.nbcnews.com/business/business-news/how-surveillance-plane-was-sent-one-wealthy-suburb-n1253607 to id[139811381331224]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Who decides when there are helicopters? Experts weigh in on National Guard monitoring protests, https://www.nbcnews.com/business/business-news/who-decides-when-there-are-helicopters-experts-weigh-national-guard-n1253599 to id[139811381331224]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Covid-19 vaccine could be heading to the black market, https://www.nbcnews.com/news/us-news/coming-black-market-near-you-covid-19-vaccine-n1253504 to id[139811381331224]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added New Zealand central bank says data system hacked, https://www.nbcnews.com/news/weird-news/new-zealand-central-bank-says-data-system-hacked-sensitive-information-n1253652 to id[139811381331224]
+INFO:NewsApp:Getting the first 5 headers from Fox
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811379667240]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811379667240]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811379667240]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811379667240]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811379667240]
+INFO:NewsApp:Getting the first 5 headers from Protv
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36038
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811381541800]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811381541800]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811381541800]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811381541800]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811381541800]
+INFO:NewsApp:Getting the first 5 headers from Digi24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42745
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added O tulpină nouă a coronavirusului, depistată pe aeroportul din Tokyo. De unde veneau pasagerii-purtători, https://www.digi24.ro/stiri/externe/mapamond/o-tulpina-noua-a-coronavirusului-depistata-pe-aeroportul-din-tokyo-de-unde-veneau-pasagerii-purtatori-1431625 to id[139811381329992]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Manny Pacquiao cere pedeapsa cu moartea și oferă recompensă de 10.000 de dolari, după crima oribilă care a zguduit Filipine, https://www.digisport.ro/special/manny-pacquiao-cere-pedeapsa-cu-moartea-si-ofera-recompensa-de-10-000-de-dolari-dupa-crima-oribila-care-a-zguduit-filipine-983024 to id[139811381329992]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Analiză ANM: Ianuarie, o lună geroasă, dar în care se pot înregistra şi temperaturi maxime de 20 de grade Celsius, https://www.digi24.ro/meteo/analiza-anm-ianuarie-o-luna-geroasa-dar-in-care-se-pot-inregistra-si-temperaturi-maxime-de-20-de-grade-celsius-1431609 to id[139811381329992]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added București are mai multe cazuri noi de coronavirus decât primele cinci județe la un loc, https://www.digi24.ro/stiri/actualitate/bucuresti-are-mai-multe-cazuri-noi-de-coronavirus-decat-primele-cinci-judete-la-un-loc-1431599 to id[139811381329992]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Preotul Necula: „A crede că vaccinul e o încălcare a unei dogme e periculos. În mâna lui Dumnezeu stau și astfel de vaccinuri”, https://www.digi24.ro/stiri/actualitate/preotul-necula-a-crede-ca-vaccinul-e-o-incalcare-a-unei-dogme-e-periculos-in-mana-lui-dumnezeu-stau-si-astfel-de-vaccinuri-1431629 to id[139811381329992]
+INFO:NewsApp:Decorating the recieved string...
+INFO:NewsApp:The search button has been pressed. Searching...
+INFO:NewsApp:Searching for  in BBC...
+INFO:NewsApp:Getting ALL available news from BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811381329992]
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811381329992]
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811381329992]
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811381329992]
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811381329992]
+DEBUG:NewsApp:Added US lifts restrictions on contacts with Taiwan, https://www.bbc.com/news/world-us-canada-55606594 to id[139811381329992]
+DEBUG:NewsApp:Added Battling the pangolin traffickers, https://www.bbc.com/news/world-africa-55592290 to id[139811381329992]
+DEBUG:NewsApp:Added Can the world's largest vaccine maker meet demand?, https://www.bbc.com/news/world-asia-india-55571793 to id[139811381329992]
+DEBUG:NewsApp:Added Australia close in on third Test win, https://www.bbc.com/sport/cricket/55608364 to id[139811381329992]
+DEBUG:NewsApp:Added Scottish Premiership: Aberdeen v Rangers & Livingston v Ross County build-up, https://www.bbc.com/sport/live/football/55529667 to id[139811381329992]
+DEBUG:NewsApp:Added India allege racist abuse in third Test, https://www.bbc.com/sport/cricket/55600880 to id[139811381329992]
+DEBUG:NewsApp:Added The English town that lured Tom Cruise, https://www.bbc.com/travel/story/20210103-englands-sleepy-scientology-town to id[139811381329992]
+DEBUG:NewsApp:Added The German word transforming careers, https://www.bbc.com/worklife/article/20201222-the-german-quereinsteiger-ending-career-changing-stigma to id[139811381329992]
+DEBUG:NewsApp:Added The social distancing manual from 1588, https://www.bbc.com/future/article/20210107-the-432-year-old-manual-on-social-distancing to id[139811381329992]
+DEBUG:NewsApp:Added Films to look forward to in 2021, https://www.bbc.com/culture/article/20210107-twenty-films-to-watch-in-2021 to id[139811381329992]
+DEBUG:NewsApp:Added How to make the most of breakfast ingredients, https://www.bbc.comhttps://www.bbc.co.uk/food/articles/breakfast_pots to id[139811381329992]
+DEBUG:NewsApp:Added Here are 21 ways to get fit in 2021, https://www.bbc.com/sport/55151792 to id[139811381329992]
+DEBUG:NewsApp:Added A historic moment for Africa's forests, https://www.bbc.com/future/article/20210107-congo-basin-a-bold-plan-to-save-africas-largest-rainforest to id[139811381329992]
+DEBUG:NewsApp:Added Greener planes of the future... or just pretty plans?, https://www.bbc.com/news/business-51751984 to id[139811381329992]
+DEBUG:NewsApp:Added 'New York is not dead, but it is on life support', https://www.bbc.com/news/business-55535324 to id[139811381329992]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava fountain, https://www.bbc.com/news/world-55605868 to id[139811381329992]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava..., https://www.bbc.com/news/world-55605868 to id[139811381329992]
+DEBUG:NewsApp:Added Madrid hit by Storm Filomena, https://www.bbc.com/news/world-55605863 to id[139811381329992]
+DEBUG:NewsApp:Added The secret artists creating miniature..., https://www.bbc.com/news/entertainment-arts-55575666 to id[139811381329992]
+DEBUG:NewsApp:Added How protests swept across the US, https://www.bbc.com/news/world-us-canada-55596518 to id[139811381329992]
+DEBUG:NewsApp:Added One-minute World News, https://www.bbc.com/news/10462520 to id[139811381329992]
+DEBUG:NewsApp:Added Boris Johnson struggles in interview, https://www.bbc.com/news/uk-40358825 to id[139811381329992]
+DEBUG:NewsApp:Added Ready for the total solar eclipse?, https://www.bbc.com/news/world-us-canada-40362067 to id[139811381329992]
+DEBUG:NewsApp:Added Koalas 'face extinction' in parts of..., https://www.bbc.com/news/world-australia-40365981 to id[139811381329992]
+DEBUG:NewsApp:Added Video 'shows Mosul mosque's destruction', https://www.bbc.com/news/world-middle-east-40366136 to id[139811381329992]
+DEBUG:NewsApp:Added Indonesia's female 'devil wheel' riders, https://www.bbc.com/news/world-asia-40360168 to id[139811381329992]
+DEBUG:NewsApp:Added Thousands attend Manila mass people told to..., https://www.bbc.com/news/world-asia-55604918 to id[139811381329992]
+DEBUG:NewsApp:Added Chocolates and beer: Buying from Belgium..., https://www.bbc.com/news/world-europe-55592161 to id[139811381329992]
+DEBUG:NewsApp:Added A night at India's largest farmers' protest, https://www.bbc.com/news/world-asia-india-55584924 to id[139811381329992]
+DEBUG:NewsApp:Added BA Holidays reverses decision to continue sales, https://www.bbc.com/news/business-55588798 to id[139811381329992]
+DEBUG:NewsApp:Added TV documentary pioneer and film-maker Apted dies, https://www.bbc.com/news/uk-55597263 to id[139811381329992]
+DEBUG:NewsApp:Added Coronavirus: A year of high-speed discovery, https://www.bbc.com/news/science-environment-55565284 to id[139811381329992]
+DEBUG:NewsApp:Added Amazon to remove Parler from web hosting service, https://www.bbc.com/news/technology-55608081 to id[139811381329992]
+DEBUG:NewsApp:Added Third Covid vaccine approved in the UK, https://www.bbc.com/news/health-55586410 to id[139811381329992]
+DEBUG:NewsApp:Added The Red Planet's many hidden colours, https://www.bbc.com/news/science-environment-55562150 to id[139811381329992]
+DEBUG:NewsApp:Added Twitter permanently suspends Trump's account, https://www.bbc.com/news/world-us-canada-55597840 to id[139811381329992]
+DEBUG:NewsApp:Added Amazon plots a course into the healthcare industry, https://www.bbc.com/news/business-55228999 to id[139811381329992]
+DEBUG:NewsApp:Added Why did these people start businesses in a pandemic?, https://www.bbc.com/news/business-55405289 to id[139811381329992]
+DEBUG:NewsApp:Added Striking news pictures from around the world, https://www.bbc.com/news/in-pictures-55579991 to id[139811381329992]
+DEBUG:NewsApp:Added Building a frozen city in China, https://www.bbc.com/news/in-pictures-55529089 to id[139811381329992]
+DEBUG:NewsApp:Added Africa's top shots: Flames, fireworks and family, https://www.bbc.com/news/world-africa-55573602 to id[139811381329992]
+DEBUG:NewsApp:Added Five startling images from the US Capitol riot, https://www.bbc.com/news/in-pictures-55577824 to id[139811381329992]
+DEBUG:NewsApp:Added In pictures: Pro-Trump protesters storm Capitol, https://www.bbc.com/news/world-us-canada-55568131 to id[139811381329992]
+INFO:NewsApp:The refresh button has been pressed. Refreshing...
+INFO:NewsApp:Getting the default news...
+INFO:NewsApp:Getting the first 5 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811376815632]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811376815632]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811376815632]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811376815632]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811376815632]
+INFO:NewsApp:Getting the first 5 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30084
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Hopes for survivors fades as passenger plane wreckage found off Indonesian coast, https://www.nbcnews.com/news/world/sriwijaya-air-flight-sj182-hopes-survivors-fade-plane-wreckage-found-n1253653 to id[139811381542472]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added How a surveillance plane was sent to one wealthy suburb, https://www.nbcnews.com/business/business-news/how-surveillance-plane-was-sent-one-wealthy-suburb-n1253607 to id[139811381542472]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Who decides when there are helicopters? Experts weigh in on National Guard monitoring protests, https://www.nbcnews.com/business/business-news/who-decides-when-there-are-helicopters-experts-weigh-national-guard-n1253599 to id[139811381542472]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Covid-19 vaccine could be heading to the black market, https://www.nbcnews.com/news/us-news/coming-black-market-near-you-covid-19-vaccine-n1253504 to id[139811381542472]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added New Zealand central bank says data system hacked, https://www.nbcnews.com/news/weird-news/new-zealand-central-bank-says-data-system-hacked-sensitive-information-n1253652 to id[139811381542472]
+INFO:NewsApp:Getting the first 5 headers from Fox
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811370845576]
+INFO:NewsApp:Getting the first 5 headers from Protv
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36038
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811251899640]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811251899640]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811251899640]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811251899640]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811251899640]
+INFO:NewsApp:Getting the first 5 headers from Digi24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42745
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added O tulpină nouă a coronavirusului, depistată pe aeroportul din Tokyo. De unde veneau pasagerii-purtători, https://www.digi24.ro/stiri/externe/mapamond/o-tulpina-noua-a-coronavirusului-depistata-pe-aeroportul-din-tokyo-de-unde-veneau-pasagerii-purtatori-1431625 to id[139810844263928]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Manny Pacquiao cere pedeapsa cu moartea și oferă recompensă de 10.000 de dolari, după crima oribilă care a zguduit Filipine, https://www.digisport.ro/special/manny-pacquiao-cere-pedeapsa-cu-moartea-si-ofera-recompensa-de-10-000-de-dolari-dupa-crima-oribila-care-a-zguduit-filipine-983024 to id[139810844263928]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Analiză ANM: Ianuarie, o lună geroasă, dar în care se pot înregistra şi temperaturi maxime de 20 de grade Celsius, https://www.digi24.ro/meteo/analiza-anm-ianuarie-o-luna-geroasa-dar-in-care-se-pot-inregistra-si-temperaturi-maxime-de-20-de-grade-celsius-1431609 to id[139810844263928]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added București are mai multe cazuri noi de coronavirus decât primele cinci județe la un loc, https://www.digi24.ro/stiri/actualitate/bucuresti-are-mai-multe-cazuri-noi-de-coronavirus-decat-primele-cinci-judete-la-un-loc-1431599 to id[139810844263928]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Preotul Necula: „A crede că vaccinul e o încălcare a unei dogme e periculos. În mâna lui Dumnezeu stau și astfel de vaccinuri”, https://www.digi24.ro/stiri/actualitate/preotul-necula-a-crede-ca-vaccinul-e-o-incalcare-a-unei-dogme-e-periculos-in-mana-lui-dumnezeu-stau-si-astfel-de-vaccinuri-1431629 to id[139810844263928]
+INFO:NewsApp:Decorating the recieved string...
+INFO:NewsApp:The write button has been pressed. Writing...
+INFO:NewsApp:Attempting to open the file '10-01-2021_articles.txt'
+DEBUG:NewsApp:Opened the file for append
+INFO:NewsApp:Adding the header ''QAnon Shaman' charged over pro-Trump riots' to the file
+DEBUG:NewsApp:Closed the file
+INFO:NewsApp:The search button has been pressed. Searching...
+INFO:NewsApp:Searching for  in FOX...
+INFO:NewsApp:Getting ALL available news from FOX
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811377356928]
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811377356928]
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811377356928]
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811377356928]
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811377356928]
+DEBUG:NewsApp:Added ANDREW MCCARTHY: Trump has committed an impeachable offense, https://www.foxnews.com/opinion/trump-impeachment-resignation-andrew-mccarthy to id[139811377356928]
+DEBUG:NewsApp:Added Bozell: Social media giants 'canceling conservatives,' antitrust action needed, https://www.foxnews.com/politics/amazon-parler-apple-removal-download-aws-conservatives to id[139811377356928]
+DEBUG:NewsApp:Added Indonesian divers find parts of plane wreckage in Java Sea, https://www.foxnews.com/world/indonesian-divers-find-parts-of-plane-wreckage-in-java-sea to id[139811377356928]
+DEBUG:NewsApp:Added Storm to dump heavy snow in parts of Plains, Mississippi Valley, https://www.foxnews.com/us/winter-storm-southern-plains-lower-mississippi-valley to id[139811377356928]
+DEBUG:NewsApp:Added Capitol riot: Shooting death of Ashli Babbitt under investigation US attorney says: report, https://www.foxnews.com/us/investigation-shooting-death-ashli-babbitt-capitol to id[139811377356928]
+DEBUG:NewsApp:Added GOP rep grew up watching 'The Daily Show' — and it led him to make a promise to himself, https://www.foxnews.com/politics/rep-peter-meijer-iraq-veteran-long-term-us-planning to id[139811377356928]
+DEBUG:NewsApp:Added US, other nations issue joint statement expressing 'serious concern' about Hong Kong mass arrests, https://www.foxnews.com/world/us-joined-by-australia-uk-and-canada-in-criticizing-hong-kong-mass-arrests to id[139811377356928]
+DEBUG:NewsApp:Added Merkel blames Trump for US Capitol riots; German parliament increases security, https://www.foxnews.com/world/german-parliament-to-beef-up-security-after-us-capitol-riots-reports to id[139811377356928]
+DEBUG:NewsApp:Added DAVE RAMSEY: What happens if you want a mortgage but have no credit card or loans?, https://www.foxbusiness.com/personal-finance/dave-ramsey-mortgage-credit-cards-loan to id[139811377356928]
+DEBUG:NewsApp:Added Accused Capitol rioter carrying zip ties on Senate floor ID’d as retired Air Force, https://www.foxnews.com/us/air-force-veteran-identified-capitol-zip-ties-senate-floor to id[139811377356928]
+DEBUG:NewsApp:Added Susan Ferrechio calls out liberal mag for ‘garbage’ claim about Trump, nukes, https://www.foxnews.com/media/susan-ferrechio-calls-out-ny-mag-writer-garbage-journalism-that-makes-things-worse to id[139811377356928]
+DEBUG:NewsApp:Added JASON CHAFFETZ: To prevent voter fraud, reject Pelosi effort to set election rules nationally, https://www.foxnews.com/opinion/elections-voter-fraud-congress-jason-chaffetz to id[139811377356928]
+DEBUG:NewsApp:Added This wildly popular dieting fad could be dangerous, https://www.foxnews.com/lifestyle/the-dangerous-dark-side-of-intermittent-fasting-for-weight-loss to id[139811377356928]
+DEBUG:NewsApp:Added Senate leader maps how GOP can ‘dispose of’ Trump ouster efforts, https://www.foxnews.com/politics/mcconnell-letter-senate-impeachment-summary to id[139811377356928]
+DEBUG:NewsApp:Added Phoenix man in Capitol riot dressed in horns, bearskin headdress is arrested, charged, https://www.foxnews.com/us/man-dressed-horns-bearskin-headdress-capitol-raid-arrested-charged to id[139811377356928]
+DEBUG:NewsApp:Added Ariel Pink dropped by record label after attending pro-Trump rally ahead of Capitol riots, https://www.foxnews.com/entertainment/ariel-pink-dropped-record-label-attending-trump-rally-capitol-riots to id[139811377356928]
+DEBUG:NewsApp:Added Dem apologizes for remark about possible second impeachment, https://www.foxnews.com/politics/house-dem-apologizing-for-comparing-new-trump-impeachment-to-a-lynching to id[139811377356928]
+DEBUG:NewsApp:Added COVID-19 vaccine marks 'major milestone' for reeling hotel industry, https://www.foxbusiness.com/lifestyle/hotel-industry-coronavirus-pandemic to id[139811377356928]
+DEBUG:NewsApp:Added Buccaneers hang on against Washington to advance to divisional round for first time since 2002 season, https://www.foxnews.com/sports/buccaneers-washington-recap-wild-card-playoffs-2020-21 to id[139811377356928]
+DEBUG:NewsApp:Added David Bowie dies, and other events on this day in history, https://www.foxnews.com/us/this-day-in-history-jan-10 to id[139811377356928]
+DEBUG:NewsApp:Added If Biden halts border wall, it could cost taxpayers billions, CBP chief warns, https://www.foxnews.com/politics/biden-border-taxpayers-billions-cbp to id[139811377356928]
+DEBUG:NewsApp:Added Capitol riot: FDNY alerts FBI that members possibly part of attack, https://www.foxnews.com/us/fdny-alerts-fbi-members-capitol to id[139811377356928]
+DEBUG:NewsApp:Added Jon Voight praises Trump, calls for unity in new video following Capitol riots: 'It's not over', https://www.foxnews.com/entertainment/jon-voight-trump-unity-new-video-capitol-riots-not-over to id[139811377356928]
+DEBUG:NewsApp:Added 5 binge-worthy Fox Nation shows to watch in January, https://www.foxnews.com/media/fox-nation-january-shows-specials-exclusive to id[139811377356928]
+DEBUG:NewsApp:Added 2020-21 NFL wild card weekend matchups, schedule and more, https://www.foxnews.com/sports/2020-21-nfl-wild-card-weekend-matchups-schedule-and-more to id[139811377356928]
+INFO:NewsApp:The search button has been pressed. Searching...
+INFO:NewsApp:Searching for  in FOX...
+INFO:NewsApp:Getting ALL available news from FOX
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811370845184]
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811370845184]
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811370845184]
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811370845184]
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811370845184]
+DEBUG:NewsApp:Added ANDREW MCCARTHY: Trump has committed an impeachable offense, https://www.foxnews.com/opinion/trump-impeachment-resignation-andrew-mccarthy to id[139811370845184]
+DEBUG:NewsApp:Added Bozell: Social media giants 'canceling conservatives,' antitrust action needed, https://www.foxnews.com/politics/amazon-parler-apple-removal-download-aws-conservatives to id[139811370845184]
+DEBUG:NewsApp:Added Indonesian divers find parts of plane wreckage in Java Sea, https://www.foxnews.com/world/indonesian-divers-find-parts-of-plane-wreckage-in-java-sea to id[139811370845184]
+DEBUG:NewsApp:Added Storm to dump heavy snow in parts of Plains, Mississippi Valley, https://www.foxnews.com/us/winter-storm-southern-plains-lower-mississippi-valley to id[139811370845184]
+DEBUG:NewsApp:Added Capitol riot: Shooting death of Ashli Babbitt under investigation US attorney says: report, https://www.foxnews.com/us/investigation-shooting-death-ashli-babbitt-capitol to id[139811370845184]
+DEBUG:NewsApp:Added GOP rep grew up watching 'The Daily Show' — and it led him to make a promise to himself, https://www.foxnews.com/politics/rep-peter-meijer-iraq-veteran-long-term-us-planning to id[139811370845184]
+DEBUG:NewsApp:Added US, other nations issue joint statement expressing 'serious concern' about Hong Kong mass arrests, https://www.foxnews.com/world/us-joined-by-australia-uk-and-canada-in-criticizing-hong-kong-mass-arrests to id[139811370845184]
+DEBUG:NewsApp:Added Merkel blames Trump for US Capitol riots; German parliament increases security, https://www.foxnews.com/world/german-parliament-to-beef-up-security-after-us-capitol-riots-reports to id[139811370845184]
+DEBUG:NewsApp:Added DAVE RAMSEY: What happens if you want a mortgage but have no credit card or loans?, https://www.foxbusiness.com/personal-finance/dave-ramsey-mortgage-credit-cards-loan to id[139811370845184]
+DEBUG:NewsApp:Added Accused Capitol rioter carrying zip ties on Senate floor ID’d as retired Air Force, https://www.foxnews.com/us/air-force-veteran-identified-capitol-zip-ties-senate-floor to id[139811370845184]
+DEBUG:NewsApp:Added Susan Ferrechio calls out liberal mag for ‘garbage’ claim about Trump, nukes, https://www.foxnews.com/media/susan-ferrechio-calls-out-ny-mag-writer-garbage-journalism-that-makes-things-worse to id[139811370845184]
+DEBUG:NewsApp:Added JASON CHAFFETZ: To prevent voter fraud, reject Pelosi effort to set election rules nationally, https://www.foxnews.com/opinion/elections-voter-fraud-congress-jason-chaffetz to id[139811370845184]
+DEBUG:NewsApp:Added This wildly popular dieting fad could be dangerous, https://www.foxnews.com/lifestyle/the-dangerous-dark-side-of-intermittent-fasting-for-weight-loss to id[139811370845184]
+DEBUG:NewsApp:Added Senate leader maps how GOP can ‘dispose of’ Trump ouster efforts, https://www.foxnews.com/politics/mcconnell-letter-senate-impeachment-summary to id[139811370845184]
+DEBUG:NewsApp:Added Phoenix man in Capitol riot dressed in horns, bearskin headdress is arrested, charged, https://www.foxnews.com/us/man-dressed-horns-bearskin-headdress-capitol-raid-arrested-charged to id[139811370845184]
+DEBUG:NewsApp:Added Ariel Pink dropped by record label after attending pro-Trump rally ahead of Capitol riots, https://www.foxnews.com/entertainment/ariel-pink-dropped-record-label-attending-trump-rally-capitol-riots to id[139811370845184]
+DEBUG:NewsApp:Added Dem apologizes for remark about possible second impeachment, https://www.foxnews.com/politics/house-dem-apologizing-for-comparing-new-trump-impeachment-to-a-lynching to id[139811370845184]
+DEBUG:NewsApp:Added COVID-19 vaccine marks 'major milestone' for reeling hotel industry, https://www.foxbusiness.com/lifestyle/hotel-industry-coronavirus-pandemic to id[139811370845184]
+DEBUG:NewsApp:Added Buccaneers hang on against Washington to advance to divisional round for first time since 2002 season, https://www.foxnews.com/sports/buccaneers-washington-recap-wild-card-playoffs-2020-21 to id[139811370845184]
+DEBUG:NewsApp:Added David Bowie dies, and other events on this day in history, https://www.foxnews.com/us/this-day-in-history-jan-10 to id[139811370845184]
+DEBUG:NewsApp:Added If Biden halts border wall, it could cost taxpayers billions, CBP chief warns, https://www.foxnews.com/politics/biden-border-taxpayers-billions-cbp to id[139811370845184]
+DEBUG:NewsApp:Added Capitol riot: FDNY alerts FBI that members possibly part of attack, https://www.foxnews.com/us/fdny-alerts-fbi-members-capitol to id[139811370845184]
+DEBUG:NewsApp:Added Jon Voight praises Trump, calls for unity in new video following Capitol riots: 'It's not over', https://www.foxnews.com/entertainment/jon-voight-trump-unity-new-video-capitol-riots-not-over to id[139811370845184]
+DEBUG:NewsApp:Added 5 binge-worthy Fox Nation shows to watch in January, https://www.foxnews.com/media/fox-nation-january-shows-specials-exclusive to id[139811370845184]
+DEBUG:NewsApp:Added 2020-21 NFL wild card weekend matchups, schedule and more, https://www.foxnews.com/sports/2020-21-nfl-wild-card-weekend-matchups-schedule-and-more to id[139811370845184]
+INFO:NewsApp:Searching for  in PROTV...
+INFO:NewsApp:Getting ALL available news from PROTV
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36144
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811251899472]
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811251899472]
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811251899472]
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811251899472]
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811251899472]
+DEBUG:NewsApp:Added Furtuna Filomena a provocat patru decese în Spania. Localnicii au schiat prin Madrid, https://stirileprotv.ro/stiri/international/furtuna-filomena-a-provocat-patru-decese-in-spania-localnicii-au-schiat-prin-madrid.html to id[139811251899472]
+DEBUG:NewsApp:Added Ea este studenta găsită fără viață în pădurea din Iași. Ce au descoperit anchetatorii în buzunarele fetei, https://www.fanatik.ro/ea-este-studenta-gasita-moarta-in-padurea-din-iasi-ce-au-descoperit-anchetatorii-in-buzunarele-fetei-19404824  to id[139811251899472]
+DEBUG:NewsApp:Added Un bărbat care a încercat să violeze o femeie în toaleta unui mall din București a fost arestat, https://stirileprotv.ro/stiri/actualitate/video-un-barbat-care-a-incercat-sa-violeze-o-femeie-in-toaleta-unui-complex-comercial-din-bucuresti-arestat.html to id[139811251899472]
+DEBUG:NewsApp:Added Fotograf Reuters, despre manifestanții de la Capitoliu: Voiau să îl „spânzure” pe Mike Pence, https://stirileprotv.ro/stiri/international/fotograf-reuters-despre-manifestantii-de-la-capitoliu-voiau-sa-il-zspanzure-pe-mike-pence.html to id[139811251899472]
+DEBUG:NewsApp:Added Ministrul Sănătății: Peste 100.000 de cadre medicale s-au vaccinat anti Covid, până acum, https://stirileprotv.ro/stiri/social/ministrul-sanatatii-peste-100-000-de-cadre-medicale-s-au-vaccinat-anti-covid-pana-acum.html to id[139811251899472]
+DEBUG:NewsApp:Added Adela Popescu, însărcinată pentru a treia oară. Declarații în exclusivitate, https://protvplus.ro/emisiuni/vorbeste-lumea/clip/28080-adela-popescu-insarcinata-pentru-a-3-a-oara to id[139811251899472]
+DEBUG:NewsApp:Added Jandarmii au strâns bani și i-au instalat panouri solare unui tată care își crește singur fiica de 14 ani, https://stirileprotv.ro/stiri/social/jandarmii-au-strans-bani-si-i-au-instalat-panouri-solare-unui-tata-care-isi-creste-singur-fiica-de-14-ani.html to id[139811251899472]
+DEBUG:NewsApp:Added Noi imagini de la asaltul Congresului SUA. Un polițist a fost strivit de susținătorii lui Trump, https://stirileprotv.ro/stiri/international/noi-imagini-de-la-asaltul-congresului-sua-un-politist-a-fost-strivit-de-sustinatorii-lui-trump.html to id[139811251899472]
+DEBUG:NewsApp:Added Cutiile negre ale avionului companiei Sriwijaya Air prăbuşit sâmbătă au fost localizate, https://stirileprotv.ro/stiri/international/au-fost-descoperite-resturi-si-fragmente-de-corpuri-in-zona-unde-a-disparut-avionul-sriwijaya-air.html to id[139811251899472]
+DEBUG:NewsApp:Added Ce s-a aflat despre studenta din Iași găsită fără viață în pădure. I-a spus unei colege că merge în zonă, https://stirileprotv.ro/stiri/actualitate/ce-s-a-aflat-despre-studenta-din-iasi-gasita-fara-viata-in-padure-i-a-spus-unei-colege-ca-merge-in-zona.html to id[139811251899472]
+DEBUG:NewsApp:Added Carantină în patru localități din Timiș după petrecerile de sărbători, https://stirileprotv.ro/stiri/actualitate/carantina-in-patru-localitati-din-timis-dupa-petrecerile-de-sarbatori.html to id[139811251899472]
+DEBUG:NewsApp:Added Greșeala uriașă pe care o facem cu toții și care ne distruge smartphone-urile, https://www.yoda.ro/mobile/greseala-uriasa-pe-care-o-facem-cu-totii-si-care-ne-distruge-smartphone-urile.html to id[139811251899472]
+DEBUG:NewsApp:Added Aleșii din Parlament cu averi considerabile. Liderul PSD Constanța deține terenuri, apartamente și conturi pline, https://stirileprotv.ro/stiri/politic/alesii-din-parlament-cu-averi-considerabile-liderul-psd-constanta-detine-terenuri-apartamente-si-conturi-pline.html to id[139811251899472]
+DEBUG:NewsApp:Added ANAF va avea acces la toate conturile românilor începând de luni, https://stirileprotv.ro/stiri/financiar/anaf-va-avea-acces-la-toate-conturile-romanilor-incepand-de-luni.html to id[139811251899472]
+DEBUG:NewsApp:Added Cel puţin 13 morţi şi 18 răniţi în Indonezia după o alunecare de teren, https://stirileprotv.ro/stiri/international/cel-putin-11-morti-si-18-raniti-in-indonezia-dupa-o-alunecare-de-teren.html to id[139811251899472]
+DEBUG:NewsApp:Added VIDEO. Răzbunarea unui curier. Ce i-a făcut clientului pentru că i-a dat un bacșiș „prea mic”, https://stirileprotv.ro/divers/video-un-curier-a-plecat-cu-mancarea-clientului-pentru-ca-a-primit-un-bacsis-zprea-mic.html to id[139811251899472]
+DEBUG:NewsApp:Added O femeie pe bicicletă a fost spulberată de un șofer de 19 ani, https://stirileprotv.ro/stiri/actualitate/o-femeie-pe-bicicleta-a-fost-spulberata-de-un-sofer-de-19-ani.html to id[139811251899472]
+DEBUG:NewsApp:Added Mary Trump: ”Unchiul meu este instabil psihic. Trebuie să fie înlăturat imediat”, https://stirileprotv.ro/stiri/international/mary-trump-unchiul-meu-este-instabil-psihic-trebuie-sa-fie-inlaturat-imediat.html to id[139811251899472]
+DEBUG:NewsApp:Added Democrații i-au dat un ultimatum lui Donald Trump. Cum ar putea fi înlăturat președintele SUA, https://stirileprotv.ro/stiri/international/democratii-i-au-dat-un-ultimatum-lui-donald-trump-cum-ar-putea-fi-inlaturat-presedintele-sua.html to id[139811251899472]
+DEBUG:NewsApp:Added Profesorii vor fi plătiți pentru a face ore suplimentare cu elevii care au pierdut cursuri din cauza Covid, https://stirileprotv.ro/stiri/financiar/profesorii-vor-fi-platiti-pentru-a-face-ore-suplimentare-cu-elevii-care-au-pierdut-cursuri-din-cauza-covid.html to id[139811251899472]
+DEBUG:NewsApp:Added Trei adolescenți, reţinuţi pentru pornografie infantilă, viol şi complicitate la viol, victimă fiind o fată de 11 ani, https://stirileprotv.ro/stiri/actualitate/trei-adolescenti-retinuti-pentru-pornografie-infantila-viol-si-complicitate-la-viol-victima-fiind-o-fata-de-11-ani.html to id[139811251899472]
+DEBUG:NewsApp:Added O femeie din Anglia a crezut că a văzut un picior de om în pământ și a sunat la poliție. Ce a descoperit de fapt, https://stirileprotv.ro/stiri/international/o-femeie-din-anglia-a-crezut-ca-a-vazut-un-picior-de-om-in-pamant-si-a-sunat-la-politie-ce-a-descoperit-de-fapt.html to id[139811251899472]
+DEBUG:NewsApp:Added Noua tulpină COVID a suferit 17 mutații deodată! Ce simptome provoacă și cum se transmite, https://www.libertatea.ro/stiri/noua-tulpina-covid-marea-britanie-simptome-transmitere-vaccin-3368567#noua-tulpina-de-covid-19-simptome?utm_source=stirileprotv&utm_medium=referral to id[139811251899472]
+DEBUG:NewsApp:Added Ce se întâmplă cu pensiile românilor în ianuarie. CNPP a făcut anunțul mult așteptat, https://bit.ly/3nsWb57 to id[139811251899472]
+DEBUG:NewsApp:Added Locul fermecător din Cluj care seamănă izbitor cu stațiunile din Alpi. Cât costă cazarea, https://stirileprotv.ro/stiri/actualitate/locul-fermecator-din-cluj-care-seamana-izbitor-cu-statiunile-din-alpi-cat-costa-cazarea.html to id[139811251899472]
+DEBUG:NewsApp:Added Irlanda de Nord avertizează că lanţul de aprovizionare cu Marea Britanie este pe cale să se prăbuşească, https://stirileprotv.ro/stiri/international/irlanda-de-nord-avertizeaza-ca-lantul-de-aprovizionare-cu-marea-britanie-este-pe-cale-sa-se-prabuseasca.html to id[139811251899472]
+DEBUG:NewsApp:Added Cine este ÎPS Teodosie, prelatul care sfidează atât statul român, cât și pe Patriarhul Daniel, https://ziare.com/stiri/eveniment/cine-este-ips-teodosie-1655326 to id[139811251899472]
+DEBUG:NewsApp:Added Un copil de 7 ani din Arad a dispărut de 24 de ore. Au fost mobilizate forțe impresionante, https://stirileprotv.ro/stiri/social/un-copil-de-7-ani-din-arad-a-disparut-de-24-de-ore-au-fost-mobilizate-forte-impresionante.html to id[139811251899472]
+DEBUG:NewsApp:Added Breaking News: Ilie Năstase și-a bătut soția! A venit poliția! Mărturii incredibile ale femeii, https://www.sport.ro/stiri/breaking-news-ilie-nastase-si-ar-fi-batut-sotia-aceasta-a-sunat-de-urgenta-la-112-detalii-de-ultima-ora.html to id[139811251899472]
+DEBUG:NewsApp:Added Facturi mai mici la curent pe piaţa concurenţială pentru consumatorii din Moldova, https://stirileprotv.ro/stiri/financiar/facturi-mai-mici-la-curent-pe-piata-concurentiala-pentru-consumatorii-din-moldova.html to id[139811251899472]
+DEBUG:NewsApp:Added Loto 6/49, 10 ianuarie. Report la Joker la categoria I de aproximativ 3,51 milioane euro, https://stirileprotv.ro/stiri/loto-649/loto-6-49-10-ianuarie-report-la-joker-la-categoria-i-de-aproximativ-3-51-milioane-euro.html to id[139811251899472]
+DEBUG:NewsApp:Added Mihai de la 3 Sud Est, după ce s-a vindecat de Covid-19: „A fost greu, era să plec”, https://stirileprotv.ro/show-buzz/entertainment/mihai-de-la-3-sud-est-dupa-ce-s-a-vindecat-de-covid-19-za-fost-greu-era-sa-plec.html to id[139811251899472]
+DEBUG:NewsApp:Added Un băiețel de 3 ani a devenit ajutor de gunoier. "E o situație cam neobișnuită", https://stirileprotv.ro/divers/un-baietel-de-3-ani-a-devenit-ajutor-de-gunoier-e-o-situatie-cam-neobisnuita.html to id[139811251899472]
+DEBUG:NewsApp:Added Vremea azi, 10 ianuarie. Lapoviță și ninsoare în sudul țării, https://stirileprotv.ro/stiri/vremea/vremea-azi-10-ianuarie-lapovita-si-ninsoare-in-sudul-tarii.html to id[139811251899472]
+DEBUG:NewsApp:Added Povestea cântăreţei Mira. S-a lansat la „Vocea României” și a crescut odată cu PROTV, https://stirileprotv.ro/stiri/1-decembrie/solista-mira-s-a-lansat-la-zvocea-romaniei-si-a-crescut-o-data-cu-protv.html to id[139811251899472]
+DEBUG:NewsApp:Added Vlad, pompierul bistriţean din prima linie medaliat cu aur la culturism, https://stirileprotv.ro/romania-te-iubesc/vlad-pompierul-bistritean-din-prima-linie-medaliat-cu-aur-la-culturism.html to id[139811251899472]
+DEBUG:NewsApp:Added Cristian Roca, tânărul care concepe "mobila viitorului" la doar 25 de ani, https://stirileprotv.ro/stiri/1-decembrie/la-25-de-ani-isi-doreste-sa-revolutioneze-amenajarile-interioare-tanarul-care-vrea-sa-produca-zmobila-inteligenta.html to id[139811251899472]
+DEBUG:NewsApp:Added Boala cu transmitere sexuală care ar putea deveni netratabilă din cauza pandemiei, https://www.doctordebine.ro/stiri-medicale/boala-cu-transmitere-sexuala-care-ar-putea-deveni-netratabila-din-cauza-pandemiei.html to id[139811251899472]
+DEBUG:NewsApp:Added Cantitate record de droguri confiscată în Spania. Printre membrii organizației sunt și români, https://stirileprotv.ro/stiri/international/cantitate-record-de-droguri-consfiscata-in-spania-printre-membrii-organizatiei-sunt-si-romani.html to id[139811251899472]
+DEBUG:NewsApp:Added Care este mâncarea preferată a Papei Francisc. Ce mănâncă Sfântul Părinte de-a lungul unei zile, https://foodstory.ro/diverse/care-este-mancarea-preferata-a-papei-francisc-ce-mananca-sfantul-parinte-de-a-lungul-unei-zile to id[139811251899472]
+DEBUG:NewsApp:Added Adela Popescu este însărcinată. A făcut anunțul în emisiunea Vorbește lumea, https://stirileprotv.ro/show-buzz/entertainment/adela-popescu-este-insarcinata-vedeta-a-facut-anuntul-in-emisiunea-vorbeste-lumea.html to id[139811251899472]
+DEBUG:NewsApp:Added Cum să conduci în siguranță pe timp de iarnă. Recomandările polițiștilor pentru șoferi, https://stirileprotv.ro/stiri/actualitate/cum-sa-conduci-in-siguranta-pe-timp-de-iarna-recomandarile-politistilor-pentru-soferi.html to id[139811251899472]
+DEBUG:NewsApp:Added O tânără din Chișinău a chemat pompierii pentru că nu-și mai putea scoate inelul de logodnă de pe deget, https://stirileprotv.ro/stiri/international/o-tanara-din-chisinau-a-chemat-pompierii-pentru-ca-nu-si-mai-putea-scoate-inelul-de-logodna-de-pe-deget.html to id[139811251899472]
+DEBUG:NewsApp:Added Facebook modifică design-ul paginilor. Dispare butonul de "Like", https://stirileprotv.ro/stiri/ilikeit/facebook-modifica-design-ul-paginilor-dispare-butonul-de-like.html to id[139811251899472]
+DEBUG:NewsApp:Added Paybyface, invenția revoluționară a unui român din SUA întors în țară. Plata cu fața merge și cu masca de protecție, https://stirileprotv.ro/stiri/ilikeit/paybyface-inventia-revolutionara-a-unui-roman-din-sua-intors-in-tara-plata-cu-fata-merge-si-cu-masca-de-protectie.html to id[139811251899472]
+DEBUG:NewsApp:Added Tehnologia anului 2021, anunțată la ILikeIT. Ce pregătesc marii jucători de pe piața tech, https://stirileprotv.ro/stiri/ilikeit/tehnologia-anului-2021-anuntata-la-ilikeit-ce-pregatesc-marii-jucatori-de-pe-piata-tech.html to id[139811251899472]
+DEBUG:NewsApp:Added Preşedinta Camerei Reprezentanţilor a SUA este îngrijorată că Trump ar putea declanșa un atac nuclear, https://stirileprotv.ro/stiri/international/presedinta-camerei-reprezentantilor-a-sua-este-ingrijorat-ca-trump-ar-putea-declansa-un-atac-nuclear.html to id[139811251899472]
+DEBUG:NewsApp:Added SpaceX a lansat cu succes un satelit de telecomunicaţii pentru Turcia. VIDEO, https://stirileprotv.ro/stiri/ilikeit/spacex-a-lansat-cu-succes-un-satelit-de-telecomunicatii-pentru-turcia-video.html to id[139811251899472]
+DEBUG:NewsApp:Added Ministrul Economiei, despre HoReCa: Când sănătatea românilor nu e în pericol, deschidem tot, https://stirileprotv.ro/stiri/financiar/ministrul-economiei-despre-horeca-cand-sanatatea-romanilor-nu-e-in-pericol-deschidem-tot.html to id[139811251899472]
+DEBUG:NewsApp:Added Spaniolii au inventat vesta de gaming. Poți să simți loviturile adversarului sau împușcăturile din joc, https://stirileprotv.ro/stiri/ilikeit/spaniolii-au-inventat-vesta-de-gaming-poti-sa-simti-loviturile-adversarului-sau-impuscaturile-din-joc.html to id[139811251899472]
+DEBUG:NewsApp:Added Mii de membri ai Gărzii Naţionale, desfăşuraţi pentru 30 de zile în Washington DC, https://stirileprotv.ro/stiri/international/mii-de-membri-ai-garzii-nationale-desfasurati-pentru-30-de-zile-in-washington-dc.html to id[139811251899472]
+DEBUG:NewsApp:Added Infractorii din autobuzele ieșene, depistați cu o aplicație de pe telefonul mobil. Cum funcționează, https://stirileprotv.ro/stiri/social/infractorii-din-autobuzele-iesene-depistati-cu-o-aplicatie-de-pe-telefonul-mobil-cum-functioneaza.html to id[139811251899472]
+DEBUG:NewsApp:Added Anglia și Scoția condiționează intrarea în țară de teste negative anti-COVID. Ce se va întâmpla în Țara Galilor și Irlanda, https://stirileprotv.ro/stiri/international/anglia-si-scotia-conditioneaza-intrarea-in-tara-de-teste-negative-anti-covid-ce-se-va-intampla-in-tara-galilor-si-irlanda.html to id[139811251899472]
+DEBUG:NewsApp:Added Medic: „Sucurile de legume şi fructe nu sunt sănătoase. Supa-cremă, o agresiune pentru pancreas”, https://stirileprotv.ro/stiri/csid/medic-zsucurile-de-legume-si-fructe-nu-sunt-sanatoase-supa-crema-o-agresiune-pentru-pancreas.html to id[139811251899472]
+DEBUG:NewsApp:Added De ce apare anxietatea și cum poate fi prevenită. „Din asta derivă foarte multe tulburări”, https://stirileprotv.ro/stiri/csid/de-ce-apare-anxietatea-si-cum-poate-fi-prevenita-zdin-asta-deriva-foarte-multe-tulburari.html to id[139811251899472]
+DEBUG:NewsApp:Added Ce vrea să audă un copil pentru a-și dezvolta încrederea în sine. ”Părintele trebuie să fie alături”, https://stirileprotv.ro/stiri/csid/ce-vrea-sa-auda-un-copil-pentru-a-si-dezvolta-increderea-in-sine-parintele-trebuie-sa-fie-alaturi.html to id[139811251899472]
+DEBUG:NewsApp:Added România reciclează doar 14% din deșeuri. Ce a găsit Inspectorul PRO în teren, https://stirileprotv.ro/stiri/inspectorul-pro/romania-recicleaza-doar-14-din-deseuri-ce-a-gasit-inspectorul-pro-in-teren.html to id[139811251899472]
+DEBUG:NewsApp:Added Fenomenul overbooking, urmărit de Inspectorul PRO. Cum se desfășoară procedura de recuperare a banilor, https://stirileprotv.ro/stiri/inspectorul-pro/fenomenul-overbooking-tot-mai-multi-romani-se-trezesc-ca-nu-au-loc-la-cursa-la-care-si-au-luat-bilet.html to id[139811251899472]
+DEBUG:NewsApp:Added Metoda inedită a unor tineri din Austria pentru a salva planeta. De ani de zile mănâncă din gunoi, https://stirileprotv.ro/stiri/inspectorul-pro/metoda-inedita-a-unor-tineri-din-austria-pentru-a-salva-planeta-de-ani-de-zile-mananca-din-gunoi.html to id[139811251899472]
+DEBUG:NewsApp:Added ”Doctor de bine”. Sfaturi importante pentru părinții preocupați de imunitatea copiilor, https://stirileprotv.ro/stiri/doctor-de-bine/doctor-de-bine-sfaturi-importante-pentru-parintii-preocupati-de-imunitatea-copiilor.html to id[139811251899472]
+DEBUG:NewsApp:Added Medic: ”Distanțarea socială va avea un impact asupra axei sexuale a copiilor”, https://stirileprotv.ro/stiri/doctor-de-bine/medic-distantarea-sociala-va-avea-un-impact-asupra-axei-sexuale-a-copiilor.html to id[139811251899472]
+DEBUG:NewsApp:Added Cum au fost afectați copiii de izolare. Medicul Mihai Craiu, invitatul emisiunii "Doctor de bine", https://stirileprotv.ro/stiri/doctor-de-bine/cum-au-fost-afecta-ii-copiii-de-izolare-medicul-mihai-craiu-invitatul-emisiunii-doctor-de-bine.html to id[139811251899472]
+INFO:NewsApp:The refresh button has been pressed. Refreshing...
+INFO:NewsApp:Getting the default news...
+INFO:NewsApp:Getting the first 5 headers from Bbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811371352304]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811371352304]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811371352304]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811371352304]
+DEBUG:NewsApp:Getting the next header in BBC
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811371352304]
+INFO:NewsApp:Getting the first 5 headers from Nbc
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.nbcnews.com:443
+DEBUG:urllib3.connectionpool:https://www.nbcnews.com:443 "GET /latest-stories/ HTTP/1.1" 200 30084
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Hopes for survivors fades as passenger plane wreckage found off Indonesian coast, https://www.nbcnews.com/news/world/sriwijaya-air-flight-sj182-hopes-survivors-fade-plane-wreckage-found-n1253653 to id[139811374031424]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added How a surveillance plane was sent to one wealthy suburb, https://www.nbcnews.com/business/business-news/how-surveillance-plane-was-sent-one-wealthy-suburb-n1253607 to id[139811374031424]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Who decides when there are helicopters? Experts weigh in on National Guard monitoring protests, https://www.nbcnews.com/business/business-news/who-decides-when-there-are-helicopters-experts-weigh-national-guard-n1253599 to id[139811374031424]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added Covid-19 vaccine could be heading to the black market, https://www.nbcnews.com/news/us-news/coming-black-market-near-you-covid-19-vaccine-n1253504 to id[139811374031424]
+DEBUG:NewsApp:Getting the next header in NBC
+DEBUG:NewsApp:Added New Zealand central bank says data system hacked, https://www.nbcnews.com/news/weird-news/new-zealand-central-bank-says-data-system-hacked-sensitive-information-n1253652 to id[139811374031424]
+INFO:NewsApp:Getting the first 5 headers from Fox
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.foxnews.com:443
+DEBUG:urllib3.connectionpool:https://www.foxnews.com:443 "GET / HTTP/1.1" 200 42163
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Gab gaining 10,000 users per hour, CEO claims, after Trump's permanent Twitter suspension, https://www.foxbusiness.com/technology/gab-usership-surges-following-trumps-permanent-twitter-suspension to id[139811380799304]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Levin: Media 'exploiting' Capitol riot to 'silence conservatives' as Democrats work to 'choke the system', https://www.foxnews.com/media/mark-levin-capitol-riot-media-exploitation-silence-conservatives to id[139811380799304]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Amazon Web drops Parler over posts ‘inciting violence’ after Capitol riot, https://www.foxbusiness.com/technology/after-capitol-riot-amazon-employees-demand-aws-stop-hosting-parler-for-posts-inciting-violence to id[139811380799304]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added Democratic senators ramp up calls for Cruz, Hawley to resign after Capitol riots, https://www.foxnews.com/politics/democratic-senators-cruz-hawley-resign-capitol-riots to id[139811380799304]
+DEBUG:NewsApp:Getting the next header in FOX
+DEBUG:NewsApp:Added NEWT GINGRICH: Despite Trump leaving office, crusade to preserve America’s freedom must continue, https://www.foxnews.com/opinion/trump-crusade-term-ends-newt-gingrich to id[139811380799304]
+INFO:NewsApp:Getting the first 5 headers from Protv
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stirileprotv.ro:443
+DEBUG:urllib3.connectionpool:https://stirileprotv.ro:443 "GET / HTTP/1.1" 200 36144
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ministrul Educației: Cursurile vor fi reluate după încetarea stării de urgență, https://stirileprotv.ro/stiri/actualitate/surse-scoala-incepe-la-1-iunie-ce-se-intampla-cu-examenele.html to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Coronavirus România, bilanț 10 ianuarie. 3.082 de cazuri noi de persoane infectate, https://stirileprotv.ro/stiri/actualitate/coronavirus-romania-bilant-10-ianuarie-peste-660-000-de-persoane-sunt-infectate.html to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added „Vikingul” de la Capitoliu a fost arestat alături de mai mulți manifestanți pro-Trump, https://stirileprotv.ro/stiri/international/zvikingul-de-la-capitoliu-a-fost-arestat-alaturi-de-mai-multi-manifestanti-pro-trump.html to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Cel mai bogat om de pe Terra vrea să trăiască pe Marte. Povestea lui Elon Musk, https://incont.stirileprotv.ro/international/cel-mai-bogat-om-de-pe-planeta-pamant-vrea-sa-traiasca-pe-alta-planeta-povestea-lui-elon-musk-geniul-din.html to id[139811370845576]
+DEBUG:NewsApp:Getting the next header in PROTV
+DEBUG:NewsApp:Added Ele îmblânzesc mastodonții pe roți! Cele mai SEXY românce șoferițe de TIR, adunate la un loc, https://www.sport.ro/virale/ele-imblanzesc-mastodontii-pe-roti-cele-mai-sexy-romance-soferite-de-tir-adunate-la-un-loc.html to id[139811370845576]
+INFO:NewsApp:Getting the first 5 headers from Digi24
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.digi24.ro:443
+DEBUG:urllib3.connectionpool:https://www.digi24.ro:443 "GET / HTTP/1.1" 200 42756
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added O tulpină nouă a coronavirusului, depistată pe aeroportul din Tokyo. De unde veneau pasagerii-purtători, https://www.digi24.ro/stiri/externe/mapamond/o-tulpina-noua-a-coronavirusului-depistata-pe-aeroportul-din-tokyo-de-unde-veneau-pasagerii-purtatori-1431625 to id[139811379716336]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Manny Pacquiao cere pedeapsa cu moartea și oferă recompensă de 10.000 de dolari, după crima oribilă care a zguduit Filipine, https://www.digisport.ro/special/manny-pacquiao-cere-pedeapsa-cu-moartea-si-ofera-recompensa-de-10-000-de-dolari-dupa-crima-oribila-care-a-zguduit-filipine-983024 to id[139811379716336]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Analiză ANM: Ianuarie, o lună geroasă, dar în care se pot înregistra şi temperaturi maxime de 20 de grade Celsius, https://www.digi24.ro/meteo/analiza-anm-ianuarie-o-luna-geroasa-dar-in-care-se-pot-inregistra-si-temperaturi-maxime-de-20-de-grade-celsius-1431609 to id[139811379716336]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added București are mai multe cazuri noi de coronavirus decât primele cinci județe la un loc, https://www.digi24.ro/stiri/actualitate/bucuresti-are-mai-multe-cazuri-noi-de-coronavirus-decat-primele-cinci-judete-la-un-loc-1431599 to id[139811379716336]
+DEBUG:NewsApp:Getting the next header in DIGI24
+DEBUG:NewsApp:Added Preotul Necula: „A crede că vaccinul e o încălcare a unei dogme e periculos. În mâna lui Dumnezeu stau și astfel de vaccinuri”, https://www.digi24.ro/stiri/actualitate/preotul-necula-a-crede-ca-vaccinul-e-o-incalcare-a-unei-dogme-e-periculos-in-mana-lui-dumnezeu-stau-si-astfel-de-vaccinuri-1431629 to id[139811379716336]
+INFO:NewsApp:Decorating the recieved string...
+INFO:NewsApp:The search button has been pressed. Searching...
+INFO:NewsApp:Searching for  in BBC...
+INFO:NewsApp:Getting ALL available news from BBC
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bbc.com:443
+DEBUG:urllib3.connectionpool:https://www.bbc.com:443 "GET / HTTP/1.1" 200 None
+DEBUG:NewsApp:Added Indonesia crashed plane's black boxes located, https://www.bbc.com/news/world-asia-55606599 to id[139811380798128]
+DEBUG:NewsApp:Added 'QAnon Shaman' charged over pro-Trump riots, https://www.bbc.com/news/world-us-canada-55606044 to id[139811380798128]
+DEBUG:NewsApp:Added Europe's slow start: How many have had the jab?, https://www.bbc.com/news/world-europe-55575756 to id[139811380798128]
+DEBUG:NewsApp:Added FA Cup third round: Watch three games & follow in-play clips, radio & text, https://www.bbc.com/sport/live/football/55356161 to id[139811380798128]
+DEBUG:NewsApp:Added An easy way to beat procrastination?, https://www.bbc.com/worklife/article/20201222-the-four-keys-that-could-unlock-procrastination to id[139811380798128]
+DEBUG:NewsApp:Added US lifts restrictions on contacts with Taiwan, https://www.bbc.com/news/world-us-canada-55606594 to id[139811380798128]
+DEBUG:NewsApp:Added Battling the pangolin traffickers, https://www.bbc.com/news/world-africa-55592290 to id[139811380798128]
+DEBUG:NewsApp:Added Can the world's largest vaccine maker meet demand?, https://www.bbc.com/news/world-asia-india-55571793 to id[139811380798128]
+DEBUG:NewsApp:Added Australia close in on third Test win, https://www.bbc.com/sport/cricket/55608364 to id[139811380798128]
+DEBUG:NewsApp:Added Scottish Premiership: Aberdeen v Rangers & Livingston v Ross County build-up, https://www.bbc.com/sport/live/football/55529667 to id[139811380798128]
+DEBUG:NewsApp:Added India allege racist abuse in third Test, https://www.bbc.com/sport/cricket/55600880 to id[139811380798128]
+DEBUG:NewsApp:Added The English town that lured Tom Cruise, https://www.bbc.com/travel/story/20210103-englands-sleepy-scientology-town to id[139811380798128]
+DEBUG:NewsApp:Added The German word transforming careers, https://www.bbc.com/worklife/article/20201222-the-german-quereinsteiger-ending-career-changing-stigma to id[139811380798128]
+DEBUG:NewsApp:Added The social distancing manual from 1588, https://www.bbc.com/future/article/20210107-the-432-year-old-manual-on-social-distancing to id[139811380798128]
+DEBUG:NewsApp:Added Films to look forward to in 2021, https://www.bbc.com/culture/article/20210107-twenty-films-to-watch-in-2021 to id[139811380798128]
+DEBUG:NewsApp:Added How to make the most of breakfast ingredients, https://www.bbc.comhttps://www.bbc.co.uk/food/articles/breakfast_pots to id[139811380798128]
+DEBUG:NewsApp:Added Here are 21 ways to get fit in 2021, https://www.bbc.com/sport/55151792 to id[139811380798128]
+DEBUG:NewsApp:Added A historic moment for Africa's forests, https://www.bbc.com/future/article/20210107-congo-basin-a-bold-plan-to-save-africas-largest-rainforest to id[139811380798128]
+DEBUG:NewsApp:Added Greener planes of the future... or just pretty plans?, https://www.bbc.com/news/business-51751984 to id[139811380798128]
+DEBUG:NewsApp:Added 'New York is not dead, but it is on life support', https://www.bbc.com/news/business-55535324 to id[139811380798128]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava fountain, https://www.bbc.com/news/world-55605868 to id[139811380798128]
+DEBUG:NewsApp:Added ICYMI: A ‘singing’ lake and a lava..., https://www.bbc.com/news/world-55605868 to id[139811380798128]
+DEBUG:NewsApp:Added Madrid hit by Storm Filomena, https://www.bbc.com/news/world-55605863 to id[139811380798128]
+DEBUG:NewsApp:Added The secret artists creating miniature..., https://www.bbc.com/news/entertainment-arts-55575666 to id[139811380798128]
+DEBUG:NewsApp:Added How protests swept across the US, https://www.bbc.com/news/world-us-canada-55596518 to id[139811380798128]
+DEBUG:NewsApp:Added One-minute World News, https://www.bbc.com/news/10462520 to id[139811380798128]
+DEBUG:NewsApp:Added Boris Johnson struggles in interview, https://www.bbc.com/news/uk-40358825 to id[139811380798128]
+DEBUG:NewsApp:Added Ready for the total solar eclipse?, https://www.bbc.com/news/world-us-canada-40362067 to id[139811380798128]
+DEBUG:NewsApp:Added Koalas 'face extinction' in parts of..., https://www.bbc.com/news/world-australia-40365981 to id[139811380798128]
+DEBUG:NewsApp:Added Video 'shows Mosul mosque's destruction', https://www.bbc.com/news/world-middle-east-40366136 to id[139811380798128]
+DEBUG:NewsApp:Added Indonesia's female 'devil wheel' riders, https://www.bbc.com/news/world-asia-40360168 to id[139811380798128]
+DEBUG:NewsApp:Added Thousands attend Manila mass people told to..., https://www.bbc.com/news/world-asia-55604918 to id[139811380798128]
+DEBUG:NewsApp:Added Chocolates and beer: Buying from Belgium..., https://www.bbc.com/news/world-europe-55592161 to id[139811380798128]
+DEBUG:NewsApp:Added A night at India's largest farmers' protest, https://www.bbc.com/news/world-asia-india-55584924 to id[139811380798128]
+DEBUG:NewsApp:Added BA Holidays reverses decision to continue sales, https://www.bbc.com/news/business-55588798 to id[139811380798128]
+DEBUG:NewsApp:Added TV documentary pioneer and film-maker Apted dies, https://www.bbc.com/news/uk-55597263 to id[139811380798128]
+DEBUG:NewsApp:Added Coronavirus: A year of high-speed discovery, https://www.bbc.com/news/science-environment-55565284 to id[139811380798128]
+DEBUG:NewsApp:Added Amazon to remove Parler from web hosting service, https://www.bbc.com/news/technology-55608081 to id[139811380798128]
+DEBUG:NewsApp:Added Third Covid vaccine approved in the UK, https://www.bbc.com/news/health-55586410 to id[139811380798128]
+DEBUG:NewsApp:Added The Red Planet's many hidden colours, https://www.bbc.com/news/science-environment-55562150 to id[139811380798128]
+DEBUG:NewsApp:Added Twitter permanently suspends Trump's account, https://www.bbc.com/news/world-us-canada-55597840 to id[139811380798128]
+DEBUG:NewsApp:Added Amazon plots a course into the healthcare industry, https://www.bbc.com/news/business-55228999 to id[139811380798128]
+DEBUG:NewsApp:Added Why did these people start businesses in a pandemic?, https://www.bbc.com/news/business-55405289 to id[139811380798128]
+DEBUG:NewsApp:Added Striking news pictures from around the world, https://www.bbc.com/news/in-pictures-55579991 to id[139811380798128]
+DEBUG:NewsApp:Added Building a frozen city in China, https://www.bbc.com/news/in-pictures-55529089 to id[139811380798128]
+DEBUG:NewsApp:Added Africa's top shots: Flames, fireworks and family, https://www.bbc.com/news/world-africa-55573602 to id[139811380798128]
+DEBUG:NewsApp:Added Five startling images from the US Capitol riot, https://www.bbc.com/news/in-pictures-55577824 to id[139811380798128]
+DEBUG:NewsApp:Added In pictures: Pro-Trump protesters storm Capitol, https://www.bbc.com/news/world-us-canada-55568131 to id[139811380798128]

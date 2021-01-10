@@ -1,0 +1,35 @@
+INFO:application: get age method
+DEBUG:application: Kid Siriciuc Anisia Maria has 3 years and -6 months
+INFO:application: greater method
+INFO:application: get age method
+DEBUG:application: Kid Siriciuc Anisia has 3 years and -6 months
+INFO:application: get age method
+DEBUG:application: Kid Chelaru Calin has 3 years and -4 months
+DEBUG:application: Kid Chelaru Calin is greater than Kid Siriciuc Anisia
+DEBUG:application: The file menu.txt is created
+DEBUG:application: Generate the menu for the days of the weeks:
+DEBUG:application:Create the list menu archive
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Siriciuc Anisia has 3 years and -6 months
+DEBUG:application: Kid Siriciuc Anisia registred in group Bees
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Chelaru Calin has 3 years and -4 months
+DEBUG:application: Kid Chelaru Calin registred in group Bees
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Chelaru Anais has 6 years and -7 months
+DEBUG:application: Kid: Chelaru Anais not matched any group
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Franciuc Alin has 4 years and -5 months
+DEBUG:application: Kid Franciuc Alin registred in group Toddlers
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Manta Evelina has 5 years and -2 months
+DEBUG:application: Kid Manta Evelina registred in group Heros
+INFO:application:register kid method
+INFO:application: get age method
+DEBUG:application: Kid Iacob Maya has 5 years and 0 months
+DEBUG:application: Kid Iacob Maya registred in group Heros

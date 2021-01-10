@@ -15,7 +15,8 @@ digi24 = "https://www.digi24.ro/"
 
 now = datetime.now()
 date_string = now.strftime("%d-%m-%Y--%H-%M")
-logging.basicConfig(level=logging.DEBUG, filename=f'ioan-juglea/logs/{date_string}_log.log')
+logging.basicConfig(level=logging.DEBUG,
+                    filename=f'logs/{date_string}_log.log')
 logger = logging.getLogger('NewsApp')
 
 
@@ -25,11 +26,14 @@ class FancyWrite:
     def __enter__(self):
         now = datetime.now()
         date_string = now.strftime("%d-%m-%Y")
-        logger.info(f"Attempting to open the file '{date_string}_articles.txt'")
-        self.file = open(f"ioan-juglea/savedarticles/{date_string}_articles.txt", "a")
+        logger.info(
+            f"Attempting to open the file '{date_string}_articles.txt'")
+        self.file = open(
+            f"savedarticles/{date_string}_articles.txt", "a")
         logger.debug(f"Opened the file for append")
         if not self.file_is_created:
-            self.file.write(f"These are the articles you saved on {date_string}:\n")
+            self.file.write(
+                f"These are the articles you saved on {date_string}:\n")
             self.file_is_created = True
         return self
 
@@ -83,7 +87,9 @@ class News():
 
 class NewsMixin():
     def get_first_x_news(self, number):
-        logger.info(f'Getting the first {number} headers from {self.__class__.__name__}')
+        logger.info(
+            f'Getting the first {number} headers from {self.__class__.__name__}'
+        )
         newsobj = self.__class__()
         news_generator = self.get_news()
         for i in range(number):
@@ -120,7 +126,6 @@ class Header():
 
 
 class Bbc(News, NewsMixin):
-
     @staticmethod
     def get_all_news():
         logger.info(f'Getting ALL available news from BBC')
@@ -151,7 +156,6 @@ class Bbc(News, NewsMixin):
 
 
 class Nbc(News, NewsMixin):
-
     @staticmethod
     def get_all_news():
         logger.info(f'Getting ALL available news from NBC')
@@ -179,7 +183,6 @@ class Nbc(News, NewsMixin):
 
 
 class Fox(News, NewsMixin):
-
     @staticmethod
     def get_all_news():
         logger.info(f'Getting ALL available news from FOX')
@@ -207,7 +210,6 @@ class Fox(News, NewsMixin):
 
 
 class Protv(News, NewsMixin):
-
     @staticmethod
     def get_all_news():
         logger.info(f'Getting ALL available news from PROTV')
@@ -233,7 +235,6 @@ class Protv(News, NewsMixin):
 
 
 class Digi24(News, NewsMixin):
-
     @staticmethod
     def get_all_news():
         logger.info(f'Getting ALL available news from DIGI24')
@@ -351,7 +352,8 @@ class MainWindow(QMainWindow):
         self.refreshButton.clicked.connect(self.refresh)
 
         self.label_3 = QtWidgets.QLabel(self)
-        self.label_3.setText("Enter the numbers of the articles that interest you here:")
+        self.label_3.setText(
+            "Enter the numbers of the articles that interest you here:")
         self.label_3.setGeometry(QtCore.QRect(500, 370, 281, 41))
         self.label_3.setWordWrap(True)
         self.label_3.setObjectName("label_3")
@@ -403,7 +405,8 @@ class MainWindow(QMainWindow):
                     found_results = True
             if found_results is False:
                 result_string += f"Couldn't find BBC articles that match {word_input}<br>"
-                logger.warning(f"Couldn't find any results for {word_input} in BBC")
+                logger.warning(
+                    f"Couldn't find any results for {word_input} in BBC")
 
         if self.checkBox_2.isChecked():
             logger.info(f'Searching for {word_input} in NBC...')
@@ -419,7 +422,8 @@ class MainWindow(QMainWindow):
                     found_results = True
             if found_results is False:
                 result_string += f"Couldn't find NBC articles that match {word_input}<br>"
-                logger.warning(f"Couldn't find any results for {word_input} in NBC")
+                logger.warning(
+                    f"Couldn't find any results for {word_input} in NBC")
 
         if self.checkBox_3.isChecked():
             logger.info(f'Searching for {word_input} in FOX...')
@@ -435,7 +439,8 @@ class MainWindow(QMainWindow):
                     found_results = True
             if found_results is False:
                 result_string += f"Couldn't find Fox articles that match {word_input}<br>"
-                logger.warning(f"Couldn't find any results for {word_input} in FOX")
+                logger.warning(
+                    f"Couldn't find any results for {word_input} in FOX")
 
         if self.checkBox_4.isChecked():
             logger.info(f'Searching for {word_input} in PROTV...')
@@ -451,7 +456,8 @@ class MainWindow(QMainWindow):
                     found_results = True
             if found_results is False:
                 result_string += f"Couldn't find PROTV articles that match {word_input}<br>"
-                logger.warning(f"Couldn't find any results for {word_input} in PROTV")
+                logger.warning(
+                    f"Couldn't find any results for {word_input} in PROTV")
 
         if self.checkBox_5.isChecked():
             logger.info(f'Searching for {word_input} in DIGI24...')
@@ -467,7 +473,8 @@ class MainWindow(QMainWindow):
                     found_results = True
             if found_results is False:
                 result_string += f"Couldn't find Digi24 articles that match {word_input}<br>"
-                logger.warning(f"Couldn't find any results for {word_input} in DIGI24")
+                logger.warning(
+                    f"Couldn't find any results for {word_input} in DIGI24")
         self.alt_text = alternate_string
         self.news_text = result_string
         self.textBox.setText(self.news_text)
@@ -480,12 +487,13 @@ class MainWindow(QMainWindow):
             news_list = ["BBC", "NBC", "FOX", "PROTV", "DIGI24"]
             for string in default_string:
                 if string[:-1] in news_list:
-                    new_string += '~'*37 + '<br>'
+                    new_string += '~' * 37 + '<br>'
                     new_string += string + '<br>'
-                    new_string += '~'*37 + '<br>'
+                    new_string += '~' * 37 + '<br>'
                 else:
                     new_string += string + '<br>'
             return new_string
+
         return inner
 
     @prettify_news

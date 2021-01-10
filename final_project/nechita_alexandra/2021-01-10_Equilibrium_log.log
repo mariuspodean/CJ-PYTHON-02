@@ -1,0 +1,24 @@
+DEBUG:application:Decorating check_status
+DEBUG:application:Creating Physical object named Desired Physical
+DEBUG:application:Creating Spiritual object named Desired Spiritual
+DEBUG:application:Creating Emotional object named Desired Emotional
+DEBUG:application:Creating Social object named Desired Social
+DEBUG:application:Creating Intellectual object named Desired Intellectual
+DEBUG:application:Creating Physical object named Actual Physical
+DEBUG:application:Creating Spiritual object named Actual Spiritual
+DEBUG:application:Creating Emotional object named Actual Emotional
+DEBUG:application:Creating Social object named Actual Social
+DEBUG:application:Creating Intellectual object named Actual Intellectual
+DEBUG:application:Performing MixinPrint for Desired Physical
+DEBUG:application:Performing MixinPrint for Desired Spiritual
+DEBUG:application:Performing MixinPrint for Desired Emotional
+DEBUG:application:Performing MixinPrint for Desired Social
+DEBUG:application:Performing MixinPrint for Desired Intellectual
+DEBUG:application:Creating DomainsCollection object named Alexandra's Desired Collection
+DEBUG:application:Creating DomainsCollection object named Alexandra's Actual Collection
+INFO:application:Looking for differences between desired state and actual state activities
+DEBUG:application:Desired state collection is Alexandra's Desired Collection and actual state is Alexandra's Actual Collection
+DEBUG:application:Opening 2021-01-10_Desired Physical.txt to write activities
+INFO:application:Writing list of activities in 2021-01-10_Desired Physical.txt
+DEBUG:application:Closing 2021-01-10_Desired Physical.txt
+DEBUG:application:Generating one friend at a time from the friends dictionary

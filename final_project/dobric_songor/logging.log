@@ -1,0 +1,74 @@
+DEBUG:application:Game Started
+DEBUG:root:Adding player Lucky Cso
+DEBUG:root:Adding player Drag X
+DEBUG:root:Adding player Jacky 8
+DEBUG:root:Adding player Imperator
+DEBUG:root:Adding player Johnny D
+DEBUG:root:Removing player Johnny D
+INFO:root:Starting the cronometer
+DEBUG:root:Writing out the players and credits before playing the game
+INFO:root:Playing with player Lucky Cso
+DEBUG:root:Asking player Lucky Cso for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Lucky Cso for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Lucky Cso for a betting amount
+DEBUG:root:Validating Lucky Cso's betting amount
+INFO:root:Playing with player Drag X
+DEBUG:root:Asking player Drag X for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Drag X for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Drag X for a betting amount
+DEBUG:root:Validating Drag X's betting amount
+DEBUG:root:Asking player Drag X for a betting amount
+DEBUG:root:Validating Drag X's betting amount
+INFO:root:Playing with player Jacky 8
+DEBUG:root:Asking player Jacky 8 for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Jacky 8 for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Jacky 8 for a betting amount
+DEBUG:root:Validating Jacky 8's betting amount
+INFO:root:Playing with player Imperator
+DEBUG:root:Asking player Imperator for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Imperator for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Imperator for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Imperator for a betting amount
+DEBUG:root:Validating Imperator's betting amount
+INFO:root:Playing with player Johnny D
+DEBUG:root:Asking player Johnny D for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Johnny D for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Johnny D for a betting amount
+DEBUG:root:Validating Johnny D's betting amount
+INFO:root:Generating the random number and color
+INFO:root:Comparing players and tables numbers
+INFO:root:Asking player Lucky Cso if they want to leave the table
+INFO:root:Checking if the player wants to leave
+INFO:root:Comparing players and tables numbers
+INFO:root:Asking player Drag X if they want to leave the table
+INFO:root:Checking if the player wants to leave
+INFO:root:Comparing players and tables numbers
+INFO:root:Asking player Jacky 8 if they want to leave the table
+INFO:root:Checking if the player wants to leave
+INFO:root:Comparing players and tables numbers
+INFO:root:Comparing players and tables numbers
+INFO:root:Playing with player Jacky 8
+DEBUG:root:Asking player Jacky 8 for a betting option
+DEBUG:root:Validating players option
+DEBUG:root:Asking player Jacky 8 for a playing choice
+DEBUG:root:Validating players choice
+DEBUG:root:Asking player Jacky 8 for a betting amount
+DEBUG:root:Validating Jacky 8's betting amount
+INFO:root:Generating the random number and color
+INFO:root:Comparing players and tables numbers
+INFO:root:No more players
+INFO:root:checking the score-order by result
+INFO:root:Stopping the cronometer
+DEBUG:root:Writing out the players and credits after playing the game
+INFO:root:printing out the players in the 'scores.txt' file with the new credits

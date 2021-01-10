@@ -1,0 +1,510 @@
+INFO:Pandair Airline: Checking if Aircraft CO400 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO200 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P2000 is due for maintenance
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing completed quick maintenance. Flights number is now 17
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus completed quick maintenance. Flights number is now 15
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P2000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO200, P2000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO100, CA300, CO200, P2000}
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CO100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CO100, CO200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CA200, CO100, CO200, P2000, P1000, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus already in Fleet.
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CA200, CO100, CO200, P2000, P1000, P4000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CA400, CA200, CO100, CO200, P2000, P1000, P4000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CA400, CA200, CO100, CO200, P2000, CO300, P1000, P4000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CA400, CA200, CO100, CO200, P2000, CO300, P1000, P4000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO100, CO200, P2000, CO300, P1000, P4000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, P4000, CO400, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing not found at Airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Created Regional Airport from Airport: [CO200, P2000] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Created Regional Airport from Airport: [CA400, CO300, CO400] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Brussels fleet replaced. New Brussels Airport: [CO200, P2000] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Cluj-Napoca fleet replaced. New Cluj-Napoca Airport: [P1000, CA100] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Berlin fleet replaced. New Berlin Airport: [P3000, CA200] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Prague fleet replaced. New Prague Airport: [CA400, CO300, CO400] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus removed from Fleet Database. Fleet overview {CA100, CA400, CA200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus removed from Fleet Database. Fleet overview {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Brussels removed from Fleet Database. Overview of airports {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400]}
+INFO:Pandair Airline: Airport Brussels not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Airport Brussels not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': []}
+INFO:Pandair Airline: Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Berlin airport. Berlin airport overview: Airport: [CA200]
+INFO:Pandair Airline: Airport Cocomo not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Airport Cocomo not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': [], 'Cocomo': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Cocomo airport. Cocomo airport overview: Airport: [P3000]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing number of flights increased by 1. Number of flights operated now at 1
+INFO:Pandair Airline: New flight added to flight log: P3000: Berlin to Cocomo
+INFO:Pandair Airline: Aircraft Alert: P3000 is due for maintenance!
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Prague airport. Prague airport overview: Airport: [CO300, CO400]
+INFO:Pandair Airline: Airport Munich not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Airport Munich not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CO300, CO400], 'Brussels': [], 'Cocomo': [P3000], 'Munich': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Munich airport. Munich airport overview: Airport: [CA400]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus number of flights increased by 1. Number of flights operated now at 21
+INFO:Pandair Airline: New flight added to flight log: CA400: Prague to Munich
+INFO:Pandair Airline: Aircraft Alert: CA400 is due for maintenance!
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has been changed
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now returning <function AlterAircraft.__enter__.<locals>.<lambda> at 0x7fe1aa0f0e18>
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has returned to original
+DEBUG:Pandair Airline:Sun Jan 10 15:34:18 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now back to original form
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO400 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO200 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P2000 is due for maintenance
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing completed quick maintenance. Flights number is now 17
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus completed quick maintenance. Flights number is now 15
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P2000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO200, P2000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO200, P2000, CO100}
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CA100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CA100, CO200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CA100, CO200, CA200, P2000, P1000, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus already in Fleet.
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, P4000, CO100, CA100, CO200, CA200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA400, P4000, CO100, CA100, CO200, CA200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA400, P4000, CO100, CA100, CO200, CO300, CA200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA400, P4000, CO100, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA400, P4000, CO100, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA400, P4000, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing not found at Airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Created Regional Airport from Airport: [CO200, P2000] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Created Regional Airport from Airport: [CA400, CO300, CO400] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Brussels fleet replaced. New Brussels Airport: [CO200, P2000] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Cluj-Napoca fleet replaced. New Cluj-Napoca Airport: [P1000, CA100] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Berlin fleet replaced. New Berlin Airport: [P3000, CA200] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CA100, CO200, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Prague fleet replaced. New Prague Airport: [CA400, CO300, CO400] 
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus removed from Fleet Database. Fleet overview {CA400, CA100, CO300, CA200, CO400, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus removed from Fleet Database. Fleet overview {CA400, CA100, CO300, CA200, CO400, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Brussels removed from Fleet Database. Overview of airports {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400]}
+INFO:Pandair Airline: Airport Brussels not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Airport Brussels not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': []}
+INFO:Pandair Airline: Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO300, CA200, CO400, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Berlin airport. Berlin airport overview: Airport: [CA200]
+INFO:Pandair Airline: Airport Cocomo not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Airport Cocomo not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': [], 'Cocomo': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO300, CA200, CO400, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Cocomo airport. Cocomo airport overview: Airport: [P3000]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing number of flights increased by 1. Number of flights operated now at 1
+INFO:Pandair Airline: New flight added to flight log: P3000: Berlin to Cocomo
+INFO:Pandair Airline: Aircraft Alert: P3000 is due for maintenance!
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CO300, CA200, CO400, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Prague airport. Prague airport overview: Airport: [CO300, CO400]
+INFO:Pandair Airline: Airport Munich not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Airport Munich not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CO300, CO400], 'Brussels': [], 'Cocomo': [P3000], 'Munich': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CA100, CO300, CA200, CO400, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Munich airport. Munich airport overview: Airport: [CA400]
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus number of flights increased by 1. Number of flights operated now at 21
+INFO:Pandair Airline: New flight added to flight log: CA400: Prague to Munich
+INFO:Pandair Airline: Aircraft Alert: CA400 is due for maintenance!
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has been changed
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now returning <function AlterAircraft.__enter__.<locals>.<lambda> at 0x7f456fb8ee18>
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has returned to original
+DEBUG:Pandair Airline:Sun Jan 10 15:34:59 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now back to original form
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO400 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO200 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P2000 is due for maintenance
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing completed quick maintenance. Flights number is now 17
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus completed quick maintenance. Flights number is now 15
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P2000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO200, P2000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO100, CA300, CO200, P2000}
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA300, CO100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CO100, CO200, P2000, P1000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CO100, CO200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA300, CA100, CO100, CA200, CO200, P2000, P1000, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus already in Fleet.
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {P4000, CA300, CA100, CO100, CA200, CO200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {P4000, CA300, CA100, CA400, CO100, CA200, CO200, P2000, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {P4000, CA300, CA100, CA400, CO100, CA200, CO200, P2000, CO300, P1000, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {P4000, CA300, CA100, CA400, CO100, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {P4000, CA100, CA400, CO100, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {P4000, CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing not found at Airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Created Regional Airport from Airport: [CO200, P2000] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Created Regional Airport from Airport: [CA400, CO300, CO400] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Brussels fleet replaced. New Brussels Airport: [CO200, P2000] 
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Cluj-Napoca fleet replaced. New Cluj-Napoca Airport: [P1000, CA100] 
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Berlin fleet replaced. New Berlin Airport: [P3000, CA200] 
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added to Fleet Database. Fleet Overview {CA100, CA400, CA200, CO200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Prague fleet replaced. New Prague Airport: [CA400, CO300, CO400] 
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus removed from Fleet Database. Fleet overview {CA100, CA400, CA200, P2000, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus removed from Fleet Database. Fleet overview {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Brussels removed from Fleet Database. Overview of airports {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400]}
+INFO:Pandair Airline: Airport Brussels not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Airport Brussels not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': []}
+INFO:Pandair Airline: Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Berlin airport. Berlin airport overview: Airport: [CA200]
+INFO:Pandair Airline: Airport Cocomo not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Airport Cocomo not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': [], 'Cocomo': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Cocomo airport. Cocomo airport overview: Airport: [P3000]
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing number of flights increased by 1. Number of flights operated now at 1
+INFO:Pandair Airline: New flight added to flight log: P3000: Berlin to Cocomo
+INFO:Pandair Airline: Aircraft Alert: P3000 is due for maintenance!
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA100, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Prague airport. Prague airport overview: Airport: [CO300, CO400]
+INFO:Pandair Airline: Airport Munich not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Airport Munich not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CO300, CO400], 'Brussels': [], 'Cocomo': [P3000], 'Munich': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA100, CA400, CA200, CO300, P1000, CO400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Munich airport. Munich airport overview: Airport: [CA400]
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus number of flights increased by 1. Number of flights operated now at 21
+INFO:Pandair Airline: New flight added to flight log: CA400: Prague to Munich
+INFO:Pandair Airline: Aircraft Alert: CA400 is due for maintenance!
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 New origin-destination pair was generated: Prague - Berlin
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has been changed
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now returning <function AlterAircraft.__enter__.<locals>.<lambda> at 0x7f1236969e18>
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has returned to original
+DEBUG:Pandair Airline:Sun Jan 10 15:35:57 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now back to original form
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO400 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO200 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P2000 is due for maintenance
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing completed quick maintenance. Flights number is now 17
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus completed quick maintenance. Flights number is now 15
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P2000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, CA300, P2000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, CA300, P2000, CO100}
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, P2000, CA300}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, P2000, CA300}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, P2000, CA300, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, CA200, P2000, CA300, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus already in Fleet.
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, P4000, CA200, P2000, CA300, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, P4000, CA200, P2000, CA300, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, CO300, P4000, CA200, P2000, CA300, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, CO300, CO400, P4000, CA200, P2000, CA300, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P1000, CA100, CO300, CO400, P4000, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, P4000, CA200, P2000, CA400, P3000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing not found at Airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier removed from Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Created Regional Airport from Airport: [CO200, P2000] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Created Regional Airport from Airport: [CA400, CO300, CO400] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Brussels fleet replaced. New Brussels Airport: [CO200, P2000] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Cluj-Napoca fleet replaced. New Cluj-Napoca Airport: [P1000, CA100] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Berlin fleet replaced. New Berlin Airport: [P3000, CA200] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added to Fleet Database. Fleet Overview {CO200, P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Prague fleet replaced. New Prague Airport: [CA400, CO300, CO400] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus removed from Fleet Database. Fleet overview {P1000, CA100, CO300, CO400, CA200, P2000, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus removed from Fleet Database. Fleet overview {P1000, CA100, CO300, CO400, CA200, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Brussels removed from Fleet Database. Overview of airports {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400]}
+INFO:Pandair Airline: Airport Brussels not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Airport Brussels not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': []}
+INFO:Pandair Airline: Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {P1000, CA100, CO300, CO400, CA200, CA400}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Berlin airport. Berlin airport overview: Airport: [CA200]
+INFO:Pandair Airline: Airport Cocomo not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Airport Cocomo not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': [], 'Cocomo': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {P1000, CA100, CO300, CO400, CA200, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Cocomo airport. Cocomo airport overview: Airport: [P3000]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing number of flights increased by 1. Number of flights operated now at 1
+INFO:Pandair Airline: New flight added to flight log: P3000: Berlin to Cocomo
+INFO:Pandair Airline: Aircraft Alert: P3000 is due for maintenance!
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {P1000, CA100, CO300, CO400, CA200, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Prague airport. Prague airport overview: Airport: [CO300, CO400]
+INFO:Pandair Airline: Airport Munich not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Airport Munich not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CO300, CO400], 'Brussels': [], 'Cocomo': [P3000], 'Munich': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {P1000, CA100, CO300, CO400, CA200, CA400, P3000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Munich airport. Munich airport overview: Airport: [CA400]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus number of flights increased by 1. Number of flights operated now at 21
+INFO:Pandair Airline: New flight added to flight log: CA400: Prague to Munich
+INFO:Pandair Airline: Aircraft Alert: CA400 is due for maintenance!
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 New origin-destination pair was generated: Prague - Munich
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has been changed
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now returning <function AlterAircraft.__enter__.<locals>.<lambda> at 0x7f625cc062f0>
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has returned to original
+DEBUG:Pandair Airline:Sun Jan 10 15:36:17 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now back to original form
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO400 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft CO200 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance
+INFO:Pandair Airline: Checking if Aircraft P2000 is due for maintenance
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing completed quick maintenance. Flights number is now 17
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier completed quick maintenance. Flights number is now 0
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus completed quick maintenance. Flights number is now 15
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, P2000}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO200, CA300, P2000}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO200, CO100, CA300, P2000}
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P2000, P1000, CA300}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P2000, P1000, CA300, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, P2000, P1000, P3000, CA300, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, CA200, P2000, P1000, P3000, CA300, CA100}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus already in Fleet.
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing already in Fleet.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CO100, CO200, CA200, P2000, P1000, P3000, CA300, P4000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO100, CO200, CA200, P2000, P1000, P3000, CA300, P4000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO100, CO200, CO300, CA200, P2000, P1000, P3000, CA300, P4000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO100, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA300, P4000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CO100, CO200, CO300, CA200, CO400, P2000, P1000, P3000, P4000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO100, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, P4000, CA100}
+INFO:Pandair Airline: Aircraft type CargoAircraft, identifier CA300, manufacturer Boeing not found at Airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P4000, manufacturer Bombardier removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Created Regional Airport from Airport: [CO200, P2000] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Created Regional Airport from Airport: [CA400, CO300, CO400] and Airport: [P3000, CA200]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Brussels fleet replaced. New Brussels Airport: [CO200, P2000] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA100, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Cluj-Napoca fleet replaced. New Cluj-Napoca Airport: [P1000, CA100] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA200, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Berlin fleet replaced. New Berlin Airport: [P3000, CA200] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO300, manufacturer Bombardier added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO400, manufacturer Boeing added to Fleet Database. Fleet Overview {CA400, CO200, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Prague fleet replaced. New Prague Airport: [CA400, CO300, CO400] 
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus removed from Fleet Database. Fleet overview {CA400, CO300, CA200, CO400, P2000, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus removed from Fleet Database. Fleet overview {CA400, CO300, CA200, CO400, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Brussels removed from Fleet Database. Overview of airports {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400]}
+INFO:Pandair Airline: Airport Brussels not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Airport Brussels not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [P3000, CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': []}
+INFO:Pandair Airline: Aircraft type CommercialAircraft, identifier CO200, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Airport and Fleet. Airplanes in fleet overview: {CA400, CO300, CA200, CO400, P1000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing removed from Berlin airport. Berlin airport overview: Airport: [CA200]
+INFO:Pandair Airline: Airport Cocomo not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Airport Cocomo not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CA400, CO300, CO400], 'Brussels': [], 'Cocomo': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO300, CA200, CO400, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing added to Cocomo airport. Cocomo airport overview: Airport: [P3000]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type PrivateAircraft, identifier P3000, manufacturer Boeing number of flights increased by 1. Number of flights operated now at 1
+INFO:Pandair Airline: New flight added to flight log: P3000: Berlin to Cocomo
+INFO:Pandair Airline: Aircraft Alert: P3000 is due for maintenance!
+INFO:Pandair Airline: Aircraft type PrivateAircraft, identifier P2000, manufacturer Airbus not found in Brussels airport.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Airport and Fleet. Airplanes in fleet overview: {CO300, CA200, CO400, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus removed from Prague airport. Prague airport overview: Airport: [CO300, CO400]
+INFO:Pandair Airline: Airport Munich not in Fleet Database.
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Airport Munich not found. Airport was added to Fleet Database. Fleet Overview: {'Cluj-Napoca': [P1000, CA100], 'Berlin': [CA200], 'Prague': [CO300, CO400], 'Brussels': [], 'Cocomo': [P3000], 'Munich': []}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added in Airport and Fleet. Airplanes in fleet overview: {CA400, CO300, CA200, CO400, P1000, P3000, CA100}
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus added to Munich airport. Munich airport overview: Airport: [CA400]
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Aircraft type CargoAircraft, identifier CA400, manufacturer Airbus number of flights increased by 1. Number of flights operated now at 21
+INFO:Pandair Airline: New flight added to flight log: CA400: Prague to Munich
+INFO:Pandair Airline: Aircraft Alert: CA400 is due for maintenance!
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Prague
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Cluj-Napoca - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Cluj-Napoca
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Cocomo
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Munich
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Berlin
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Brussels
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 New origin-destination pair was generated: Prague - Brussels
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has been changed
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now returning <function AlterAircraft.__enter__.<locals>.<lambda> at 0x7f024317ca60>
+INFO:Pandair Airline:Behaviour of Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier has returned to original
+DEBUG:Pandair Airline:Sun Jan 10 15:36:38 2021 Due for maintenance method for Aircraft type PrivateAircraft, identifier P1000, manufacturer Bombardier now back to original form
+INFO:Pandair Airline: Checking if Aircraft P1000 is due for maintenance

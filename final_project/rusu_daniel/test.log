@@ -1,0 +1,29 @@
+INFO:application:Prepare dict
+INFO:application:is initializing variables for the class
+INFO:application:is initializing variables for the class
+INFO:application:is initializing variables for the class
+INFO:application:is initializing variables for the class
+INFO:application:is initializing variables for the class
+DEBUG:application:return the daniel and clam
+DEBUG:application:return the bolt and 12345
+DEBUG:application:return the jhon and asterix19
+DEBUG:application:return the kyle and domm13
+DEBUG:application:return the james and blocked
+DEBUG:application:is overloading and return danielbolt
+DEBUG:application:is overloading reverse add and return ...
+Database users: danielboltjhon
+DEBUG:application:is overloading reverse add and return ...
+Database users: danielboltjhonkyle
+DEBUG:application:is overloading reverse add and return ...
+Database users: danielboltjhonkylejames
+DEBUG:application:{} is starting
+DEBUG:application:is done and returning: {'daniel': 'clam', 'bolt': '12345', 'jhon': 'asterix19', 'kyle': 'domm13', 'james': 'blocked'} 
+DEBUG:application:is done and returning: {'daniel': 'clam', 'bolt': '12345', 'jhon': 'asterix19', 'kyle': 'domm13', 'james': 'blocked'} 
+DEBUG:application:Is done and generates key b'NM_JgZvcsjrI_dT5zZdR5MHRsbIQHe8tIzghQ-sReac='
+INFO:application:Writes key
+INFO:application:Loads key
+DEBUG:application:0 is starting ...
+DEBUG:application:While loop with 6 tries
+DEBUG:application:While loop with 6 tries
+DEBUG:application:handling dict: {'daniel': 'clam', 'bolt': '12345', 'jhon': 'asterix19', 'kyle': 'domm13', 'james': 'blocked'}
+DEBUG:application:While loop with 6 tries

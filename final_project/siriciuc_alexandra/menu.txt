@@ -1,0 +1,28 @@
+Menu start date: 16-11-2020
+Menu price: 13 EUR
+
+Monday:
+   breakfast: corn flakes, full cream milk
+   lunch: rise with fish, mix beans and mushroom, radish and carrot soup
+   snack: fresh fruits
+
+Tuesday:
+   breakfast: chicken sausage sandwich, fresh fruits
+   lunch: beef and tomato bolognaise with wholemeal pasta, mixed fresh vegetables
+   snack: apricots pie
+
+Wednesday:
+   breakfast: hard boiled egg, toast or teacake
+   lunch: fish with spinach, chicken soup
+   snack: walnut biscuits
+
+Thurday:
+   breakfast: bread with peanut butter, full cream milk
+   lunch: chicken sandwich, cream corn, cucumber salad
+   snack: vanilla croissant
+
+Friday:
+   breakfast: bread with cheese and chicken
+   lunch: beef cottage pie with mashed potato, cabbage salad
+   snack: chicken sandwitch
+
